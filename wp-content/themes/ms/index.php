@@ -369,7 +369,7 @@
                 </div>
                 <div class="row">
 
-                    <div id="carousel-feedback" class="hexagon-news">
+                    <div id="carousel-feedback" class="hexagon-feedback">
                         <?php
                         query_posts(array(
                             'cat' => 4,
@@ -387,7 +387,8 @@
                                 ?>
                                 <img src="<?php echo $large_image_url[0]; ?>" alt="">
                                 <h4 class><?php the_title(); ?></h4>
-                                <h5><?php echo get_the_date('d.m.Y'); ?></h5>
+                                <h5><?php the_excerpt() ?></h5>
+                                <p><?php the_content() ?></p>
                             </div>
                             <?
                         endwhile;
