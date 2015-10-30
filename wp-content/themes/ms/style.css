@@ -26,12 +26,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin-bottom: 75px;
 }
 
-.hexagon-news .slick-slide{
+.hexagon-news .slick-slide {
     position: relative;
     overflow: hidden;
     margin: 0 20px;
     cursor: pointer;
 }
+
 .hexagon-news .slick-slide:before {
     content: '';
     background: rgba(6, 32, 73, .75);
@@ -47,39 +48,45 @@ Use it to make something cool, have fun, and share what you've learned with othe
     background: rgba(238, 140, 1, .75);
     background: rgba(238, 140, 1, .75);
 }
+
 .hexagon-news .slick-slide .title p {
     color: #ee8c01;
     margin: .4em 0 0;
     font-weight: normal;
 }
+
 .hexagon-news .slick-slide:hover .title p {
     color: #000000;
 }
+
 .hexagon-news .slick-list {
     max-width: 1024px;
     margin: 0 auto;
 }
+
 .slick-prev.slick-arrow,
 .slick-next.slick-arrow {
     position: absolute;
     top: 50%;
 }
+
 .slick-prev.slick-arrow {
     left: 0;
 }
+
 .slick-next.slick-arrow {
     right: 0;
 }
+
 .hexagon li {
-	display:  inline-block;
-	width: 100px;
-	height: 55px;
-	background: red;
-	position: relative;
-	margin: 12px 0 12px -4px;
-	list-style: none;
-	text-align: 0;
-	cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    background: red;
+    position: relative;
+    margin: 12px 0 12px -4px;
+    list-style: none;
+    cursor: pointer;
 }
 
 .hexagon-news .border-box {
@@ -90,15 +97,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
     background-size: 100% 100%;
     z-index: 2;
 }
+
 .hexagon-news .slick-list *:focus {
     outline: none;
 }
+
 .hexagon-news .slick-slide img {
     display: block;
     min-width: 100%;
     height: 200px;
     width: auto;
 }
+
 .hexagon-news .slick-slide .title {
     position: absolute;
     top: 35%;
@@ -111,71 +121,103 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-weight: bold;
     line-height: 1.4em;
 }
+
 .hexagon li,
 .hexagon li:before,
 .hexagon li:after,
 .hexagon-news .slick-slide .title p,
 .hexagon-news .slick-slide:before {
-	-webkit-transition: .2s;
-	-o-transition: .2s;
-	transition: .2s;	
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
 }
+
 .hexagon li.row-2 {
-	margin-left: 47px;
+    margin-left: 47px;
 }
+
 .hexagon li:before {
- content: "";
- position: absolute;
- top: -25px;
- left: 0;
- width: 0;
- height: 0;
- border-left: 50px solid transparent;
- border-right: 50px solid transparent;
- border-bottom: 25px solid red;
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid red;
 }
+
 .hexagon li:after {
- content: "";
- position: absolute;
- bottom: -25px;
- left: 0;
- width: 0;
- height: 0;
- border-left: 50px solid transparent;
- border-right: 50px solid transparent;
- border-top: 25px solid red;
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid red;
 }
+
 .hexagon li:hover {
     background: rgba(255, 255, 255, 0.58);
     text-align: center;
 }
-.hexagon li:hover:after{
-	border-top-color: rgba(255, 255, 255, 0.58);
-}
-.hexagon li:hover:before {
-	border-bottom-color: rgba(255, 255, 255, 0.58);
+
+.hexagon li:hover:after {
+    border-top-color: rgba(255, 255, 255, 0.58);
 }
 
-.about-1, .about-2{
-	background: #fff;
+.hexagon li:hover:before {
+    border-bottom-color: rgba(255, 255, 255, 0.58);
 }
-.footer_title{
-	color: #BEC2C5;
+
+.about-1, .about-2 {
+    background: #fff;
+    position: relative;
+}
+.col-md-6.about-1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('img/arrow-2.png') no-repeat;
+    width: 200px;
+    height: 500px;
+    right: calc( 100% - 55px);
+}
+.about-company-pefix {
+    position: relative;
+}
+.about-company-pefix:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('img/arrow-top.png') no-repeat;
+    height: 83px;
+    bottom: calc( 100% - 1px);
+    background-size: 100% 100%;
+    right: 0px;
+    left: 0;
+}
+.footer_title {
+    color: #BEC2C5;
 }
 
 .orange-caption {
-	color: #ED8C01;
+    color: #ED8C01;
 }
-.socials a{
-	color: #BEC2C5;
-	text-decoration: none; 
+
+.socials a {
+    color: #BEC2C5;
+    text-decoration: none;
 }
 
 .socials i.fa {
-	width: 35px;
+    width: 35px;
 }
 
 #map {
-	height: 575px;
-	width: 100%
+    height: 575px;
+    width: 100%
 }

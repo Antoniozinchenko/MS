@@ -147,7 +147,7 @@ header{
   }
   .top_slider .slide_image .text-box {
     position: absolute;
-    width: 200px;
+    width: 281px;
     left: 207px;
     top: 242px;
     background: transparent;
@@ -156,9 +156,15 @@ header{
   .top_slider .slide_image .count-apartment {
     font-size: 64px;
     font-weight: 800;
+    color: #c6c6c6;
   }
   .top_slider .slide_image .lost-apartment {
     display: inline-block;
+    font-size: 26px;
+    padding-left: 5px;
+    line-height: 1em;
+    vertical-align: super;
+    color: #c6c6c6;
   }
   .top_slider .slide_image .more {}
 

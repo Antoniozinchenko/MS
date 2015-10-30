@@ -22,17 +22,22 @@ $pwd = pwd();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="<?php echo $pwd ?>style.css" rel="stylesheet">
 
+
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
     <!-- JS -->
     <script src="<?php echo $pwd ?>js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="<?php echo $pwd ?>js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+    <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
 
 </head>
 <body>
-<?php wp_head();?>
 
 <header>
     <div class="container">
