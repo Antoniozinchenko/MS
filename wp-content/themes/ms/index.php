@@ -110,7 +110,7 @@
         </h2>
         <div class="top row"> </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 about-1">
             <?php the_content();?>
           </div>
 <?
@@ -122,7 +122,7 @@
 
 
         
-          <div class="col-md-6">
+          <div class="col-md-6 about-2">
             <h1>Наші останні перемоги</h1>
             <div class="row">
 <?php
@@ -317,12 +317,10 @@ endwhile;
           протягом 15-ти хвилин і відповість на усі Ваші запитання
         </div> 
         <div class="row">
-          <form action="" id="" class="col-md-8 col-md-offset-2">
-            <input type="text" class="inp_style" placeholder="Ваше ім’я">
-            <input type="tel" class="inp_style" placeholder="Телефон">
-            <input type="email" class="inp_style" placeholder="E-mail">
-            <input type="submit" class="btn_style" value="Відправити">
-          </form>
+          <div class="col-md-8 col-md-offset-2">
+          <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
+          </div>
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
@@ -373,23 +371,7 @@ endwhile;
         </div>
       </div>
     </div>
-    <div id="map" style=" background-color: #000; color: #fff;" class="text-center">
-      map 100% x 575px
-    </div>
-    <div class="contacts_aftermap">
-      <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-6">
-              form
-            </div>
-            <div class="col-md-3 col-md-offset-1">
-              right
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="map"></div>
   </section>
 
   <?php get_footer(); ?>
