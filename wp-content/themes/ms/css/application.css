@@ -143,7 +143,24 @@ header{
     height: 498px;
 
     background-color: #000;
+    background: url('../img/top-img.png');
   }
+  .top_slider .slide_image .text-box {
+    position: absolute;
+    width: 200px;
+    left: 207px;
+    top: 242px;
+    background: transparent;
+  }
+  .top_slider .slide_image .title {}
+  .top_slider .slide_image .count-apartment {
+    font-size: 64px;
+    font-weight: 800;
+  }
+  .top_slider .slide_image .lost-apartment {
+    display: inline-block;
+  }
+  .top_slider .slide_image .more {}
 
 /* project about*/
 .project_about .col-md-6{

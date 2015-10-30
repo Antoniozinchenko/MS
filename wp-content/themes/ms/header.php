@@ -17,12 +17,16 @@ $pwd = pwd();
     <link href="<?php echo $pwd ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
     <link href="<?php echo $pwd ?>style.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="<?php echo $pwd ?>js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="<?php echo $pwd ?>js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
 </head>
 <body>
