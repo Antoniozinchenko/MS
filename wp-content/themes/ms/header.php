@@ -19,17 +19,20 @@ $pwd = pwd();
     <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="<?php echo $pwd ?>style.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="<?php echo $pwd ?>js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="<?php echo $pwd ?>js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
 </head>
 <body>
+<?php wp_head();?>
 
 <header>
     <div class="container">
