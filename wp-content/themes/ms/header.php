@@ -1,6 +1,6 @@
-<?php
-$pwd = pwd();
-?>
+<?php $pwd = pwd(); ?>
+/*  test branch */
+
 <!DOCTYPE html>
 <html>
 <head>
