@@ -22,21 +22,38 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .hexagon-news {
+    display: block;
+    overflow: hidden;
+    height: 0;
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 95px;
+
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.hexagon-news.slick-slider {
+    height: auto;
+
+    -webkit-transition: .0s;
+    -moz-transition: .0s;
+    -ms-transition: .0s;
+    -o-transition: .0s;
+    transition: .0s;
 }
 
 .hexagon-news .slick-slide {
     position: relative;
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 8px;
     cursor: pointer;
 }
 
 .hexagon-news .slick-slide:before {
     content: '';
-    background: rgba(6, 32, 73, .75);
-    background: rgba(6, 32, 73, .75);
+    background: rgba(6, 32, 73, .5);
     width: 100%;
     height: 100%;
     display: block;
@@ -45,8 +62,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .hexagon-news .slick-slide:hover:before {
-    background: rgba(238, 140, 1, .75);
-    background: rgba(238, 140, 1, .75);
+    background: rgba(238, 140, 1, .7);
 }
 
 .hexagon-news .slick-slide .title p {
@@ -60,7 +76,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .hexagon-news .slick-list {
-    max-width: 1024px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
@@ -91,7 +107,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .hexagon-news .border-box {
     position: absolute;
-    background: url('img/border.png') 100% no-repeat;
+    background: url('img/border2.png') 100% no-repeat;
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
@@ -105,7 +121,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .hexagon-news .slick-slide img {
     display: block;
     min-width: 100%;
-    height: 200px;
+    height: 205px;
     width: auto;
 }
 
@@ -113,12 +129,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
     position: absolute;
     top: 35%;
     text-align: center;
-    left: 0;
-    right: 0;
+    left: 17px;
+    right: 17px;
     z-index: 3;
     color: #fff;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 16px;
     line-height: 1.4em;
 }
 
@@ -256,19 +271,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .news .container, .carousel-wrap {
     position: relative;
 }
-.news-arrow-left, .feedback-arrow-left {
+
+.slider-arrow-left,
+.slider-arrow-right {
     position: absolute;
     top: 260px;
-    left:-30px;
     font-size: 60px;
     cursor: pointer;
+    color: #c5c5c5;
+    z-index: 5;
 }
-.news-arrow-right, .feedback-arrow-right {
-    position: absolute;
-    top: 260px;
-    right:-30px;
-    font-size: 60px;
-    cursor: pointer;
+
+.slider-arrow-left:hover,
+.slider-arrow-right:hover {
+    color: #999999;
+}
+.slider-arrow-left {
+    /*left:-30px;*/
+    left: 90px;
+}
+.slider-arrow-right {
+    /*right:-30px;*/
+    right: 90px;
 }
 
 .hexagon-block {
