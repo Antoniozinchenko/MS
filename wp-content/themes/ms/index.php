@@ -8,7 +8,51 @@
                 </h1>
 
                 <div class="top_slider">
-                    <ul class="slides hexagon">
+                    <ul class="hexagon-block">
+                        <li>
+                            <div class="hexagon-wrap hexagon-right">
+                                <div class="hexagon-left">
+                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hexagon-wrap hexagon-right">
+                                <div class="hexagon-left">
+                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hexagon-wrap hexagon-right">
+                                <div class="hexagon-left">
+                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="start-row-2 row-2">
+                            <div class="hexagon-wrap hexagon-right">
+                                <div class="hexagon-left">
+                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row-2">
+                            <div class="hexagon-wrap hexagon-right">
+                                <div class="hexagon-left">
+                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row-2">
+                            <div class="hexagon-wrap hexagon-right">
+                                <div class="hexagon-left">
+                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="slides hexagon hidden">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>

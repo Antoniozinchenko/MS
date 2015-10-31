@@ -271,20 +271,45 @@ Use it to make something cool, have fun, and share what you've learned with othe
     cursor: pointer;
 }
 
-
-
-#carousel-feedback .hexagon-wrap {
+.hexagon-block {
+    width: 450px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.hexagon-block > li {
+    display: inline-block;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+.hexagon-block > li.start-row-2{
+    clear: left;
+    margin-left: 75px;
+}
+.hexagon-block > li.row-2{
+    margin-top: -45px;
+    z-index: 1;
+}
+#carousel-feedback .hexagon-wrap,
+.hexagon-block .hexagon-wrap {
     position: relative;
     overflow: hidden;
+}
+#carousel-feedback .hexagon-wrap {
     width: 150px;
     height: 150px;
     left: 55px;
+}
+.hexagon-block .hexagon-wrap {
+    width: 120px;
+    height: 150px;
 }
 #carousel-feedback .center-content {
     width: 303px;
     margin: 0 auto;
 }
-#carousel-feedback .hexagon-wrap + .content-box {
+#carousel-feedback .hexagon-wrap + .content-box,
+.hexagon-block .hexagon-wrap + .content-box {
     max-width: 300px;
     background: url('img/bg-1.png') no-repeat;
     padding: 40px 15px 27px 25px;
@@ -292,33 +317,105 @@ Use it to make something cool, have fun, and share what you've learned with othe
     position: relative;
     top: -83px;
 }
-#carousel-feedback .hexagon-wrap img {
+#carousel-feedback .hexagon-wrap img,
+.hexagon-block .hexagon-wrap img {
     min-height: 100%;
     width: 100%;
 }
 
-#carousel-feedback .hexagon-left:before,
-#carousel-feedback .hexagon-left:after,
-#carousel-feedback .hexagon-right:before,
-#carousel-feedback .hexagon-right:after {
+.hexagon-block .hexagon-wrap .img {
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+}
+.hexagon-block .img:hover:before,
+.hexagon-block .img:hover:after {
+    box-shadow: inset 0 0 0 0px #FFFFFF;
+}
+.hexagon-block .img:hover:before,
+.hexagon-block .img:hover:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    /*border: 17px solid #FFFFFF;*/
+    box-shadow: inset 0 0 0 17px #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+.hexagon-block .img:hover {
+    box-shadow: inset 0 0 0 12px #FFFFFF;
+}
+.hexagon-block .img:hover:before {
+    -webkit-transform: rotate(59deg);
+    -moz-transform: rotate(59deg);
+    -ms-transform: rotate(59deg);
+    -o-transform: rotate(59deg);
+    transform: rotate(59deg);
+}
+.hexagon-block .img:hover:after {
+    -webkit-transform: rotate(-59deg);
+    -moz-transform: rotate(-59deg);
+    -ms-transform: rotate(-59deg);
+    -o-transform: rotate(-59deg);
+    transform: rotate(-59deg);
+}
+.hexagon-block > li .img:before,
+.hexagon-block > li .img:after{
     width: 0;
     height: 0;
     content: '';
     display: block;
     position: absolute;
+    z-index: 1;
 }
 
-#carousel-feedback .hexagon-left:before {
+.hexagon-block > li .img,
+.hexagon-block > li .img:before,
+.hexagon-block > li .img:after {
+    /*-webkit-transition: .3s;*/
+    /*-moz-transition: .3s;*/
+    /*-ms-transition: .3s;*/
+    /*-o-transition: .3s;*/
+    /*transition: .3s;*/
+}
+
+#carousel-feedback .hexagon-left:before,
+#carousel-feedback .hexagon-left:after,
+#carousel-feedback .hexagon-right:before,
+#carousel-feedback .hexagon-right:after,
+.hexagon-block .hexagon-left:before,
+.hexagon-block .hexagon-left:after,
+.hexagon-block .hexagon-right:before,
+.hexagon-block .hexagon-right:after{
+    width: 0;
+    height: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#carousel-feedback .hexagon-left:before,
+.hexagon-block .hexagon-left:before{
     border-right: 75px solid transparent;
 }
-#carousel-feedback .hexagon-left:after {
+#carousel-feedback .hexagon-left:after,
+.hexagon-block .hexagon-left:after{
     border-right: 75px solid transparent;
 }
-#carousel-feedback .hexagon-right:before {
+#carousel-feedback .hexagon-right:before,
+.hexagon-block .hexagon-right:before{
     border-left: 75px solid transparent;
     right: 0;
 }
-#carousel-feedback .hexagon-right:after {
+#carousel-feedback .hexagon-right:after,
+.hexagon-block .hexagon-right:after{
     border-left: 75px solid transparent;
     right: 0;
 }
@@ -326,13 +423,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #carousel-feedback .hexagon-left:before,
 #carousel-feedback .hexagon-right:before {
     border-top: 45px solid #EBEBEB;
+    top: 0;
+}
+.hexagon-block .hexagon-left:before,
+.hexagon-block .hexagon-right:before {
+    border-top: 45px solid #FAF8F9;
+    top: 0;
 }
 #carousel-feedback .hexagon-left:after,
 #carousel-feedback .hexagon-right:after {
     border-bottom: 45px solid #EBEBEB;
     bottom: 0;
 }
-
+.hexagon-block .hexagon-left:after,
+.hexagon-block .hexagon-right:after  {
+    border-bottom: 45px solid #FAF8F9;
+    bottom: 0;
+}
 #carousel-feedback .content-box h4 {
     font-weight: bold;
 }
