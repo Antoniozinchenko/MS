@@ -66,9 +66,20 @@
             </a>
 
             <div class="contacts pull-left">
-                <p>(095) 231 11 00<span> м.Львів</span></p>
+                <p>
+                    <span class="number">
+                        (095) 231 11 00
+                    </span>
+                    <span class="city"> м.Львів</span></p>
 
-                <p>(098) 231 77 00<span> м.Чернівці</span></p>
+                <p>
+                    <span class="number">
+                        (098) 231 77 00
+                    </span>    
+                    <span class="city"> м.Чернівці</span></p>
+            </div>
+            <div class="pull-right">
+                <a href="javascript:;" class="btn_menu"></a>
             </div>
         </div>
     </div>
