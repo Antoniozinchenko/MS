@@ -110,17 +110,38 @@ header{
 
     border-left: 1px solid #c6c6c6;
     font-size: 16px;
-    color: #c6c6c6;
+    
   }
     header .contacts p{
       line-height: 25px;
     }
     header .contacts span{
       display: inline-block;
+    }
+    header .contacts .number{
+      color: #c6c6c6;
+      width: 120px;
+    }
+    header .contacts .city{
       margin-left: 15px;
-
-      color: #72777a;
       font-family: benderbold, sans-serif;
+      color: #72777a;
+    }
+  .btn_menu{
+    display: block;
+    width: 23px;
+    height: 20px;
+    margin-top: 68px;
+    margin-right: -23px;
+
+    background: url('images/menu.png') no-repeat 0 0;
+
+    -webkit-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+  }
+    .btn_menu:hover{
+      background: url('images/menu_active.png') no-repeat 0 0;
     }
 
 
