@@ -221,3 +221,74 @@ Use it to make something cool, have fun, and share what you've learned with othe
     height: 575px;
     width: 100%
 }
+
+#carousel-feedback .hexagon-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    left: 55px;
+}
+#carousel-feedback .center-content {
+    width: 303px;
+    margin: 0 auto;
+}
+#carousel-feedback .hexagon-wrap + .content-box {
+    max-width: 300px;
+    background: url('img/bg-1.png') no-repeat;
+    padding: 40px 15px 27px 25px;
+    z-index: 4;
+    position: relative;
+    top: -83px;
+}
+#carousel-feedback .hexagon-wrap img {
+    min-height: 100%;
+    width: 100%;
+}
+
+#carousel-feedback .hexagon-left:before,
+#carousel-feedback .hexagon-left:after,
+#carousel-feedback .hexagon-right:before,
+#carousel-feedback .hexagon-right:after {
+    width: 0;
+    height: 0;
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+#carousel-feedback .hexagon-left:before {
+    border-right: 75px solid transparent;
+}
+#carousel-feedback .hexagon-left:after {
+    border-right: 75px solid transparent;
+}
+#carousel-feedback .hexagon-right:before {
+    border-left: 75px solid transparent;
+    right: 0;
+}
+#carousel-feedback .hexagon-right:after {
+    border-left: 75px solid transparent;
+    right: 0;
+}
+
+#carousel-feedback .hexagon-left:before,
+#carousel-feedback .hexagon-right:before {
+    border-top: 45px solid #EBEBEB;
+}
+#carousel-feedback .hexagon-left:after,
+#carousel-feedback .hexagon-right:after {
+    border-bottom: 45px solid #EBEBEB;
+    bottom: 0;
+}
+
+#carousel-feedback .content-box h4 {
+    font-weight: bold;
+}
+#carousel-feedback .content-box h4 {
+    font-weight: bold;
+}
+#carousel-feedback .content-box .position{
+    margin-bottom: 1em;
+    color: #aaa;
+}

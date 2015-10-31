@@ -374,22 +374,36 @@
                         query_posts(array(
                             'cat' => 4,
                             'posts_per_page' => 10,
-                            'order' => 'ASC'
+                            'order' => 'DESC'
                         ));
                         while (have_posts()) : the_post(); ?>
                             <div>
-                                <?php
-                                if (has_post_thumbnail()) {
-                                    $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
-                                } else {
-                                    $large_image_url = 'img/no-image.jpg';
-                                }
-                                ?>
-                                <img src="<?php echo $large_image_url[0]; ?>" alt="">
-                                <h4 class><?php the_title(); ?></h4>
-                                <h5><?php the_excerpt() ?></h5>
-                                <p><?php the_content() ?></p>
-                            </div>
+                                <div class="center-content">
+                                    <?php
+                                    if (has_post_thumbnail()) {
+                                        $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
+                                    } else {
+                                        $large_image_url = 'img/no-image.jpg';
+                                    }
+                                    ?>
+                                    <div class="hexagon-wrap hexagon-right">
+                                        <div class="hexagon-left">
+                                            <img src="<?php echo $large_image_url[0]; ?>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class><?php the_title(); ?></h4>
+
+                                        <?php
+                                        $excerpt = get_the_excerpt();
+                                        if( !empty($excerpt) )
+                                          echo "<div class='position' >$excerpt</div>";
+                                        ?>
+                                        <div class="discription"><?php the_content() ?></div>
+                                    </div>
+                                </div>
+                                </div>
+                            <div>
                             <?
                         endwhile;
                         ?>
