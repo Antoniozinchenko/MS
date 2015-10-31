@@ -8,7 +8,58 @@
                 </h1>
 
                 <div class="top_slider">
-                    <ul class="hexagon-block">
+                    <div class="our-poligons">
+                     <div class="first-row">
+                        <a href="#lol" class="b-polygon b-polygon_hexagon" >
+                            <span class="b-polygon-part">
+                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/4-cam1-min-150x150.jpg')">
+
+                                </span>
+                            </span>
+                        </a><a href="#lol" class="b-polygon b-polygon_hexagon">
+                            <span class="b-polygon-part">
+                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/CAM_0_-Y_W1-min-150x150.jpg')">
+
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="second-row">
+                        <a href="#lol" class="b-polygon b-polygon_hexagon">
+                            <span class="b-polygon-part">
+                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-38-min-150x150.jpg')">
+
+                                </span>
+                            </span>
+                        </a><a href="#lol" class="b-polygon b-polygon_hexagon">
+                            <span class="b-polygon-part">
+                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-142-150x150.jpg')">
+
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="third-row">
+                        <a href="#lol" class="b-polygon b-polygon_hexagon">
+                            <span class="b-polygon-part">
+                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-142-min-150x150.jpg')">
+
+                                </span>
+                            </span>
+                        </a><a href="#lol" class="b-polygon b-polygon_hexagon">
+                            <span class="b-polygon-part">
+                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-171-min-150x150.jpg')">
+
+                                </span>
+                            </span>
+                        </a>
+                    </div>                      
+                    </div>
+
+ 
+
+                    <!-- <ul class="hexagon-block">
                         <li>
                             <div class="hexagon-wrap hexagon-right">
                                 <div class="hexagon-left">
@@ -59,7 +110,7 @@
                         <li class="row-2">4</li>
                         <li>5</li>
                         <li>6</li>
-                    </ul>
+                    </ul> -->
                     <div class="slide_image">
                         <div class="slide_image text-box">
                             <h2 class="title">жк "DIAMANT"</h2>
