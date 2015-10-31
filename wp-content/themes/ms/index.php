@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php $pwd = pwd(); ?>
 
     <section class="our_projects">
         <div class="container">
@@ -437,25 +438,34 @@
     </section>
     -->
 
-    <section class="question_form text-center">
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <h2 class="section_title">
-                    Залишились запитання?
-                </h2>
-
-                <div class="text">
-                    Заповни форму і наш менеджер зв’яжеться з Вами <br>
-                    протягом 15-ти хвилин і відповість на усі Ваші запитання
-                </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+    <section class="question_form">
+      <div class="container">
+        <div class="col-md-11 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="section_title">
+                Залишились<br>
+                запитання?
+              </h2>
+              <div class="text">
+                Заповни форму і наш менеджер зв’яжеться з Вами <br>
+                протягом 15-ти хвилин і відповість на усі Ваші запитання
+              </div>
+              <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
             </div>
+            <div class="col-md-6 consultant">
+              <img src="<?php echo $pwd ?>img/consultant.png" alt="">
+              <div class="consultant_info text-center">
+                <p>
+                  Галина Найда
+                  <br>
+                  <span>персональний консультант</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="feedback">
@@ -514,35 +524,37 @@
         </div>
     </section>
 
-    <!-- <section class="our_team">
+    <section class="our_team">
       <div class="container">
-        <h2 class="section_title">
-          наша команда
-        </h2>
-        <div class="row">
-          <svg class="svg-graphic" width="180" height="200" viewBox="0 0 560 645" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <g>
-              <clipPath id="hex-mask">
-                  <polygon points="270,0 0,160 0,485 270,645 560,485 560,160"></polygon>
-              </clipPath>
-            </g>
-            <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="javascript:;" transform="">
-              <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="http://img07.deviantart.net/4bec/i/2015/198/0/f/oko_by_secret_mirror-d91o4mc.jpg" preserveAspectRatio="xMidYMin slice"></image>
-            <figcaption></figcaption>
-            </a>
-          </svg>
+        <div class="col-md-10 col-md-offset-1">
+          <h2 class="section_title">
+            наша команда
+          </h2>
+          <div class="row">
+            <svg class="svg-graphic" width="246" height="250" viewBox="0 0 560 645" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
+              <g>
+                <clipPath id="hex-mask">
+                    <polygon points="270,0 0,160 0,485 270,645 560,485 560,160"></polygon>
+                </clipPath>
+              </g>
+              <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="javascript:;" transform="">
+                <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="http://img07.deviantart.net/4bec/i/2015/198/0/f/oko_by_secret_mirror-d91o4mc.jpg" preserveAspectRatio="xMidYMin slice"></image>
+                <figcaption>12321</figcaption>
+              </a>
+            </svg>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section class="contacts">
-        <div class="container">
+        <!-- <div class="container">
             <div class="col-md-10 col-md-offset-1">
                 <div class="section_title">
                     Контакти
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="map"></div>
     </section>
 

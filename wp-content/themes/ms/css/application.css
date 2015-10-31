@@ -78,10 +78,6 @@ body{
 .horizontal_block{
   height: 480px;
 }
-/*  .question_form{
-    height: 610px;
-  }
-*/
 
 /*=============*/
 
@@ -249,21 +245,24 @@ section.windows{
 
 /* question_form */
 .question_form{
-  /*padding-top: 70px;*/
+  padding-top: 56px;
+  height: 610px;
 }
   .question_form .section_title{
     margin-bottom: 15px;
+    margin-top: 8px;
 
     color: #fff;
   }
   .question_form .text{
+    margin-bottom: 15px;
+
     font-size: 18px;
     line-height: 30px;
     color: rgb(255,255,255);
     color: rgba(255,255,255, .5);
   }
   .question_form form{
-    margin-top: 60px;
   }
     .inp_style{
       width: 100%;
@@ -292,7 +291,7 @@ section.windows{
       width: 100%;
       height: 60px;
       line-height: 60px;
-      margin-top: 22px;
+      margin-top: 4px;
       border: none;
       font-family: benderblack, sans-serif;
       
@@ -301,6 +300,35 @@ section.windows{
       color: #fff;
       background-color: #ee8c01;
     }
+  .consultant{
+    position: relative;
+  }
+    .consultant img{
+      display: block;
+      margin: 0 auto;
+    }
+  .consultant_info{
+    position: absolute;
+    width: 100%;
+    height: 52px;
+    left: 0;
+    bottom: 25px;
+    z-index: 2;
+
+    color: #fff;
+    line-height: 24px;
+  }
+    .consultant_info p{
+      font-family: benderblack, sans-serif;
+      font-size: 24px;
+    }
+    .consultant_info span{
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: bender, sans-serif;
+    }
+
+
 
 /* feedback */
 section.feedback{
@@ -330,6 +358,9 @@ footer{
 
   padding: 75px 0 65px 0;
 }
+  footer .inp_style{
+    background: #72777a;
+  }
   footer .footer_title{
     font-size: 24px;
     color: #b8bbbc;
