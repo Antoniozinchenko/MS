@@ -174,17 +174,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .about-1, .about-2 {
-    background: #fff;
+    background: #FAF8F9;
     position: relative;
+}
+.about-1{
+    padding: 30px;
+    line-height: 1.6em;
+    margin-bottom: 80px;
+}
+.about-1 p{
+    display: inline;
+}
+.read-more-popup {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ED8C01!important;
 }
 .col-md-6.about-1:before {
     content: '';
     display: block;
     position: absolute;
     background: url('img/arrow-2.png') no-repeat;
-    width: 200px;
-    height: 500px;
-    right: calc( 100% - 55px);
+    background-size: 100% 100%;
+    width: 160px;
+    height: 382px;
+    top: 0;
+    right: calc( 100% - 20px);
 }
 .about-company-pefix {
     position: relative;
@@ -194,11 +209,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
     display: block;
     position: absolute;
     background: url('img/arrow-top.png') no-repeat;
-    height: 83px;
+    height: 153px;
     bottom: calc( 100% - 1px);
     background-size: 100% 100%;
     right: 0px;
     left: 0;
+}
+.about_company .section_title{
+    margin: 60px 0 40px;
 }
 .footer_title {
     color: #BEC2C5;
@@ -221,6 +239,39 @@ Use it to make something cool, have fun, and share what you've learned with othe
     height: 575px;
     width: 100%
 }
+/*popup window*/
+#simplemodal-container a.modalCloseImg {
+    background:url(/img/x.png) no-repeat; /* adjust url as required */
+    width:25px;
+    height:29px;
+    display:inline;
+    z-index:3200;
+    position:absolute;
+    top:-15px;
+    right:-18px;
+    cursor:pointer;
+}
+
+/*slider arrows*/
+.news .container {
+    position: relative;
+}
+.news-arrow-left {
+    position: absolute;
+    top: 260px;
+    left:0;
+    font-size: 60px;
+    cursor: pointer;
+}
+.news-arrow-right {
+    position: absolute;
+    top: 260px;
+    right:0;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
 
 #carousel-feedback .hexagon-wrap {
     position: relative;

@@ -103,7 +103,10 @@
             <div class="col-md-10 col-md-offset-1">
                 <?php
                 // query for the about page
-                $your_query = new WP_Query('pagename=about');
+                $your_query = new WP_Query(array(
+                                'id' => 58,
+                                'posts_per_page' => 1
+                            ));
                 // "loop" through query (even though it's just one page)
                 while ($your_query->have_posts()) :
                 $your_query->the_post();
@@ -115,15 +118,14 @@
                 <div class="top row"></div>
                 <div class="row about-company-pefix">
                     <div class="col-md-6 about-1">
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
+                        <a href="javascript:;" rel= "<?php the_ID(); ?>" class="postpopup read-more-popup"> Більше</a>
                     </div>
                     <?
                     endwhile;
                     // reset post data (important!)
                     wp_reset_postdata();
                     ?>
-
-
                     <div class="col-md-6 about-2">
                         <h1>Наші останні перемоги</h1>
 
@@ -143,7 +145,7 @@
                                     }
                                     ?>
                                     <h5><?php the_excerpt() ?></h5>
-                                    <h4><?php the_title(); ?><h4>
+                                    <h4 class="orange-caption"><?php the_title(); ?><h4>
                                 </div>
                                 <?
                             endwhile;
@@ -279,7 +281,8 @@
             <h2 class="section_title text-center">
                 Новини
             </h2>
-
+            <i class="news-arrow-left fa fa-angle-left"></i>
+            <i class="news-arrow-right fa fa-angle-right"></i>
             <div id="carousel-news" class="hexagon-news">
                 <?php
                 query_posts(array(
