@@ -2648,6 +2648,8 @@ jQuery(document).ready(function () {
     jQuery('#carousel-news').slick({
         infinite: true,
         speed: 300,
+        prevArrow: '.news-arrow-left',
+        nextArrow: '.news-arrow-right',
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [

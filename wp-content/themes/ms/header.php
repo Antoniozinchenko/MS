@@ -30,6 +30,7 @@ $pwd = pwd();
     <!-- JS -->
     <script src="<?php echo $pwd ?>js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="<?php echo $pwd ?>js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?php echo $pwd ?>js/jquery.simplemodal.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
