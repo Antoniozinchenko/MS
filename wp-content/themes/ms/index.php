@@ -163,8 +163,10 @@
                 <div class="row about-company-pefix">
                     <div class="col-md-6 about-1">
                         <?php the_excerpt(); ?>
-
-                        <a href="javascript:;" rel= "<?php the_ID(); ?>" class="postpopup read-more-popup"> Більше</a>
+                        <div style="display:none">
+                            <div id="full-content-<?php the_ID();?>"><?php the_content(); ?></div>
+                        </div>
+                        <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> Більше</a>
                     </div>
                     <?
                     endwhile;
@@ -442,13 +444,13 @@
                                     </div>
                                     <div class="content-box">
                                         <h4 class><?php the_title(); ?></h4>
-
-                                        <?php
-                                        $excerpt = get_the_excerpt();
-                                        if( !empty($excerpt) )
-                                          echo "<div class='position' >$excerpt</div>";
-                                        ?>
-                                        <div class="discription"><?php the_content() ?></div>
+                                        <div class="discription">
+                                            <?php the_excerpt(); ?>
+                                                <div style="display:none">
+                                                    <div id="full-content-<?php the_ID();?>"><?php the_content(); ?></div>
+                                                </div>
+                                                <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> Більше</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
