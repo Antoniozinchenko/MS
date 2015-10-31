@@ -15,6 +15,7 @@ $pwd = pwd();
 
     <!--CSS-->
     <link href="<?php echo $pwd ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo $pwd ?>css/reset.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/poligons.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
