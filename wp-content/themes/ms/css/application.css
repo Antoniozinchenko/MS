@@ -254,8 +254,11 @@ section.brick{
 /* news */
 section.news{}
   section.news .section_title{
-    margin-top: 80px;
+    margin-top: 85px;
     margin-bottom: 65px;
+  }
+  section.articles .section_title{
+    margin-top: 90px;
   }
 
 /* windows */

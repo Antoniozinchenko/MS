@@ -13,10 +13,43 @@ jQuery(document).ready(function () {
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
-                    infinite: true,
+                    infinite: true
                 }
             },
-            {   
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    jQuery('#carousel-articles').slick({
+        infinite: true,
+        speed: 300,
+        prevArrow: '.articles-arrow-left',
+        nextArrow: '.articles-arrow-right',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true
+                }
+            },
+            {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
