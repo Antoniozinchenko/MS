@@ -57,8 +57,12 @@
             var mapOptions = {
                 center: new google.maps.LatLng(49.843374988638054, 24.03210762888193),
                 zoom: 15,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+				disableDefaultUI: false,
+				scrollwheel: false,
+				draggable: true
+            };
 
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
