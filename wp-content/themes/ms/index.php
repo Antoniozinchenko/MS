@@ -104,7 +104,7 @@
                 <?php
                 // query for the about page
                 $your_query = new WP_Query(array(
-                                'id' => 58,
+                                'p' => 58,
                                 'posts_per_page' => 1
                             ));
                 // "loop" through query (even though it's just one page)
@@ -119,6 +119,7 @@
                 <div class="row about-company-pefix">
                     <div class="col-md-6 about-1">
                         <?php the_excerpt(); ?>
+
                         <a href="javascript:;" rel= "<?php the_ID(); ?>" class="postpopup read-more-popup"> Більше</a>
                     </div>
                     <?
@@ -370,8 +371,9 @@
                 <div class="text text-center">
                     Взнайте більше про нас словами наших клієнтів
                 </div>
-                <div class="row">
-
+                <div class="row carousel-wrap">
+                    <i class="feedback-arrow-left fa fa-angle-left"></i>
+                    <i class="feedback-arrow-right fa fa-angle-right"></i>
                     <div id="carousel-feedback" class="hexagon-feedback">
                         <?php
                         query_posts(array(
@@ -405,14 +407,14 @@
                                         <div class="discription"><?php the_content() ?></div>
                                     </div>
                                 </div>
-                                </div>
-                            <div>
+                            </div>
                             <?
                         endwhile;
                         ?>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- <section class="our_team">

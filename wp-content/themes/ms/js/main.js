@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
                     infinite: true,
                 }
             },
-            {
+            {   
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
@@ -36,6 +36,8 @@ jQuery(document).ready(function () {
     jQuery('#carousel-feedback').slick({
         infinite: true,
         speed: 300,
+        prevArrow: '.feedback-arrow-left',
+        nextArrow: '.feedback-arrow-right',
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
