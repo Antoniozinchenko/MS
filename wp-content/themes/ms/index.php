@@ -208,8 +208,7 @@
                     <?php the_title(); ?>
                 </h2>
 
-                <div class="top row"></div>
-                <div class="row about-company-pefix">
+                <div class="about-company-pefix">
                     <div class="col-md-6 about-1">
                         <?php the_excerpt(); ?>
                         <div style="display:none">
@@ -223,33 +222,34 @@
                     wp_reset_postdata();
                     ?>
                     <div class="col-md-6 about-2">
-                        <h1>Наші останні перемоги</h1>
+                        <h2>Наші останні нагороди:</h2>
 
-                        <div class="row">
-                            <?php
-                            query_posts(array(
-                                'cat' => 2,
-                                'posts_per_page' => 2,
-                                'order' => 'ASC'
-                            ));
-                            while (have_posts()) : the_post();
-                                ?>
-                                <div class="col-md-6 text-center">
-                                    <?php
-                                    if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
-                                        the_post_thumbnail();
-                                    }
-                                    ?>
-                                    <h5><?php the_excerpt() ?></h5>
-                                    <h4 class="orange-caption"><?php the_title(); ?><h4>
-                                </div>
-                                <?
-                            endwhile;
+                        
+                        <?php
+                        query_posts(array(
+                            'cat' => 2,
+                            'posts_per_page' => 2,
+                            'order' => 'ASC'
+                        ));
+                        while (have_posts()) : the_post();
                             ?>
-                        </div>
+                            <div class="col-md-6 text-center">
+                                <?php
+                                if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
+                                    the_post_thumbnail();
+                                }
+                                ?>
+                                <div class="border">
+                                  <h5><?php the_excerpt() ?></h5>
+                                  <h4 class="orange-caption"><?php the_title(); ?></h4>
+                                </div>
+                            </div>
+                            <?
+                        endwhile;
+                        ?>
+                      
                     </div>
                 </div>
-                <div class="bot row"></div>
             </div>
         </div>
     </section>

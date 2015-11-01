@@ -194,16 +194,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
     position: relative;
 }
 .about-1{
-    padding: 30px;
-    line-height: 1.6em;
-    margin-bottom: 80px;
+    padding: 35px;
+    line-height: 24px;
+    margin-bottom: 95px;
 }
 .about-1 p{
     display: inline;
+    font-size: 14px;
+    color: #72777a;
 }
 .read-more-popup {
     text-decoration: none;
-    font-weight: bold;
+    font-family: benderblack, sans-serif;
     color: #ED8C01!important;
 }
 .col-md-6.about-1:before {
@@ -212,8 +214,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
     position: absolute;
     background: url('img/arrow-2.png') no-repeat;
     background-size: 100% 100%;
-    width: 160px;
-    height: 382px;
+    width: 166px;
+    height: 465px;
     top: 0;
     right: calc( 100% - 20px);
 }
@@ -232,7 +234,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     left: 0;
 }
 .about_company .section_title{
-    margin: 60px 0 40px;
+    margin: 64px 0 40px;
 }
 /*.footer_title {
     color: #BEC2C5;
