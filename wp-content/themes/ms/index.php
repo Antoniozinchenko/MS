@@ -377,8 +377,8 @@
             <h2 class="section_title text-center">
                 Новини
             </h2>
-            <i class="news-arrow-left fa fa-angle-left"></i>
-            <i class="news-arrow-right fa fa-angle-right"></i>
+            <i class="news-arrow-left slider-arrow-left fa fa-angle-left"></i>
+            <i class="news-arrow-right slider-arrow-right fa fa-angle-right"></i>
             <div id="carousel-news" class="hexagon-news">
                 <?php
                 query_posts(array(
@@ -401,7 +401,7 @@
                             <p><?php echo get_the_date('d.m.Y'); ?></p>
                         </h4>
                     </div>
-                    <?
+                <?
                 endwhile;
                 ?>
             </div>
@@ -425,6 +425,42 @@
         </div>
     </section>
 
+    <section class="news articles">
+        <div class="container">
+            <h2 class="section_title text-center">
+                Статті
+            </h2>
+            <i class="articles-arrow-left slider-arrow-left fa fa-angle-left"></i>
+            <i class="articles-arrow-right slider-arrow-right fa fa-angle-right"></i>
+            <div id="carousel-articles" class="hexagon-news">
+                <?php
+                query_posts(array(
+                    'cat' => 3,
+                    'posts_per_page' => 16,
+                    'order' => 'ASC'
+                ));
+                while (have_posts()) : the_post(); ?>
+                    <div>
+                        <div class="border-box"></div>
+                        <?php
+                        if (has_post_thumbnail()) {
+                            $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
+                        } else {
+                            $large_image_url[0] = 'img/no-image.jpg';
+                        }
+                        ?>
+                        <img src="<?php echo $large_image_url[0]; ?>" alt="">
+                        <h4 class="title"><?php the_title(); ?>
+                            <p><?php echo get_the_date('d.m.Y'); ?></p>
+                        </h4>
+                    </div>
+                <?
+                endwhile;
+                ?>
+            </div>
+
+        </div>
+    </section>
     <!--
     <section class="gallery">
       <div class="container">
@@ -476,8 +512,8 @@
                     Взнайте більше про нас словами наших клієнтів
                 </div>
                 <div class="row carousel-wrap">
-                    <i class="feedback-arrow-left fa fa-angle-left"></i>
-                    <i class="feedback-arrow-right fa fa-angle-right"></i>
+                    <i class="feedback-arrow-left slider-arrow-left fa fa-angle-left"></i>
+                    <i class="feedback-arrow-right slider-arrow-right fa fa-angle-right"></i>
                     <div id="carousel-feedback" class="hexagon-feedback">
                         <?php
                         query_posts(array(
