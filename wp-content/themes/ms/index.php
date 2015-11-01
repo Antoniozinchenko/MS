@@ -11,7 +11,7 @@
                 <div class="top_slider">
                   <div class="clearfix">
                     <div class="line clearfix first">
-                      <div class="smalligon" data-number="7">
+                      <div class="smalligon" data-number="20">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -37,7 +37,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon" data-number="0">
+                      <div class="smalligon" data-number="10">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -65,7 +65,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon data-number="15">
+                      <div class="smalligon" data-number="15">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -78,7 +78,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon data-number="27">
+                      <div class="smalligon" data-number="27">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -545,11 +545,14 @@
                                             }
                                         ?>
                                         <div class="discription">
-                                            <?php echo get_the_excerpt(); ?>
+                                            <?php $excerpt =  get_the_excerpt(); ?>
+                                            <?php if( !empty( $excerpt ) ){ ?>
+                                                <?php echo $excerpt ?>
                                             <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> більше</a>
                                                 <div style="display:none">
                                                     <div id="full-content-<?php the_ID();?>"><?php the_content(); ?></div>
                                                 </div>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -662,7 +665,7 @@
               </div>
             </div>
           </div>
-          <div class="contacons contacons-chernivci">
+          <div class="contacons contacons-chernivci" style="display:none;">
                 <div class="line first clearfix">
                     <div class="contacon">
                         <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">

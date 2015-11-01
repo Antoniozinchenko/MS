@@ -102,7 +102,13 @@ jQuery(document).ready(function () {
 });
 
 $(document).ready(function() {
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+        'titlePosition' : 'inside',
+        'transitionIn' : 'none',
+        'transitionOut' : 'none',
+        'width': 560,
+        'showNavArrows': false
+    });
 });
 
 (function($){
@@ -179,8 +185,10 @@ $(document).ready(function() {
             $('.contact-tab-btn').removeClass('active');
             this.classList.add('active');
 
-            $('.contacons:not(.'+tab+')').fadeOut(delay);
-            $('.'+tab).fadeIn(delay);
+            $('.contacons:not(.'+tab+')').fadeOut(delay, function(){
+
+                $('.'+tab).fadeIn(delay);
+            });
 
         });
 
