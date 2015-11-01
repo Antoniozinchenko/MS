@@ -288,7 +288,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .feedback-arrow-left.slider-arrow-left,
-.slider-arrow-right.slider-arrow-right {
+.feedback-arrow-right.slider-arrow-right {
     top: 50%;
     margin-top: -.5em;
 }
@@ -306,7 +306,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .feedback-arrow-left.slider-arrow-left {
     left: -26px;
 }
-.slider-arrow-right.slider-arrow-right {
+.feedback-arrow-right.slider-arrow-right {
     right: -26px;
 }
 
@@ -574,4 +574,16 @@ label {
 #nav-main-box > ul a:hover {
     color: #ee8c01;
     border-color: #ee8c01;
+}
+
+.fancybox-nav  {
+    display: none;
+}
+.fancybox-skin {
+    width: 600px!important;
+}
+.fancybox-inner,
+.fancybox-outer {
+    width: 585px!important;
+    display: inline;
 }
