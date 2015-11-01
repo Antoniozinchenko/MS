@@ -9,118 +9,115 @@
                 </h1>
 
                 <div class="top_slider">
-                    <div class="our-poligons">
-                     <div class="first-row">
-                        <a href="#lol" class="b-polygon b-polygon_hexagon" >
-                            <span class="b-polygon-part">
-                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/4-cam1-min-150x150.jpg')">
-
-                                </span>
-                            </span>
-                        </a><a href="#lol" class="b-polygon b-polygon_hexagon">
-                            <span class="b-polygon-part">
-                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/CAM_0_-Y_W1-min-150x150.jpg')">
-
-                                </span>
-                            </span>
-                        </a>
+                  <div class="clearfix">
+                    <div class="line clearfix first">
+                      <div class="smalligon">
+                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                          <g>
+                            <clipPath id="hex-mask_small">
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                            </clipPath>
+                          </g>
+                          <a xlink:href="javascript:;">
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
+                          </a>
+                        </svg>
+                      </div>
+                      <div class="smalligon">
+                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                          <g>
+                            <clipPath id="hex-mask_small">
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                            </clipPath>
+                          </g>
+                          <a xlink:href="javascript:;">
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://pre07.deviantart.net/09e0/th/pre/f/2015/302/3/6/magician_s_pocket_by_boxtail-d9eteeu.png" preserveAspectRatio="xMidYMin slice" />
+                          </a>
+                        </svg>
+                      </div>
+                      <div class="smalligon">
+                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                          <g>
+                            <clipPath id="hex-mask_small">
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                            </clipPath>
+                          </g>
+                          <a xlink:href="javascript:;">
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://orig02.deviantart.net/cb89/f/2015/183/7/3/twisted_fibers_by_boxtail-d8zo6px.png" preserveAspectRatio="xMidYMin slice" />
+                          </a>
+                        </svg>
+                      </div>
                     </div>
-
-                    <div class="second-row">
-                        <a href="#lol" class="b-polygon b-polygon_hexagon">
-                            <span class="b-polygon-part">
-                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-38-min-150x150.jpg')">
-
-                                </span>
-                            </span>
-                        </a><a href="#lol" class="b-polygon b-polygon_hexagon">
-                            <span class="b-polygon-part">
-                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-142-150x150.jpg')">
-
-                                </span>
-                            </span>
-                        </a>
+                    <div class="line clearfix second">
+                      <div class="smalligon">
+                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                          <g>
+                            <clipPath id="hex-mask_small">
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                            </clipPath>
+                          </g>
+                          <a xlink:href="javascript:;">
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://orig02.deviantart.net/cb89/f/2015/183/7/3/twisted_fibers_by_boxtail-d8zo6px.png" preserveAspectRatio="xMidYMin slice" />
+                          </a>
+                        </svg>
+                      </div>
+                      <div class="smalligon">
+                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                          <g>
+                            <clipPath id="hex-mask_small">
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                            </clipPath>
+                          </g>
+                          <a xlink:href="javascript:;">
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://pre07.deviantart.net/09e0/th/pre/f/2015/302/3/6/magician_s_pocket_by_boxtail-d9eteeu.png" preserveAspectRatio="xMidYMin slice" />
+                          </a>
+                        </svg>
+                      </div>
+                      <div class="smalligon">
+                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                          <g>
+                            <clipPath id="hex-mask_small">
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                            </clipPath>
+                          </g>
+                          <a xlink:href="javascript:;">
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
+                          </a>
+                        </svg>
+                      </div>
                     </div>
-                    <div class="third-row">
-                        <a href="#lol" class="b-polygon b-polygon_hexagon">
-                            <span class="b-polygon-part">
-                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-142-min-150x150.jpg')">
-
-                                </span>
-                            </span>
-                        </a><a href="#lol" class="b-polygon b-polygon_hexagon">
-                            <span class="b-polygon-part">
-                                <span class="b-polygon-part b-polygon-part_content"style="background:url('<?php echo pwd() ?>img/build/Layer-171-min-150x150.jpg')">
-
-                                </span>
-                            </span>
-                        </a>
-                    </div>                      
+                    
+                  </div>
+                  <div class="pre_slide">
+                    <div class="content">
+                      <h2 class="title">жк "DIAMANT"</h2>
+                      <span class="count-apartment">20</span>
+                      <span class="lost-apartment">квартир <br>залишилось</span>
+                      <a class="more" href="javascript:void(0)">
+                        Детальніше
+                      </a>
                     </div>
+                  </div>
+                  <div class="slide_image">
+                    <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                      <g>
+                        <clipPath id="hex-mask">
+                          <polygon points="244,0 0,130 0,350 244,497 497,350 497,130 244,0" />
+                        </clipPath>
+                      </g>
 
- 
-
-                    <!-- <ul class="hexagon-block">
-                        <li>
-                            <div class="hexagon-wrap hexagon-right">
-                                <div class="hexagon-left">
-                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hexagon-wrap hexagon-right">
-                                <div class="hexagon-left">
-                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hexagon-wrap hexagon-right">
-                                <div class="hexagon-left">
-                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="start-row-2 row-2">
-                            <div class="hexagon-wrap hexagon-right">
-                                <div class="hexagon-left">
-                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="row-2">
-                            <div class="hexagon-wrap hexagon-right">
-                                <div class="hexagon-left">
-                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="row-2">
-                            <div class="hexagon-wrap hexagon-right">
-                                <div class="hexagon-left">
-                                    <div class="img" style="background-image:url('http://localhost/MS/wp-content/uploads/2015/10/Layer-19-min-300x300.jpg');"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="slides hexagon hidden">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li class="row-2">4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul> -->
-                    <div class="slide_image">
-                        <div class="slide_image text-box">
-                            <h2 class="title">жк "DIAMANT"</h2>
-                            <span class="count-apartment">20</span>
-                            <span class="lost-apartment">квартир <br>залишилось</span>
-
-                            <p><a class="more" href="javascript:void(0)">Детальніше</a></p>
-                        </div>
-                    </div>
+                      <a xlink:href="javascript:;">
+                        <polygon fill="#fff" points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" transform="translate(1, 1)" />
+                        <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
+                      </a>
+                    </svg>
+                  </div>
                 </div>
 
                 <div class="project_about">
