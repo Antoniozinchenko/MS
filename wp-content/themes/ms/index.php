@@ -20,7 +20,7 @@
                           </g>
                           <a xlink:href="javascript:;">
                             <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
                       </div>
@@ -33,7 +33,7 @@
                           </g>
                           <a xlink:href="javascript:;">
                             <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://pre07.deviantart.net/09e0/th/pre/f/2015/302/3/6/magician_s_pocket_by_boxtail-d9eteeu.png" preserveAspectRatio="xMidYMin slice" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/2.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
                       </div>
@@ -46,7 +46,7 @@
                           </g>
                           <a xlink:href="javascript:;">
                             <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://orig02.deviantart.net/cb89/f/2015/183/7/3/twisted_fibers_by_boxtail-d8zo6px.png" preserveAspectRatio="xMidYMin slice" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/3.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
                       </div>
@@ -61,7 +61,7 @@
                           </g>
                           <a xlink:href="javascript:;">
                             <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://orig02.deviantart.net/cb89/f/2015/183/7/3/twisted_fibers_by_boxtail-d8zo6px.png" preserveAspectRatio="xMidYMin slice" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/4.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
                       </div>
@@ -74,7 +74,7 @@
                           </g>
                           <a xlink:href="javascript:;">
                             <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://pre07.deviantart.net/09e0/th/pre/f/2015/302/3/6/magician_s_pocket_by_boxtail-d9eteeu.png" preserveAspectRatio="xMidYMin slice" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/5.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
                       </div>
@@ -87,7 +87,7 @@
                           </g>
                           <a xlink:href="javascript:;">
                             <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
+                            <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/6.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
                       </div>
@@ -114,7 +114,7 @@
 
                       <a xlink:href="javascript:;">
                         <polygon fill="#fff" points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" transform="translate(1, 1)" />
-                        <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
+                        <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
                       </a>
                     </svg>
                   </div>
