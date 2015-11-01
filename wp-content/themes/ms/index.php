@@ -108,7 +108,7 @@
                     <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                       <g>
                         <clipPath id="hex-mask">
-                          <polygon points="244,0 0,130 0,350 244,497 497,350 497,130 244,0" />
+                          <polygon points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" />
                         </clipPath>
                       </g>
 
@@ -564,7 +564,7 @@
             наша команда
           </h2>
           <div class="row">
-            <svg class="svg-graphic" width="246" height="250" viewBox="0 0 560 645" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <!-- <svg class="svg-graphic" width="246" height="250" viewBox="0 0 560 645" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
               <g>
                 <clipPath id="hex-mask">
                     <polygon points="270,0 0,160 0,485 270,645 560,485 560,160"></polygon>
@@ -574,7 +574,7 @@
                 <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="http://img07.deviantart.net/4bec/i/2015/198/0/f/oko_by_secret_mirror-d91o4mc.jpg" preserveAspectRatio="xMidYMin slice"></image>
                 <figcaption>12321</figcaption>
               </a>
-            </svg>
+            </svg> -->
           </div>
         </div>
       </div>
