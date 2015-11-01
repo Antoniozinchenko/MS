@@ -475,9 +475,6 @@ section.our_team{
 
     letter-spacing: normal;
   }
-    .contacon polygon{
-      overflow: hidden;
-    }
     .contacon .worker_pre,
     .contacon .worker_post{
       position: absolute;
@@ -519,6 +516,10 @@ section.our_team{
       color: #fff;
       text-transform: uppercase;
     }
+      .contacon .worker_post .number{
+        width: 100%;
+        display: block;
+      }
 
     .contacon:hover .worker_pre{
       opacity: 0;
