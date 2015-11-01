@@ -438,7 +438,7 @@
             <div id="carousel-articles" class="hexagon-news">
                 <?php
                 query_posts(array(
-                    'cat' => 3,
+                    'cat' => 5,
                     'posts_per_page' => 16,
                     'order' => 'ASC'
                 ));
@@ -529,24 +529,30 @@
                                 <div class="center-content">
                                     <?php
                                     if (has_post_thumbnail()) {
-                                        $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
+                                        $img_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
                                     } else {
-                                        $large_image_url = 'img/no-image.jpg';
+                                        $img_url[0] = 'img/no-image.jpg';
                                     }
                                     ?>
                                     <div class="hexagon-wrap hexagon-right">
-                                        <div class="hexagon-left">
-                                            <img src="<?php echo $large_image_url[0]; ?>" alt="">
+                                        <div class="hexagon-left" style="background: url('<?php echo $img_url[0]; ?>') 50% 0 no-repeat;height:100%;">
+                                            <?php /* ?><img src="<?php echo $img_url[0]; ?>" alt=""><?php //*/ ?>
                                         </div>
                                     </div>
                                     <div class="content-box">
                                         <h4 class><?php the_title(); ?></h4>
+                                        <?php
+                                            $position = types_render_field("human-position");
+                                            if( !empty($position) ) {
+                                                echo "<div class='position-humen'>$position</div>";
+                                            }
+                                        ?>
                                         <div class="discription">
-                                            <?php the_excerpt(); ?>
+                                            <?php echo get_the_excerpt(); ?>
+                                            <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> більше</a>
                                                 <div style="display:none">
                                                     <div id="full-content-<?php the_ID();?>"><?php the_content(); ?></div>
                                                 </div>
-                                                <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> Більше</a>
                                         </div>
                                     </div>
                                 </div>
