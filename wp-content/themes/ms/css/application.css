@@ -458,6 +458,36 @@ section.our_team{
   }
     section.our_team .line.first{
     }
+    .line.first .contacon:nth-child(3):before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      width: 110px;
+      height: 51px;
+      z-index: 2;
+      
+      background: url('images/worker_before.png');
+
+      background-size: cover;
+      -webkit-background-size: cover;
+    }
+    .line.second .contacon:first-child:before{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -141px;
+      left: -43px;
+      width: 207px;
+      height: 283px;
+      z-index: 2;
+      
+      background: url('images/worker_after.png');
+
+      background-size: cover;
+      -webkit-background-size: cover;
+    }
     section.our_team .line.second{
       margin-top: -70px;
     }
