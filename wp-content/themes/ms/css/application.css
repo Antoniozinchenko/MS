@@ -445,6 +445,104 @@ section.feedback{
     color: #72777a;
   }
 
+/* our_team */
+section.our_team{
+  background-color: #fff;
+  padding-top: 80px;
+}
+  section.our_team .line{
+    position: relative;
+
+    text-align: center;
+    letter-spacing: -0.3em;
+  }
+    section.our_team .line.first{
+    }
+    section.our_team .line.second{
+      margin-top: -70px;
+    }
+  /* contacons wrapper*/
+  .contacons{
+    position: relative;
+    z-index: 2;
+  }
+  /* contacon item */
+  .contacon{
+    display: inline-block;
+    position: relative;
+
+    letter-spacing: normal;
+  }
+    .contacon .worker_pre,
+    .contacon .worker_post{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+
+      line-height: 24px;
+      text-align: center;
+
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+    .contacon .worker_pre{
+      bottom: 40px;
+    }
+      .contacon span.name{
+        font-size: 16px;
+        text-transform: inherit;
+        color: #fdc75f;
+        font-family: benderblack, sans-serif;
+      }
+      .contacon span.position{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    .contacon .worker_post{
+      top: 108px;
+      opacity: 0;
+      visibility: hidden;
+
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .contacon:hover .worker_pre{
+      opacity: 0;
+      visibility: hidden;
+    }
+    .contacon:hover .worker_post{
+      opacity: 1;
+      visibility: visible;
+    }
+  section.our_team .tabs{
+    margin-right: 65px;
+    margin-bottom: 10px;
+  }
+    section.our_team .tabs .tab{
+      display: inline-block;
+      padding: 0 10px 15px;
+      margin: 0 13px;
+
+      font-size: 18px;
+      color: #c6c6c6;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    section.our_team .tabs .tab.active{
+      color: #ee8c01;
+      font-family: benderblack, sans-serif;
+      border-bottom: 4px solid #ee8c01;
+    }
+
 /* contacts */
 section.contacts{
 
