@@ -543,3 +543,35 @@ label {
     margin: 8px 0;
     padding-bottom: 8px;
 }
+
+#nav-main-box {
+    position: relative;
+}
+#nav-main-box > ul {
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    right: -23px;
+    top: 100%;
+    margin-top: -20px;
+    z-index: 99;
+    width: 200px;
+}
+#nav-main-box > ul a {
+    color: #72777a;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    border-left: 1px solid transparent;
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+#nav-main-box > ul a:hover {
+    color: #ee8c01;
+    border-color: #ee8c01;
+}

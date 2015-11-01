@@ -77,8 +77,9 @@
                     </span>    
                     <span class="city"> м.Чернівці</span></p>
             </div>
-            <div class="pull-right">
+            <div id="nav-main-box" class="pull-right">
                 <a href="javascript:;" class="btn_menu"></a>
+                <ul></ul>
             </div>
         </div>
     </div>
