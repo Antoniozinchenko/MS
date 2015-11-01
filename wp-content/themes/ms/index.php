@@ -586,7 +586,7 @@
                   </g>
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/ira_senuk.png" preserveAspectRatio="xMidYMin slice" />
                     <p class="worker_pre">
                       <span class="name">
                         Іра Сеник
@@ -615,7 +615,7 @@
                   </g>
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galia_peskova.png" preserveAspectRatio="xMidYMin slice" />
                     <p class="worker_pre">
                       <span class="name">
                         Галя Пєскова
@@ -644,7 +644,7 @@
                   </g>
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
                     <p class="worker_pre">
                       <span class="name">
                         Василь Савчук
@@ -675,7 +675,7 @@
                   </g>
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/nadia_lukashuk.png" preserveAspectRatio="xMidYMin slice" />
                     <p class="worker_pre">
                       <span class="name">
                         Надія Лукащук
@@ -704,7 +704,7 @@
                   </g>
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/birma_zaharova.png" preserveAspectRatio="xMidYMin slice" />
                     <p class="worker_pre">
                       <span class="name">
                         Бірма Захарова
@@ -728,18 +728,18 @@
             </div>
           </div>
           <div class="contacons contacons-chernivci">
-                <div class="line first clearfix">
-                    <div class="contacon">
-                        <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                            <g>
-                                <clipPath id="hex-mask_worker">
-                                    <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                </clipPath>
-                            </g>
-                            <a xlink:href="javascript:;">
-                                <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
-                                <p class="worker_pre">
+            <div class="line first clearfix">
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/ira_senuk.png" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
                       <span class="name">
                         Іра Сеник
                       </span>
@@ -754,66 +754,130 @@
                       <span class="mail">
                         horseinbathroom@mail.mail
                       </span>
-                                </p>
-                            </a>
-                        </svg>
-                    </div>
-                    <div class="contacon">
-                        <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                            <g>
-                                <clipPath id="hex-mask_worker">
-                                    <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                </clipPath>
-                            </g>
-                            <a xlink:href="javascript:;">
-                                <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
-                            </a>
-                        </svg>
-                    </div>
-                    <div class="contacon">
-                        <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                            <g>
-                                <clipPath id="hex-mask_worker">
-                                    <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                </clipPath>
-                            </g>
-                            <a xlink:href="javascript:;">
-                                <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
-                            </a>
-                        </svg>
-                    </div>
-                </div>
-                <div class="line second clearfix">
-                    <div class="contacon">
-                        <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                            <g>
-                                <clipPath id="hex-mask_worker">
-                                    <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                </clipPath>
-                            </g>
-                            <a xlink:href="javascript:;">
-                                <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
-                            </a>
-                        </svg>
-                    </div>
-                    <div class="contacon">
-                        <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                            <g>
-                                <clipPath id="hex-mask_worker">
-                                    <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                </clipPath>
-                            </g>
-                            <a xlink:href="javascript:;">
-                                <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
-                            </a>
-                        </svg>
-                    </div>
-                </div>
+                    </p>
+                  </a>
+                </svg>
+              </div>
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galia_peskova.png" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Галя Пєскова
+                      </span>
+                      <span class="position">
+                        персональний консультант
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
+                  </a>
+                </svg>
+              </div>
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Василь Савчук
+                      </span>
+                      <span class="position">
+                        персональний консультант
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
+                  </a>
+                </svg>
+              </div>
             </div>
+            <div class="line second clearfix">
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/nadia_lukashuk.png" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Надія Лукащук
+                      </span>
+                      <span class="position">
+                        заступник керівника відділу продажу
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
+                  </a>
+                </svg>
+              </div>
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/birma_zaharova.png" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Бірма Захарова
+                      </span>
+                      <span class="position">
+                        керівник відділу продажу
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
+                  </a>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="fake"></div>
