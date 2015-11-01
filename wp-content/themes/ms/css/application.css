@@ -468,11 +468,16 @@ section.our_team{
   }
   /* contacon item */
   .contacon{
+    width: 247px;
+    height: 250px;
     display: inline-block;
     position: relative;
 
     letter-spacing: normal;
   }
+    .contacon polygon{
+      overflow: hidden;
+    }
     .contacon .worker_pre,
     .contacon .worker_post{
       position: absolute;
