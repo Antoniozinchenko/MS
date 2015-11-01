@@ -67,7 +67,6 @@
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
             var image = '<?php echo pwd(); ?>img/markerTop.png';
-            console.log(image);
             var marker = new google.maps.Marker({
                 position: mapOptions.center,
                 map: map,
