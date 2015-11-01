@@ -15,11 +15,11 @@
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
-                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
                             </clipPath>
                           </g>
                           <a xlink:href="javascript:;">
-                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
@@ -28,11 +28,11 @@
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
-                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
                             </clipPath>
                           </g>
                           <a xlink:href="javascript:;">
-                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://pre07.deviantart.net/09e0/th/pre/f/2015/302/3/6/magician_s_pocket_by_boxtail-d9eteeu.png" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
@@ -41,11 +41,11 @@
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
-                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
                             </clipPath>
                           </g>
                           <a xlink:href="javascript:;">
-                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://orig02.deviantart.net/cb89/f/2015/183/7/3/twisted_fibers_by_boxtail-d8zo6px.png" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
@@ -56,11 +56,11 @@
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
-                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
                             </clipPath>
                           </g>
                           <a xlink:href="javascript:;">
-                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://orig02.deviantart.net/cb89/f/2015/183/7/3/twisted_fibers_by_boxtail-d8zo6px.png" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
@@ -69,11 +69,11 @@
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
-                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
                             </clipPath>
                           </g>
                           <a xlink:href="javascript:;">
-                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="http://pre07.deviantart.net/09e0/th/pre/f/2015/302/3/6/magician_s_pocket_by_boxtail-d9eteeu.png" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
@@ -82,11 +82,11 @@
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
-                              <polygon points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" />
+                              <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
                             </clipPath>
                           </g>
                           <a xlink:href="javascript:;">
-                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 96,25 47,0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="https://sphotos-b.xx.fbcdn.net/hphotos-frc1/902130_10151601296353689_541866262_o.jpg" preserveAspectRatio="xMidYMin slice" />
                           </a>
                         </svg>
@@ -208,8 +208,7 @@
                     <?php the_title(); ?>
                 </h2>
 
-                <div class="top row"></div>
-                <div class="row about-company-pefix">
+                <div class="about-company-pefix">
                     <div class="col-md-6 about-1">
                         <?php the_excerpt(); ?>
                         <div style="display:none">
@@ -223,33 +222,34 @@
                     wp_reset_postdata();
                     ?>
                     <div class="col-md-6 about-2">
-                        <h1>Наші останні перемоги</h1>
+                        <h2>Наші останні нагороди:</h2>
 
-                        <div class="row">
-                            <?php
-                            query_posts(array(
-                                'cat' => 2,
-                                'posts_per_page' => 2,
-                                'order' => 'ASC'
-                            ));
-                            while (have_posts()) : the_post();
-                                ?>
-                                <div class="col-md-6 text-center">
-                                    <?php
-                                    if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
-                                        the_post_thumbnail();
-                                    }
-                                    ?>
-                                    <h5><?php the_excerpt() ?></h5>
-                                    <h4 class="orange-caption"><?php the_title(); ?><h4>
-                                </div>
-                                <?
-                            endwhile;
+                        
+                        <?php
+                        query_posts(array(
+                            'cat' => 2,
+                            'posts_per_page' => 2,
+                            'order' => 'ASC'
+                        ));
+                        while (have_posts()) : the_post();
                             ?>
-                        </div>
+                            <div class="col-md-6 text-center">
+                                <?php
+                                if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
+                                    the_post_thumbnail();
+                                }
+                                ?>
+                                <div class="border">
+                                  <h5><?php the_excerpt() ?></h5>
+                                  <h4 class="orange-caption"><?php the_title(); ?></h4>
+                                </div>
+                            </div>
+                            <?
+                        endwhile;
+                        ?>
+                      
                     </div>
                 </div>
-                <div class="bot row"></div>
             </div>
         </div>
     </section>

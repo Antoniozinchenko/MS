@@ -231,6 +231,8 @@ header{
     }
     .top_slider .smalligon{
       float: left;
+      width: 95px; 
+      height: 96px;
     }
 
 /* project about*/
@@ -262,6 +264,32 @@ section.preparing{
   margin-top: 50px;
   padding-top: 130px;
 }
+
+/* about company */
+.about-2{
+  padding-bottom: 55px;
+}
+.about-2 h2{
+  color: #72777a;
+  font-family: benderblack, sans-serif;
+  text-align: left;
+  font-size: 24px;
+
+  margin-bottom: 65px;
+  margin-top: 18px;
+}
+  .about-2 h5{
+    font-size: 14px;
+    color: #c6c6c6;
+
+    margin-top: 15px;
+    line-height: 24px;
+  }
+    .about-2 h4{
+      font-size: 16px;
+      color: #ee8c01;
+      line-height: 24px;
+    }
 
 /* supervision*/
 section.supervision{
