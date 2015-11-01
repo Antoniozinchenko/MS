@@ -11,7 +11,7 @@
                 <div class="top_slider">
                   <div class="clearfix">
                     <div class="line clearfix first">
-                      <div class="smalligon" data-number="20">
+                      <div class="smalligon" data-number="7">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -37,7 +37,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon" data-number="10">
+                      <div class="smalligon" data-number="0">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -65,7 +65,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon" data-number="15">
+                      <div class="smalligon data-number="15">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -78,7 +78,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon" data-number="27">
+                      <div class="smalligon data-number="27">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -545,14 +545,11 @@
                                             }
                                         ?>
                                         <div class="discription">
-                                            <?php $excerpt =  get_the_excerpt(); ?>
-                                            <?php if( !empty( $excerpt ) ){ ?>
-                                                <?php echo $excerpt ?>
+                                            <?php echo get_the_excerpt(); ?>
                                             <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> більше</a>
                                                 <div style="display:none">
                                                     <div id="full-content-<?php the_ID();?>"><?php the_content(); ?></div>
                                                 </div>
-                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -603,7 +600,7 @@
                         093 000 00 00
                       </span>
                       <span class="mail">
-                        horseinbathroom@mail.mail
+                        mail@mail.mail
                       </span>
                     </p>
                   </a>
@@ -619,6 +616,22 @@
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Галя Пєскова
+                      </span>
+                      <span class="position">
+                        персональний консультант
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
                   </a>
                 </svg>
               </div>
@@ -632,6 +645,22 @@
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Василь Савчук
+                      </span>
+                      <span class="position">
+                        персональний консультант
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
                   </a>
                 </svg>
               </div>
@@ -647,6 +676,22 @@
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Надія Лукащук
+                      </span>
+                      <span class="position">
+                        заступник керівника відділу продажу
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
                   </a>
                 </svg>
               </div>
@@ -660,12 +705,29 @@
                   <a xlink:href="javascript:;">
                     <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Бірма Захарова
+                      </span>
+                      <span class="position">
+                        керівник відділу продажу
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        mail@mail.mail
+                      </span>
+                    </p>
+
                   </a>
                 </svg>
               </div>
             </div>
           </div>
-          <div class="contacons contacons-chernivci" style="display:none;">
+          <div class="contacons contacons-chernivci">
                 <div class="line first clearfix">
                     <div class="contacon">
                         <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">

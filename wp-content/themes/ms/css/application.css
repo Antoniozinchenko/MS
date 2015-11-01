@@ -468,6 +468,8 @@ section.our_team{
   }
   /* contacon item */
   .contacon{
+    width: 247px;
+    height: 250px;
     display: inline-block;
     position: relative;
 
@@ -514,6 +516,10 @@ section.our_team{
       color: #fff;
       text-transform: uppercase;
     }
+      .contacon .worker_post .number{
+        width: 100%;
+        display: block;
+      }
 
     .contacon:hover .worker_pre{
       opacity: 0;
