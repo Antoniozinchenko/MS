@@ -166,16 +166,21 @@ $(document).ready(function() {
          * Contacts tabs switch
          */
 
-        var delay = 200,
+        var delay = 400,
             tab;
 
         $('.contact-tab-btn').on('click', function(){
 
+            if(this.classList.contains('active') ){
+                return false;
+            };
             tab = $(this).data('tab');
 
-            $('.contact').fadeOut(delay, function(){
-                $('.'+tab).fadeIn(delay);
-            });
+            $('.contact-tab-btn').removeClass('active');
+            this.classList.add('active');
+
+            $('.contacons:not(.'+tab+')').fadeOut(delay);
+            $('.'+tab).fadeIn(delay);
 
         });
 
