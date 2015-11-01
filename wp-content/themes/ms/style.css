@@ -254,6 +254,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #map {
+    margin-top: -76px;
     height: 575px;
     width: 100%
 }

@@ -570,31 +570,105 @@
             наша команда
           </h2>
           <div class="row">
-            <!-- <svg class="svg-graphic" width="246" height="250" viewBox="0 0 560 645" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
-              <g>
-                <clipPath id="hex-mask">
-                    <polygon points="270,0 0,160 0,485 270,645 560,485 560,160"></polygon>
-                </clipPath>
-              </g>
-              <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="javascript:;" transform="">
-                <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="http://img07.deviantart.net/4bec/i/2015/198/0/f/oko_by_secret_mirror-d91o4mc.jpg" preserveAspectRatio="xMidYMin slice"></image>
-                <figcaption>12321</figcaption>
-              </a>
-            </svg> -->
+            <ul class="tabs pull-right clearfix">
+              <li class="tab active">м. Львів</li>
+              <li class="tab">м. Чернівці</li>
+            </ul>
+          </div>
+          <div class="contacons">
+            <div class="line first clearfix">
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                    <p class="worker_pre">
+                      <span class="name">
+                        Іра Сеник
+                      </span>
+                      <span class="position">
+                        персональний консультант
+                      </span>
+                    </p>
+                    <p class="worker_post">
+                      <span class="number">
+                        093 000 00 00
+                      </span>
+                      <span class="mail">
+                        horseinbathroom@mail.mail
+                      </span>
+                    </p>
+                  </a>
+                </svg>
+              </div>
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                  </a>
+                </svg>
+              </div>
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                  </a>
+                </svg>
+              </div>
+            </div>
+            <div class="line second clearfix">
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                  </a>
+                </svg>
+              </div>
+              <div class="contacon">
+                <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                  <g>
+                    <clipPath id="hex-mask_worker">
+                      <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                    </clipPath>
+                  </g>
+                  <a xlink:href="javascript:;">
+                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="translate(1, 1)" />
+                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="http://novchronic.ru/i/main/6352/1305117925.a.jpg" preserveAspectRatio="xMidYMin slice" />
+                  </a>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="fake"></div>
     </section>
 
     <section class="contacts">
-        <!-- <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="section_title">
-                    Контакти
-                </div>
-            </div>
-        </div> -->
-        <div id="map"></div>
+      <div id="map"></div>
     </section>
 
 <?php get_footer(); ?>
