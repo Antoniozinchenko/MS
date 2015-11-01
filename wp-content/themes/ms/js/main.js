@@ -102,5 +102,55 @@ jQuery(document).ready(function () {
 });
 
 $(document).ready(function() {
-$(".fancybox").fancybox();
+    $(".fancybox").fancybox();
 });
+
+(function($){
+
+    $(document).ready(function() {
+
+        /**
+         * Contacts tabs switch
+         */
+
+        var delay = 200,
+            tab;
+
+        $('.contact-tab-btn').on('click', function(){
+
+            tab = $(this).data('tab');
+
+            $('.contact').fadeOut(delay, function(){
+                $('.'+tab).fadeIn(delay);
+            });
+
+        });
+
+        /**
+         * Header sots switch
+         */
+
+        var sots = {
+            animVal: '',
+            baseVal: '',
+            tmpHrefObj: {},
+            $topImg: $('.slide_image').find('image'),
+            numberApartment: 0,
+            $countApartment: $('.count-apartment')
+        };
+
+        $('.smalligon').on('click', function(){
+
+            sots.tmpHrefObj = $(this).find('image').prop('href');
+
+            sots.$topImg.prop('href').animVal = sots.tmpHrefObj.animVal;
+            sots.$topImg.prop('href').baseVal = sots.tmpHrefObj.baseVal;
+
+            sots.numberApartment = $(this).data('number');
+            sots.$countApartment.text( sots.numberApartment );
+
+        });
+
+
+    });
+})(window.jQuery);

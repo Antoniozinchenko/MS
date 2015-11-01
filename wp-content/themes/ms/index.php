@@ -11,7 +11,7 @@
                 <div class="top_slider">
                   <div class="clearfix">
                     <div class="line clearfix first">
-                      <div class="smalligon">
+                      <div class="smalligon" data-number="7">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -24,7 +24,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon">
+                      <div class="smalligon" data-number="2">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -37,7 +37,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon">
+                      <div class="smalligon" data-number="0">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -52,7 +52,7 @@
                       </div>
                     </div>
                     <div class="line clearfix second">
-                      <div class="smalligon">
+                      <div class="smalligon" data-number="11">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -65,7 +65,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon">
+                      <div class="smalligon data-number="15">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
@@ -78,7 +78,7 @@
                           </a>
                         </svg>
                       </div>
-                      <div class="smalligon">
+                      <div class="smalligon data-number="27">
                         <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                           <g>
                             <clipPath id="hex-mask_small">
