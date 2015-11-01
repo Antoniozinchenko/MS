@@ -406,9 +406,12 @@ section.windows{
 section.feedback{
   padding-top: 85px;
 }
+  section.feedback .section_title {
+    line-height: .85em;
+  }
   section.feedback .text{
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 17px;
+    margin-bottom: 34px;
 
     font-size: 18px;
     color: #72777a;
