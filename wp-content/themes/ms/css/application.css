@@ -149,41 +149,89 @@ header{
 .top_slider{
   height: 266px;
   margin-bottom: 70px;
-  background-color: #faf8f9;
   position: relative;
+
+  background: url('images/top_slider.png') no-repeat 0 0;
 }
+  .top_slider:before{
+    content: '';
+    display: block;
+    width: 140px;
+    height: 122px;
+    position: absolute;
+    bottom: -33px;
+    left: -53px;
+
+    background: url('images/top_slider_before.png') no-repeat 0 0;
+  }
   .top_slider .slide_image{
     position: absolute;
-    right: 0;
-    bottom: -25px;
+    right: 78px;
+    bottom: 8px;
     width: 488px;
     height: 498px;
-
-    background-color: #000;
-    background: url('../img/top-img.png');
+    z-index: 2;
   }
-  .top_slider .slide_image .text-box {
+  .top_slider .pre_slide{
     position: absolute;
-    width: 281px;
-    left: 207px;
-    top: 242px;
-    background: transparent;
+    bottom: 35px;
+    right: -32px;
+    width: 399px;
+    height: 398px;
+    z-index: 3;
+
+    background: url('images/pre_slide.png') no-repeat 0 0;
   }
-  .top_slider .slide_image .title {}
-  .top_slider .slide_image .count-apartment {
-    font-size: 64px;
-    font-weight: 800;
+    .pre_slide .content{
+      margin-top: 224px;
+      margin-left: 70px;
+
+      font-family: benderblack, sans-serif;
+    }
+  .top_slider .title {
+    font-size: 24px;
+    color: #72777a;
+
+    margin-bottom: 12px;
+  }
+  .top_slider .count-apartment {
+    font-size: 65px;
     color: #c6c6c6;
   }
-  .top_slider .slide_image .lost-apartment {
+  .top_slider .lost-apartment {
     display: inline-block;
-    font-size: 26px;
     padding-left: 5px;
-    line-height: 1em;
-    vertical-align: super;
+
+    font-size: 24px;
+    line-height: 27px;
     color: #c6c6c6;
+    text-transform: uppercase;
+    font-family: bender, sans-serif;
   }
-  .top_slider .slide_image .more {}
+  .top_slider .more {
+    font-size: 24px;
+    color: #ee8c01;
+    text-transform: uppercase;
+
+    display: inline-block;
+    margin-top: 12px;
+  }
+  /* smalligons */
+  .top_slider .line{
+    position: relative;
+  }
+    .top_slider .line.first{
+      margin-top: 51px;
+      margin-left: 38px;
+    }
+    .top_slider .line.second{
+      margin-left: 38px;
+      top: -24px;
+      left: 47px;
+    }
+    .top_slider .smalligon{
+      float: left;
+    }
 
 /* project about*/
 .project_about .col-md-6{
