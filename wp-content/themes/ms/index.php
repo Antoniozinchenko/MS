@@ -11,7 +11,7 @@
                 <div class="top_slider">
                     <div class="clearfix">
                         <div class="line clearfix first">
-                            <div class="smalligon" data-number="7" data-namber="1" data-next="2" data-select="acrive">
+                            <div class="smalligon" data-number="7" data-namber="1" data-next="2" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
