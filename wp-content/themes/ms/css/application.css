@@ -325,14 +325,44 @@ header{
     }
     .top_slider .line.second{
       margin-left: 38px;
-      top: -24px;
-      left: 47px;
+      top: -26px;
+      left: 45px;
     }
     .top_slider .smalligon{
       float: left;
       width: 95px; 
       height: 96px;
+      position: relative;
     }
+    .top_slider .smalligon .smalligon_mask{
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 97px;
+      height: 97px;
+
+      text-align: center;
+      /*line-height: 98px;*/
+      cursor: pointer;
+      line-height: 145px;
+      color: #fff;
+      font-family: benderblack, sans-serif;
+      font-size: 18px;
+
+      background: url('images/poly_mask_before.png') no-repeat 0 -1px;
+      /*background: url('images/poly_mask.png') no-repeat 0 0;*/
+      -webkit-background-size: cover;
+      background-size: cover;
+
+      -webkit-transition: font-size .3s ease;
+      -o-transition: font-size .3s ease;
+      transition: font-size .3s ease;
+    }
+      .top_slider .smalligon:hover .smalligon_mask{
+        background: url('images/poly_mask.png') no-repeat 0 0;
+        line-height: 98px;
+        font-size: 46px;
+      }
 
 /* project about*/
 .project_about .col-md-6{

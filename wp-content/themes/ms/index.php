@@ -11,29 +11,32 @@
                 <div class="top_slider">
                     <div class="clearfix">
                         <div class="line clearfix first">
-                            <div class="smalligon" data-number="7" data-namber="1" data-next="2" data-select="acrive">
+                            <div class="smalligon" data-number="7" data-namber="1" data-next="2" data-select="active">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
                                         </clipPath>
                                     </g>
                                     <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
                                         <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
+                                        <p class="smalligon_mask">1</p>
                                     </a>
                                 </svg>
+                               
                             </div>
                             <div class="smalligon" data-number="2" data-namber="2" data-next="3" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
                                         </clipPath>
                                     </g>
                                     <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
                                         <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/2.jpg" preserveAspectRatio="xMidYMin slice" />
+                                        <p class="smalligon_mask">2</p>
                                     </a>
                                 </svg>
                             </div>
@@ -41,27 +44,29 @@
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
                                         </clipPath>
                                     </g>
                                     <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
                                         <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/3.jpg" preserveAspectRatio="xMidYMin slice" />
+                                        <p class="smalligon_mask">3</p>
                                     </a>
                                 </svg>
-                            </div>
+                            </div> 
                         </div>
                         <div class="line clearfix second">
                             <div class="smalligon" data-number="11" data-namber="4" data-next="5" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
                                         </clipPath>
                                     </g>
                                     <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
                                         <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/4.jpg" preserveAspectRatio="xMidYMin slice" />
+                                        <p class="smalligon_mask">4</p>
                                     </a>
                                 </svg>
                             </div>
@@ -69,12 +74,13 @@
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
                                         </clipPath>
                                     </g>
                                     <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
                                         <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/5.jpg" preserveAspectRatio="xMidYMin slice" />
+                                        <p class="smalligon_mask">5</p>
                                     </a>
                                 </svg>
                             </div>
@@ -82,12 +88,13 @@
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
                                         </clipPath>
                                     </g>
                                     <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
                                         <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/6.jpg" preserveAspectRatio="xMidYMin slice" />
+                                        <p class="smalligon_mask">6</p>
                                     </a>
                                 </svg>
                             </div>
