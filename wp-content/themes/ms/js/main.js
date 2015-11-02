@@ -153,14 +153,20 @@ $(document).ready(function() {
 
             createNavMenu();
 
-            var $btnMenu = $('#nav-main-box').children('.btn_menu');
+            var $btnMenu = $('#nav-main-box').children('.nav-menu-btn');
 
             $btnMenu.on('click', function(){
                 $navMain.slideDown();
             });
 
+            var isBtn, btn, inBtn;
+
             $(document).on('click', function(event){
-                var isBtn = event.target.classList.contains("btn_menu");
+                btn = event.target.classList.contains("nav-menu-btn");
+                inBtn = $(event.target).parent().hasClass("nav-menu-btn");
+
+                isBtn = btn || inBtn;
+                
                 if( !isBtn && $navMain[0].style.display == 'block' ) {
                     $navMain.slideUp();
                 }

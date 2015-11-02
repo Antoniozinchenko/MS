@@ -11,7 +11,7 @@
                 <div class="top_slider">
                     <div class="clearfix">
                         <div class="line clearfix first">
-                            <div class="smalligon" data-number="7">
+                            <div class="smalligon" data-number="7" data-namber="1" data-next="2" data-select="acrive">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -24,7 +24,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="2">
+                            <div class="smalligon" data-number="2" data-namber="2" data-next="3" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -37,7 +37,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="10">
+                            <div class="smalligon" data-number="10" data-namber="3" data-next="4" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                         <div class="line clearfix second">
-                            <div class="smalligon" data-number="11">
+                            <div class="smalligon" data-number="11" data-namber="4" data-next="5" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -65,7 +65,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="15">
+                            <div class="smalligon" data-number="15" data-namber="5" data-next="6" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -78,7 +78,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="27">
+                            <div class="smalligon" data-number="27" data-namber="6" data-next="1" data-select="">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -95,6 +95,7 @@
 
                     </div>
                     <div class="pre_slide">
+                    	<a href="javascript:void(0)" class="camera"></a>
                         <div class="content">
                             <h2 class="title">жк "DIAMANT"</h2>
                             <span class="count-apartment">20</span>
@@ -103,6 +104,7 @@
                                 Детальніше
                             </a>
                         </div>
+                    	<i class="fa fa-angle-right next-appartmen"></i>
                     </div>
                     <div class="slide_image">
                         <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -277,7 +279,7 @@
                 </h2>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-left">
                         <div class="ico_wr">
                             <i class="ico ico_06"></i>
                         </div>
@@ -287,7 +289,7 @@
                             прямо із смартфону
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-right">
                         <div class="ico_wr">
                             <i class="ico ico_05"></i>
                         </div>
@@ -296,7 +298,7 @@
                             та внутрішня інфраструктура
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-left">
                         <div class="ico_wr">
                             <i class="ico ico_07"></i>
                         </div>
@@ -305,7 +307,7 @@
                             на комунальні послуги
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-right">
                         <div class="ico_wr">
                             <i class="ico ico_08"></i>
                         </div>
@@ -314,7 +316,7 @@
                             планування
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-left">
                         <div class="ico_wr">
                             <i class="ico ico_09"></i>
                         </div>
@@ -323,7 +325,7 @@
                             електропостачання
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-right">
                         <div class="ico_wr">
                             <i class="ico ico_10"></i>
                         </div>
@@ -332,7 +334,7 @@
                             у Вашому помешканні
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-left">
                         <div class="ico_wr">
                             <i class="ico ico_11"></i>
                         </div>
@@ -340,7 +342,7 @@
                             Доступна ціна
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cel-right">
                         <div class="ico_wr">
                             <i class="ico ico_12"></i>
                         </div>

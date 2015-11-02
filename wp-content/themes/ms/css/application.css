@@ -143,7 +143,40 @@ header{
     .btn_menu:hover{
       background: url('images/menu_active.png') no-repeat 0 0;
     }
+    .nav-menu-btn {
+      margin-top: 68px;
+      margin-right: -23px;
+      cursor: pointer;
+    }
+    .nav-menu-btn i {
+      display: block;
+      width: 16px;
+      margin: 4px 0;
+    }
+    .nav-menu-btn:before {
+      content: '';
+      width: 23px;
+    }
+    .nav-menu-btn:after {
+      content: '';
+      width: 20px;
+    }
+    .nav-menu-btn i,
+    .nav-menu-btn:before,
+    .nav-menu-btn:after {
+      display: block;
+      height: 4px;
+      background-color: #b5b4b2;
 
+      -webkit-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    .nav-menu-btn:hover i,
+    .nav-menu-btn:hover:before,
+    .nav-menu-btn:hover:after {
+      background: #eb8000;
+    }
 
 /* our project */
 .top_slider{
@@ -182,6 +215,39 @@ header{
 
     background: url('images/pre_slide.png') no-repeat 0 0;
   }
+    .top_slider .camera {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 76px;
+      width: 27px;
+      height: 27px;
+      background: url('images/camera.png') no-repeat 0 0;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .top_slider .camera:hover {
+      background-position-x: -27px;
+    }
+
+    .top_slider .next-appartmen {
+      position: absolute;
+      top: 50%;
+      right: -45px;
+      margin-top: -.5em;
+      font-size: 80px;
+      color: #c5c5c5;
+      cursor: pointer;
+      z-index: 5;
+      line-height: 0;
+
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+    }
+    .top_slider .next-appartmen:hover {
+      color: #999999;
+    }
     .pre_slide .content{
       margin-top: 224px;
       margin-left: 70px;
@@ -307,6 +373,19 @@ section.advantages{
   }  
   section.advantages .col-md-6{
     height: 110px;
+  }
+  section.advantages .cel-left,
+  section.advantages .cel-right {
+    width: 340px;
+    padding: 0;
+  }
+  section.advantages .cel-left {
+    margin-left: 25px;
+    float: left;
+  }
+  section.advantages .cel-right {
+    margin-right: 25px;
+    float: right;
   }
     section.advantages .col-md-6 div {
       display: table-cell;
