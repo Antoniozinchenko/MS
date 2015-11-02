@@ -59,8 +59,8 @@
 
 <header>
     <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-            <a href="javascript:;" class="logo pull-left">
+        <div class="wrap-860">
+            <a href="javascript:void(0);" class="logo pull-left">
                 <img src="<?php echo $pwd ?>img/logo.png" alt="">
             </a>
 

@@ -2,7 +2,7 @@
 
 <footer>
     <div class="container">
-    	<div class="col-md-10 col-md-offset-1">
+    	<div class="wrap-860">
     		<div class="row">
 	        <div class="col-md-6">
 	            <h2 class="footer_title">
@@ -37,7 +37,7 @@
 </footer>
 <div class="afterfooter">
 	<div class="container">
-		<div class="col-md-10 col-md-offset-1">
+		<div class="wrap-1024">
 			<div class="pull-left">
 				&copy; Девелоперська компанія "MS"
 			</div>
