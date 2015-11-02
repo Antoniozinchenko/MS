@@ -138,10 +138,12 @@
                                 <i class="ico ico_01"></i>
                             </div>
                             <div class="number">
-                                100
+                                25
                             </div>
                             <div class="text">
-                                креативних <br> ідей
+                                архітекторів-
+                                <br> 
+                                проектантів  
                             </div>
                         </div>
                         <div class="col-md-6">

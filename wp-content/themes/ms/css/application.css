@@ -385,6 +385,7 @@ header{
   }
   .project_about .text{
     font-size: 24px;
+    text-transform: uppercase;
   }
 
 /* preparing */
@@ -536,13 +537,22 @@ section.windows{
       line-height: 60px;
       margin-top: 4px;
       border: none;
+
       font-family: benderblack, sans-serif;
-      
       text-align: center;
       text-transform: uppercase;
       color: #fff;
-      background-color: #ee8c01;
+      background: #ee8c01;
+      font-size: 18px;
+
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
     }
+      .btn_style:hover{
+        background: #f9b341;
+        font-size: 20px;
+      }
   .consultant{
     position: relative;
   }
@@ -793,7 +803,14 @@ footer{
       color: #b9bbbd;
       text-transform: uppercase;
       font-family: benderblack, sans-serif;
+
+      -webkit-transition: color .3s ease-in-out;
+      -o-transition: color .3s ease-in-out;
+      transition: color .3s ease-in-out;
     }
+      .f_socials a:hover{
+        color: #fff;
+      }
     .f_socials i{
       display: inline-block;
       width: 36px;
