@@ -66,109 +66,109 @@
                                 </svg>
                             </div>
                             <div class="smalligon" data-number="15">
-                            <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_small">
-                                        <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                                    <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/5.jpg" preserveAspectRatio="xMidYMin slice" />
-                                </a>
-                            </svg>
+                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                    <g>
+                                        <clipPath id="hex-mask_small">
+                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                        </clipPath>
+                                    </g>
+                                    <a xlink:href="javascript:void(0);">
+                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/5.jpg" preserveAspectRatio="xMidYMin slice" />
+                                    </a>
+                                </svg>
+                            </div>
+                            <div class="smalligon" data-number="27">
+                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                    <g>
+                                        <clipPath id="hex-mask_small">
+                                            <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                        </clipPath>
+                                    </g>
+                                    <a xlink:href="javascript:void(0);">
+                                        <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
+                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/6.jpg" preserveAspectRatio="xMidYMin slice" />
+                                    </a>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="smalligon" data-number="27">
-                        <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+                    </div>
+                    <div class="pre_slide">
+                        <div class="content">
+                            <h2 class="title">жк "DIAMANT"</h2>
+                            <span class="count-apartment">20</span>
+                            <span class="lost-apartment">квартир <br>залишилось</span>
+                            <a class="more" href="javascript:void(0)">
+                                Детальніше
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide_image">
+                        <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                             <g>
-                                <clipPath id="hex-mask_small">
-                                    <polygon points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" />
+                                <clipPath id="hex-mask">
+                                    <polygon points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" />
                                 </clipPath>
                             </g>
+
                             <a xlink:href="javascript:void(0);">
-                                <polygon fill="#fff" points="47,0 0,25 0,72 47,96 96,72 95,25 47,0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/6.jpg" preserveAspectRatio="xMidYMin slice" />
+                                <polygon fill="#fff" points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" transform="translate(1, 1)" />
+                                <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
                             </a>
                         </svg>
                     </div>
                 </div>
 
-            </div>
-            <div class="pre_slide">
-                <div class="content">
-                    <h2 class="title">жк "DIAMANT"</h2>
-                    <span class="count-apartment">20</span>
-                    <span class="lost-apartment">квартир <br>залишилось</span>
-                    <a class="more" href="javascript:void(0)">
-                        Детальніше
-                    </a>
-                </div>
-            </div>
-            <div class="slide_image">
-                <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                    <g>
-                        <clipPath id="hex-mask">
-                            <polygon points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" />
-                        </clipPath>
-                    </g>
-
-                    <a xlink:href="javascript:void(0);">
-                        <polygon fill="#fff" points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" transform="translate(1, 1)" />
-                        <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
-                    </a>
-                </svg>
-            </div>
-        </div>
-
-        <div class="project_about">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="ico_wr">
-                        <i class="ico ico_01"></i>
-                    </div>
-                    <div class="number">
-                        100
-                    </div>
-                    <div class="text">
-                        креативних <br> ідей
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="ico_wr">
-                        <i class="ico ico_02"></i>
-                    </div>
-                    <div class="number">
-                        170
-                    </div>
-                    <div class="text">
-                        фахівців
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="ico_wr">
-                        <i class="ico ico_03"></i>
-                    </div>
-                    <div class="number">
-                        2080
-                    </div>
-                    <div class="text">
-                        годин <br> проектування
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="ico_wr">
-                        <i class="ico ico_04"></i>
-                    </div>
-                    <div class="number">
-                        288
-                    </div>
-                    <div class="text">
-                        щасливих <br> сімей
+                <div class="project_about">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ico_wr">
+                                <i class="ico ico_01"></i>
+                            </div>
+                            <div class="number">
+                                100
+                            </div>
+                            <div class="text">
+                                креативних <br> ідей
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ico_wr">
+                                <i class="ico ico_02"></i>
+                            </div>
+                            <div class="number">
+                                170
+                            </div>
+                            <div class="text">
+                                фахівців
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ico_wr">
+                                <i class="ico ico_03"></i>
+                            </div>
+                            <div class="number">
+                                2080
+                            </div>
+                            <div class="text">
+                                годин <br> проектування
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ico_wr">
+                                <i class="ico ico_04"></i>
+                            </div>
+                            <div class="number">
+                                288
+                            </div>
+                            <div class="text">
+                                щасливих <br> сімей
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
 
@@ -884,7 +884,7 @@
     </section>
 
     <section class="contacts">
-        <div id="map"></div>
+          <div id="map"></div>
     </section>
 
 <?php get_footer(); ?>
