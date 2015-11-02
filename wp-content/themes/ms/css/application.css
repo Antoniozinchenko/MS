@@ -385,6 +385,7 @@ header{
   }
   .project_about .text{
     font-size: 24px;
+    text-transform: uppercase;
   }
 
 /* preparing */
