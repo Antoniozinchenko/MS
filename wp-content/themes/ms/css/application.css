@@ -342,7 +342,6 @@ header{
       height: 97px;
 
       text-align: center;
-      /*line-height: 98px;*/
       cursor: pointer;
       line-height: 145px;
       color: #fff;
@@ -350,7 +349,6 @@ header{
       font-size: 18px;
 
       background: url('images/poly_mask_before.png') no-repeat 0 -1px;
-      /*background: url('images/poly_mask.png') no-repeat 0 0;*/
       -webkit-background-size: cover;
       background-size: cover;
 
@@ -358,7 +356,8 @@ header{
       -o-transition: font-size .3s ease;
       transition: font-size .3s ease;
     }
-      .top_slider .smalligon:hover .smalligon_mask{
+      .top_slider .smalligon:hover .smalligon_mask,
+      .top_slider .smalligon.active .smalligon_mask{
         background: url('images/poly_mask.png') no-repeat 0 0;
         line-height: 98px;
         font-size: 46px;
