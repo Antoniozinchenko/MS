@@ -226,9 +226,42 @@ header{
       z-index: 1;
       cursor: pointer;
     }
-    .top_slider .camera:hover {
-      background-position-x: -27px;
-    }
+      .top_slider .camera:hover {
+        background-position-x: -27px;
+      }
+      .top_slider .camera:hover span{
+        display: block;
+      }
+      .top_slider .camera span {
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: -45px;
+        z-index: 2;
+        height: 34px;
+        line-height: 34px;
+        padding: 0 19px;
+
+        color: #fff;
+        background-color: #ee8c01;
+      }
+        .top_slider .camera span:before{
+          color: #ee8c01;
+          top: -4px;
+          left: 50%;
+          position: absolute;
+          z-index: 2;
+          margin-left: -4px;
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 0;
+          vertical-align: middle;
+          border-bottom: 4px dashed;
+          border-bottom: 4px solid\9;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+        }
 
     .top_slider .next-appartmen {
       position: absolute;
@@ -292,14 +325,43 @@ header{
     }
     .top_slider .line.second{
       margin-left: 38px;
-      top: -24px;
-      left: 47px;
+      top: -26px;
+      left: 45px;
     }
     .top_slider .smalligon{
       float: left;
       width: 95px; 
       height: 96px;
+      position: relative;
     }
+    .top_slider .smalligon .smalligon_mask{
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 97px;
+      height: 97px;
+
+      text-align: center;
+      cursor: pointer;
+      line-height: 145px;
+      color: #fff;
+      font-family: benderblack, sans-serif;
+      font-size: 18px;
+
+      background: url('images/poly_mask_before.png') no-repeat 0 -1px;
+      -webkit-background-size: cover;
+      background-size: cover;
+
+      -webkit-transition: font-size .3s ease;
+      -o-transition: font-size .3s ease;
+      transition: font-size .3s ease;
+    }
+      .top_slider .smalligon:hover .smalligon_mask,
+      .top_slider .smalligon.active .smalligon_mask{
+        background: url('images/poly_mask.png') no-repeat 0 0;
+        line-height: 98px;
+        font-size: 46px;
+      }
 
 /* project about*/
 .project_about .col-md-6{
