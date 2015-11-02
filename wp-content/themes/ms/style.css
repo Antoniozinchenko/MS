@@ -587,3 +587,12 @@ label {
     width: 585px!important;
     display: inline;
 }
+
+.wrap-860 {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.wrap-1024 {
+    max-width: 1024px;
+    margin: 0 auto;
+}
