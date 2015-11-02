@@ -1,4 +1,5 @@
 <?php $pwd = pwd(); ?>
+<?php $get_hd = get_hd(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -49,9 +50,6 @@
 <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
-
-
-
     <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
 
 </head>
@@ -60,7 +58,7 @@
 <header>
     <div class="container">
         <div class="wrap-860">
-            <a href="javascript:void(0);" class="logo pull-left">
+            <a href="<?php echo $get_hd; ?>" class="logo pull-left">
                 <img src="<?php echo $pwd ?>img/logo.png" alt="">
             </a>
 
@@ -78,7 +76,12 @@
                     <span class="city"> м.Чернівці</span></p>
             </div>
             <div id="nav-main-box" class="pull-right">
-                <a href="javascript:;" class="btn_menu"></a>
+                <ol class="menu-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <div class="nav-menu-btn"><i></i></div>
                 <ul></ul>
             </div>
         </div>
