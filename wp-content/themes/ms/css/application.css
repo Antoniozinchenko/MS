@@ -226,9 +226,42 @@ header{
       z-index: 1;
       cursor: pointer;
     }
-    .top_slider .camera:hover {
-      background-position-x: -27px;
-    }
+      .top_slider .camera:hover {
+        background-position-x: -27px;
+      }
+      .top_slider .camera:hover span{
+        display: block;
+      }
+      .top_slider .camera span {
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: -45px;
+        z-index: 2;
+        height: 34px;
+        line-height: 34px;
+        padding: 0 19px;
+
+        color: #fff;
+        background-color: #ee8c01;
+      }
+        .top_slider .camera span:before{
+          color: #ee8c01;
+          top: -4px;
+          left: 50%;
+          position: absolute;
+          z-index: 2;
+          margin-left: -4px;
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 0;
+          vertical-align: middle;
+          border-bottom: 4px dashed;
+          border-bottom: 4px solid\9;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+        }
 
     .top_slider .next-appartmen {
       position: absolute;

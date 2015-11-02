@@ -95,7 +95,9 @@
 
                     </div>
                     <div class="pre_slide">
-                    	<a href="javascript:void(0)" class="camera"></a>
+                    	<a href="javascript:void(0)" class="camera">
+                            <span>вебкамера</span>   
+                        </a>
                         <div class="content">
                             <h2 class="title">жк "DIAMANT"</h2>
                             <span class="count-apartment">20</span>
