@@ -137,8 +137,7 @@ $(document).ready(function() {
                     $section = $(item).parents('section'),
                     id;
 
-
-                id = $section.id ? $section.id : 'custome-nav-title-id-' + i;
+                id = $section[0].id ? $section[0].id : 'custome-nav-title-id-' + i;
                 $section.prop('id', id);
 
                 itemHtml += '<li><a href="#' + id + '">' + item.innerText + '</a></li>';
@@ -253,3 +252,9 @@ $(document).ready(function() {
 
     });
 })(window.jQuery);
+
+$(".get_call").on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#question-form").offset().top
+    }, 800);
+});
