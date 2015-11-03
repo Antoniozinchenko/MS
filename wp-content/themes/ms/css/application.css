@@ -692,6 +692,10 @@ section.our_team{
       display: none;
 
       background: url('images/contacon_fake.png') no-repeat 0 0;
+
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
     }
       .contacon:hover .contacon_fake{
         display: block;
