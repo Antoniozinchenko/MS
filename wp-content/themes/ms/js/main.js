@@ -166,7 +166,7 @@ $(document).ready(function() {
                 inBtn = $(event.target).parent().hasClass("nav-menu-btn");
 
                 isBtn = btn || inBtn;
-                
+
                 if( !isBtn && $navMain[0].style.display == 'block' ) {
                     $navMain.slideUp();
                 }
@@ -212,6 +212,9 @@ $(document).ready(function() {
         };
 
         $('.smalligon').on('click', function(){
+
+           document.querySelector('.smalligon.active').classList.remove('active');
+           this.classList.add('active');
 
             sots.tmpHrefObj = $(this).find('image').prop('href');
 
