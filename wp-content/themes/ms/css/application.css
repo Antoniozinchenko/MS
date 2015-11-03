@@ -667,7 +667,7 @@ section.our_team{
       -webkit-background-size: cover;
     }
     section.our_team .line.second{
-      margin-top: -70px;
+      margin-top: -71px;
     }
   /* contacons wrapper*/
   .contacons{
@@ -676,7 +676,7 @@ section.our_team{
   }
   /* contacon item */
   .contacon{
-    width: 247px;
+    width: 245px;
     height: 250px;
     display: inline-block;
     position: relative;

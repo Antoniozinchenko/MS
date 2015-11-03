@@ -588,14 +588,14 @@
                 <div class="contacons contacons-lviv">
                     <div class="line first clearfix">
                         <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                 <g>
                                     <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 250,67 123,0" />
+                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
                                     </clipPath>
                                 </g>
                                 <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 250,67 123,0" transform="" />
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
                                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/ira_senuk.png" preserveAspectRatio="xMidYMin slice" />
                                     <p class="worker_pre">
                                         <span class="name">
@@ -621,14 +621,14 @@
                             <div class="contacon_fake"></div>
                         </div>
                         <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                 <g>
                                     <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 250,67 123,0" />
+                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
                                     </clipPath>
                                 </g>
                                 <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 250,67 123,0" transform="" />
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
                                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galia_peskova.png" preserveAspectRatio="xMidYMin slice" />
                                     <p class="worker_pre">
                                         <span class="name">
@@ -653,15 +653,15 @@
                             </svg>
                             <div class="contacon_fake"></div>
                         </div>
-                        <!-- <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <div class="contacon">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                 <g>
                                     <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
                                     </clipPath>
                                 </g>
                                 <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="" />
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
                                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
                                     <p class="worker_pre">
                                         <span class="name">
@@ -672,27 +672,31 @@
                                         </span>
                                     </p>
                                     <p class="worker_post">
-                                        <span class="number">
-                                            093 000 00 00
-                                        </span>
                                         <span class="mail">
-                                            mail@mail.mail
+                                            savchuk@ms-bud.com.ua
+                                        </span>
+                                        <span class="number">
+                                            097 321 00 77
+                                        </span>
+                                        <span class="get_call">
+                                            замовити дзвінок
                                         </span>
                                     </p>
                                 </a>
                             </svg>
-                        </div> -->
+                            <div class="contacon_fake"></div>
+                        </div>
                     </div>
-                    <!-- <div class="line second clearfix">
+                    <div class="line second clearfix">
                         <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                 <g>
                                     <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
                                     </clipPath>
                                 </g>
                                 <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="" />
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
                                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/nadia_lukashuk.png" preserveAspectRatio="xMidYMin slice" />
                                     <p class="worker_pre">
                                         <span class="name">
@@ -703,138 +707,159 @@
                                         </span>
                                     </p>
                                     <p class="worker_post">
-                                        <span class="number">
-                                            093 000 00 00
-                                        </span>
                                         <span class="mail">
-                                            mail@mail.mail
+                                            hello@ms-bud.com.ua
+                                        </span>
+                                        <span class="number">
+                                            067 673 67 10
+                                        </span>
+                                        <span class="get_call">
+                                            замовити дзвінок
                                         </span>
                                     </p>
                                 </a>
                             </svg>
+                            <div class="contacon_fake"></div>
                         </div>
                         <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                 <g>
                                     <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
+                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
                                     </clipPath>
                                 </g>
                                 <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="" />
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
                                     <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/birma_zaharova.png" preserveAspectRatio="xMidYMin slice" />
                                     <p class="worker_pre">
                                         <span class="name">
                                             Бірма Захарова
                                         </span>
                                         <span class="position">
-                                            керівник відділу продажу
+                                            керівник відділу <br> продажу
                                         </span>
                                     </p>
                                     <p class="worker_post">
-                                        <span class="number">
-                                            093 000 00 00
-                                        </span>
                                         <span class="mail">
-                                            mail@mail.mail
+                                            ms@ms-bud.com.ua
+                                        </span>
+                                        <span class="number">
+                                            (032) 26 01 333
+                                        </span>
+                                        <span class="get_call">
+                                            замовити дзвінок
                                         </span>
                                     </p>
                                 </a>
                             </svg>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="contacons contacons-chernivci" style="display:none;">
-                    <div class="line first clearfix">
-                        <div class="contacon contacon_before">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/ira_senuk.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Іра Сеник
-                                        </span>
-                                        <span class="position">
-                                            персональний консультант
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="number">
-                                            093 000 00 00
-                                        </span>
-                                        <span class="mail">
-                                            horseinbathroom@mail.mail
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galia_peskova.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Галя Пєскова
-                                        </span>
-                                        <span class="position">
-                                            персональний консультант
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="number">
-                                            093 000 00 00
-                                        </span>
-                                        <span class="mail">
-                                            mail@mail.mail
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="247" height="250" viewBox="0 0 247 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,181 123,250 250,181 247,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Василь Савчук
-                                        </span>
-                                        <span class="position">
-                                            персональний консультант
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="number">
-                                            093 000 00 00
-                                        </span>
-                                        <span class="mail">
-                                            mail@mail.mail
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
+                            <div class="contacon_fake"></div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <div class="contacons contacons-chernivci" style="display:none;">
+                    <div class="line first clearfix">
+                        <div class="contacon contacon_before">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                <g>
+                                    <clipPath id="hex-mask_worker">
+                                        <polygon points="123,0 0,67 0,183 123,250 250,183 245,67 123,0" />
+                                    </clipPath>
+                                </g>
+                                <a xlink:href="javascript:void(0);">
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 250,183 245,67 123,0" transform="" />
+                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/sviatoslav_lucushun.png" preserveAspectRatio="xMidYMin slice" />
+                                    <p class="worker_pre">
+                                        <span class="name">
+                                            Святослав Луцишин
+                                        </span>
+                                        <span class="position">
+                                           керівник відділу <br> продажу
+                                        </span>
+                                    </p>
+                                    <p class="worker_post">
+                                        <span class="mail">
+                                            sv@ms-bud.com.ua
+                                        </span>
+                                        <span class="number">
+                                            050 430 33 34
+                                        </span>
+                                        <span class="get_call">
+                                            замовити дзвінок
+                                        </span>
+                                    </p>
+                                </a>
+                            </svg>
+                            <div class="contacon_fake"></div>
+                        </div>
+                        <div class="contacon">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                <g>
+                                    <clipPath id="hex-mask_worker">
+                                        <polygon points="123,0 0,67 0,183 123,250 250,183 245,67 123,0" />
+                                    </clipPath>
+                                </g>
+                                <a xlink:href="javascript:void(0);">
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 250,183 245,67 123,0" transform="" />
+                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/irina_romanuk.png" preserveAspectRatio="xMidYMin slice" />
+                                    <p class="worker_pre">
+                                        <span class="name">
+                                            Ірина Романюк
+                                        </span>
+                                        <span class="position">
+                                            заступник керівника <br>
+                                            відділу продажу
+                                        </span>
+                                    </p>
+                                    <p class="worker_post">
+                                        <span class="mail">
+                                            iryna@ms-bud.com.ua
+                                        </span>
+                                        <span class="number">
+                                            098 231 77 00
+                                        </span>
+                                        <span class="get_call">
+                                            замовити дзвінок
+                                        </span>
+                                    </p>
+                                </a>
+                            </svg>
+                            <div class="contacon_fake"></div>
+                        </div>
+                        <div class="contacon">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                <g>
+                                    <clipPath id="hex-mask_worker">
+                                        <polygon points="123,0 0,67 0,183 123,250 250,183 245,67 123,0" />
+                                    </clipPath>
+                                </g>
+                                <a xlink:href="javascript:void(0);">
+                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 250,183 245,67 123,0" transform="" />
+                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galina_nayda.png" preserveAspectRatio="xMidYMin slice" />
+                                    <p class="worker_pre">
+                                        <span class="name">
+                                            Галина Найда
+                                        </span>
+                                        <span class="position">
+                                            персональний <br> консультант
+                                        </span>
+                                    </p>
+                                    <p class="worker_post">
+                                        <span class="mail">
+                                            gn@ms-bud.com.ua
+                                        </span>
+                                        <span class="number">
+                                            050 430 93 33
+                                        </span>
+                                        <span class="get_call">
+                                            замовити дзвінок
+                                        </span>
+                                    </p>
+                                </a>
+                            </svg>
+                            <div class="contacon_fake"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="fake"></div>
