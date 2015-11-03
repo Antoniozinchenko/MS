@@ -596,3 +596,24 @@ label {
     max-width: 1024px;
     margin: 0 auto;
 }
+
+.wpcf7-form .wpcf7-response-output {
+    margin: -10px 0 0;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0;
+}
+.wpcf7-form .wpcf7-not-valid-tip {
+    position: absolute;
+    bottom: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #eb8000;
+}
+span.wpcf7-form-control-wrap {
+    display: block;
+}
+.wpcf7-form-control-wrap + br {
+    display: none;
+}
