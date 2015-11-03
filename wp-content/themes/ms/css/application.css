@@ -629,7 +629,8 @@ section.our_team{
       background-size: cover;
       -webkit-background-size: cover;
     }
-    .line.second .contacon:first-child:before{
+    .line.second .contacon:first-child:before,
+    .contacon_before.contacon:before{
       content: '';
       display: block;
       position: absolute;
@@ -661,14 +662,26 @@ section.our_team{
 
     letter-spacing: normal;
   }
+    .contacon .contacon_fake{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+
+      background: url('images/contacon_fake.png') no-repeat 0 0;
+    }
+      .contacon:hover .contacon_fake{
+        display: block;
+      }
     .contacon .worker_pre,
     .contacon .worker_post{
       position: absolute;
       left: 0;
       width: 100%;
-      z-index: 2;
+      z-index: 3;
 
-      line-height: 24px;
       text-align: center;
 
       -webkit-transition: all .3s ease-in-out;
@@ -680,6 +693,7 @@ section.our_team{
     }
       .contacon span.name{
         font-size: 16px;
+        line-height: 16px;
         text-transform: inherit;
         color: #fdc75f;
         font-family: benderblack, sans-serif;
@@ -687,25 +701,59 @@ section.our_team{
       .contacon span.position{
         display: block;
         width: 80%;
-        margin: 0 auto;
+        margin: 4px auto 0;
 
         font-size: 14px;
+        line-height: 16px;
         color: #fff;
         text-transform: uppercase;
       }
     .contacon .worker_post{
-      top: 108px;
+      top: 95px;
       opacity: 0;
       visibility: hidden;
 
       font-size: 16px;
+      line-height: 16px;
       color: #fff;
       text-transform: uppercase;
     }
+      .contacon .worker_post span {
+        display: inline-block;
+      }
+      .contacon .worker_post .mail{
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 16px;
+      }
       .contacon .worker_post .number{
         width: 100%;
-        display: block;
+        margin-bottom: 24px;
+
+        font-size: 16px;
+        line-height: 16px;
       }
+      .contacon .worker_post .get_call{
+        display: inline-block;
+        width: 170px;
+        height: 30px;
+        border: 1px solid #ee8c01;
+
+        text-transform: uppercase;
+        color: #ee8c01;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: benderblack, sans-serif;
+        cursor: pointer;
+
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+        .contacon .worker_post .get_call:hover{
+          color: #fff;
+          background: #ee8c01;
+        }
 
     .contacon:hover .worker_pre{
       opacity: 0;
