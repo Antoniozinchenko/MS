@@ -249,12 +249,13 @@ $(document).ready(function() {
             setBigHexagon(newApt);
         });
 
+        $(".get_call").on('click', function() {
+            $('html, body').animate({
+                scrollTop: $("#question-form").offset().top
+            }, 800);
+        });
+
 
     });
 })(window.jQuery);
 
-$(".get_call").on('click', function() {
-    $('html, body').animate({
-        scrollTop: $("#question-form").offset().top
-    }, 800);
-});

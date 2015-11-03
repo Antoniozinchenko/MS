@@ -640,9 +640,9 @@ section.our_team{
       display: block;
       position: absolute;
       top: -10px;
-      left: -15px;
-      width: 110px;
-      height: 51px;
+      left: -43px;
+      width: 130px;
+      height: 61px;
       z-index: 2;
 
       background: url('images/worker_before.png');
