@@ -485,7 +485,7 @@
         <div class="container">
             <div class="wrap-860">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-left">
                         <h2 class="section_title">
                             Залишились<br>
                             запитання?
