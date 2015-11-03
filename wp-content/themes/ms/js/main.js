@@ -207,23 +207,47 @@ $(document).ready(function() {
             baseVal: '',
             tmpHrefObj: {},
             $topImg: $('.slide_image').find('image'),
-            numberApartment: 0,
-            $countApartment: $('.count-apartment')
+            countApartment: document.getElementById('big-hex-count'),
+            titleApartment: document.getElementById('big-hex-title'),
+            linkApartment: document.getElementById('big-hex-link'),
         };
 
-        $('.smalligon').on('click', function(){
-
-           document.querySelector('.smalligon.active').classList.remove('active');
-           this.classList.add('active');
-
-            sots.tmpHrefObj = $(this).find('image').prop('href');
+        function setBigHexagon(smallHexagone){
+            var $tmpHex = $(smallHexagone);
+            sots.tmpHrefObj = $tmpHex.find('image').prop('href');
 
             sots.$topImg.prop('href').animVal = sots.tmpHrefObj.animVal;
             sots.$topImg.prop('href').baseVal = sots.tmpHrefObj.baseVal;
 
-            sots.numberApartment = $(this).data('number');
-            sots.$countApartment.text( sots.numberApartment );
+            sots.countApartment.innerText = $tmpHex.data('number');
+            sots.titleApartment.innerText = $tmpHex.data('title');
+            sots.linkApartment.setAttribute('href', $tmpHex.data('link') );
 
+            smallHexagone.classList.add('active');
+        }
+
+        $('.smalligon').on('click', function(){
+
+            document.querySelector('.smalligon.active').classList.remove('active');
+            
+            setBigHexagon(this);
+        });
+
+        var nextAptBtn = document.getElementById('next-appartmen-btn'),
+            activeApt,
+            newApt,
+            nextNumb; 
+
+        $(nextAptBtn).on('click', function(){
+
+            activeApt = document.querySelector('.smalligon.active');
+
+            nextNumb = $(activeApt).data('next');
+            activeApt.classList.remove('active');
+
+            newApt = document.getElementById('number-apt-' + nextNumb);
+
+            setBigHexagon(newApt);
         });
 
 

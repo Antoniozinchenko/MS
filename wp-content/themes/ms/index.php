@@ -11,7 +11,7 @@
                 <div class="top_slider">
                     <div class="clearfix">
                         <div class="line clearfix first">
-                            <div class="smalligon active" data-number="20" data-namber="1" data-next="2" data-select="active">
+                            <div id="number-apt-1" class="smalligon active" data-number="20" data-title='жк "DIAMANT"' data-link="#1" data-next="2">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -24,9 +24,8 @@
                                         <p class="smalligon_mask">1</p>
                                     </a>
                                 </svg>
-                               
                             </div>
-                            <div class="smalligon" data-number="2" data-namber="2" data-next="3" data-select="">
+                            <div id="number-apt-2" class="smalligon" data-number="2" data-title='жк "DIAMANT 2"' data-link="#2" data-next="3">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -40,7 +39,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="10" data-namber="3" data-next="4" data-select="">
+                            <div id="number-apt-3" class="smalligon" data-number="10" data-title='жк "DIAMANT 3"' data-link="#3" data-next="4">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -56,7 +55,7 @@
                             </div> 
                         </div>
                         <div class="line clearfix second">
-                            <div class="smalligon" data-number="11" data-namber="4" data-next="5" data-select="">
+                            <div id="number-apt-4" class="smalligon" data-number="11" data-title='жк "DIAMANT 4"' data-link="#4" data-next="5">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -70,7 +69,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="15" data-namber="5" data-next="6" data-select="">
+                            <div id="number-apt-5" class="smalligon" data-number="15" data-title='жк "DIAMANT 5"' data-link="#5" data-next="6">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -84,7 +83,7 @@
                                     </a>
                                 </svg>
                             </div>
-                            <div class="smalligon" data-number="27" data-namber="6" data-next="1" data-select="">
+                            <div id="number-apt-6" class="smalligon" data-number="27" data-title='жк "DIAMANT 6"' data-link="#6" data-next="1">
                                 <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                                     <g>
                                         <clipPath id="hex-mask_small">
@@ -106,14 +105,12 @@
                             <span>вебкамера</span>   
                         </a>
                         <div class="content">
-                            <h2 class="title">жк "DIAMANT"</h2>
-                            <span class="count-apartment">20</span>
+                            <h2 id="big-hex-title" class="title">жк "DIAMANT"</h2>
+                            <span id="big-hex-count" class="count-apartment">20</span>
                             <span class="lost-apartment">квартир <br>залишилось</span>
-                            <a class="more" href="javascript:void(0)">
-                                Детальніше
-                            </a>
+                            <a id="big-hex-link" class="more" href="javascript:void(0)">Детальніше</a>
                         </div>
-                    	<i class="fa fa-angle-right next-appartmen"></i>
+                    	<i id="next-appartmen-btn" class="fa fa-angle-right next-appartmen"></i>
                     </div>
                     <div class="slide_image">
                         <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
