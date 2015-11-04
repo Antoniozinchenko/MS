@@ -165,14 +165,14 @@ $(document).ready(function() {
 
             $btnMenu.on('click', function(){
                 //$navMain.slideDown();
-                $('body').css('overflow', 'hidden')
+                $('body').css('overflow', 'hidden').addClass('blur');
                 $('#fixed-menu').fadeIn();
             });
 
             $btnCloseMenu.on('click', function(){
                 //$navMain.slideDown();
                 $('#fixed-menu').fadeOut();
-                $('body').css('overflow', '');
+                $('body').css('overflow', '').removeClass('blur');
             });
 
             var isBtn, btn, inBtn;
