@@ -81,8 +81,8 @@
 
                 <div class="nav-menu-btn"><i></i></div>
                 <div id="fixed-menu">
-                    <div class="wrap-860 box">
-                        <div id="nav-menu-close-btn">X</div>
+                    <div class="clearfix wrap-860 box">
+                        <i id="nav-menu-close-btn" class="fa fa-close"></i>
                         <ul id="nav-menu"></ul>
                         <div id="nav-our-projects">
                             <h3>Наші проекти</h3>

@@ -596,6 +596,9 @@ label {
 #fixed-menu a:hover {
     color: #ffffff;
 }
+#fixed-menu .box {
+    position: relative;
+}
 #fixed-menu .box > * {
     width: 50%;
     display: inline-block;
@@ -604,13 +607,12 @@ label {
     float: left;
 }
 #fixed-menu #nav-menu-close-btn {
-    background: red;
     position: absolute;
-    right: 20%;
-    width: auto;
-    float: none;
-    display: block;
+    left: 100%;
+    top: 65px;
+    margin-left: 85px;
     cursor: pointer;
+    color: #575656;
 }
 .fancybox-nav  {
     display: none;
