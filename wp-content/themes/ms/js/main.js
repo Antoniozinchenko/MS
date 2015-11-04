@@ -114,6 +114,14 @@ $(document).ready(function() {
 (function($){
 
     $(document).ready(function() {
+        var $smallHex = $('#small-top-hexagon .smalligon');
+
+        for(var i=0; i<=$smallHex.length; i++) {
+            j = (i+2) > $smallHex.length ? 1 : (i+2);
+            $($smallHex[i]).data('next', j);
+        }
+
+
 
         /**
          * Create Nav Menu
@@ -148,14 +156,23 @@ $(document).ready(function() {
         if ($mainSection.length > 0) {
 
             var $navMainBox = $('#nav-main-box'),
-                $navMain = $navMainBox.children('ul');
+                $navMain = $('#nav-menu');
 
             createNavMenu();
 
             var $btnMenu = $('#nav-main-box').children('.nav-menu-btn');
+            var $btnCloseMenu = $('#nav-menu-close-btn');
 
             $btnMenu.on('click', function(){
-                $navMain.slideDown();
+                //$navMain.slideDown();
+                $('body').css('overflow', 'hidden')
+                $('#fixed-menu').fadeIn();
+            });
+
+            $btnCloseMenu.on('click', function(){
+                //$navMain.slideDown();
+                $('#fixed-menu').fadeOut();
+                $('body').css('overflow', '');
             });
 
             var isBtn, btn, inBtn;

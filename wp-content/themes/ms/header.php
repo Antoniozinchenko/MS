@@ -21,6 +21,7 @@
     <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <!-- <link rel="stylesheet" href="<?php echo $pwd ?>css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="<?php echo $pwd ?>style.css" rel="stylesheet">
 
@@ -76,13 +77,28 @@
                     <span class="city"> м.Чернівці</span></p>
             </div>
             <div id="nav-main-box" class="pull-right">
-                <ol class="menu-btn">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
+                <?php // wp_nav_menu( array('menu' => 'menu' )); ?>
+
                 <div class="nav-menu-btn"><i></i></div>
-                <ul></ul>
+                <div id="fixed-menu">
+                    <div class="wrap-860 box">
+                        <div id="nav-menu-close-btn">X</div>
+                        <ul id="nav-menu"></ul>
+                        <div id="nav-our-projects">
+                            <h3>Наші проекти</h3>
+                            <ul>
+                                <?php
+                                query_posts('cat=7&posts_per_page=6&order=ASC');
+                                while (have_posts()) : the_post();
+                                    ?>
+                                    <li><a href="<?php echo get_the_permalink($post->ID) ?>"><?php the_title(); ?></a></li>
+                                <?
+                                endwhile;
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
