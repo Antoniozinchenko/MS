@@ -272,6 +272,10 @@ $(document).ready(function() {
             }, 800);
         });
 
+        $('.btn_detailed').on('click', function(){
+            $(this).parent().toggleClass('open');
+        });
+
 
     });
 })(window.jQuery);
