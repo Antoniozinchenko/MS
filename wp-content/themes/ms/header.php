@@ -80,26 +80,31 @@
                 <?php // wp_nav_menu( array('menu' => 'menu' )); ?>
 
                 <div class="nav-menu-btn"><i></i></div>
-                <div id="fixed-menu">
-                    <div class="clearfix wrap-860 box">
-                        <i id="nav-menu-close-btn" class="fa fa-close"></i>
-                        <ul id="nav-menu"></ul>
-                        <div id="nav-our-projects">
-                            <h3>Наші проекти</h3>
-                            <ul>
-                                <?php
-                                query_posts('cat=7&posts_per_page=6&order=ASC');
-                                while (have_posts()) : the_post();
-                                    ?>
-                                    <li><a href="<?php echo get_the_permalink($post->ID) ?>"><?php the_title(); ?></a></li>
-                                <?
-                                endwhile;
-                                ?>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
 </header>
+
+<!-- fxd menu -->
+<div id="fixed-menu">
+    <div class="clearfix wrap-860 box">
+        <i id="nav-menu-close-btn" class="fa fa-close"></i>
+        <div class="menus_wrap clearfix">
+            <ul id="nav-menu"></ul>
+            <div id="nav-our-projects">
+                <h3>Наші проекти</h3>
+                <ul>
+                    <?php
+                    query_posts('cat=7&posts_per_page=6&order=ASC');
+                    while (have_posts()) : the_post();
+                        ?>
+                        <li><a href="<?php echo get_the_permalink($post->ID) ?>"><?php the_title(); ?></a></li>
+                    <?
+                    endwhile;
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -35,7 +35,7 @@
       </div> 
     </div>
 </footer>
-<div class="afterfooter">
+<section class="afterfooter">
 	<div class="container">
 		<div class="wrap-1024">
 			<div class="pull-left">
@@ -47,7 +47,7 @@
     	</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <script>
     jQuery(document).ready(function () {
