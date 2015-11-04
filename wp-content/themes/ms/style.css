@@ -189,43 +189,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     border-bottom-color: rgba(255, 255, 255, 0.58);
 }
 
-.read-more-popup {
-    text-decoration: none;
-    font-family: benderblack, sans-serif;
-    color: #ED8C01!important;
-}
-.col-md-6.about-1:before {
-    content: '';
-    display: block;
-    position: absolute;
-    background: url('img/arrow-2.png') no-repeat;
-    background-size: 100% 100%;
-    width: 166px;
-    height: 465px;
-    top: 0;
-    right: calc( 100% - 20px);
-}
-.about-company-pefix {
-    position: relative;
-}
-.about-company-pefix:before {
-    content: '';
-    display: block;
-    position: absolute;
-    background: url('img/arrow-top.png') no-repeat;
-    height: 153px;
-    bottom: calc( 100% - 1px);
-    background-size: 100% 100%;
-    right: 0px;
-    left: 0;
-}
-.about_company .section_title{
-    margin: 64px 0 40px;
-}
-/*.footer_title {
-    color: #BEC2C5;
-}*/
-
 .orange-caption {
     color: #ED8C01;
 }

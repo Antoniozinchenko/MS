@@ -495,27 +495,66 @@ section.preparing{
 }
 
 /* about company */
+.about_company .section_title{
+  margin: 68px 0 40px;
+}
 .about-1, .about-2 {
-    background: #FAF8F9;
-    position: relative;
+  background: #FAF8F9;
+  position: relative;
 }
 .about-1{
-    /*padding: 35px;*/
-    /*line-height: 24px;*/
-    margin-bottom: 95px;
-    height: 360px;
-    padding: 0;
+  margin-bottom: 86px;
+  height: 370px;
+  padding: 0;
+  width: 408px;
+  float: left;
 }
+  .about-1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('images/bef1.png') no-repeat;
+    background-size: 100% 100%;
+    width: 166px;
+    height: 456px;
+    top: 0;
+    left: -146px;
+  }
   .about-1 p,
   .company_describe{
-      display: inline;
-      font-size: 14px;
-      line-height: 21px;
-      color: #72777a;
+    display: inline;
+    font-size: 14px;
+    line-height: 21px;
+    color: #72777a;
   }
+  .about-1 .btn_detailed{
+    font-size: 14px;
+    color: #eb8000;
+    font-family: benderblack, sans-serif;
+    text-decoration: none;
+    
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+  }
+    .about-1 .btn_detailed:hover{
+      color: #f9b341;
+    }
 .about-2{
+  float: left;
+  width: 452px;
   padding-bottom: 55px;
 }
+  .about-2:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('images/graph_top.png') no-repeat 0 0;
+    height: 166px;
+    width: 553px;
+    top: -156px;
+    right: 0px;
+  }
   .about-2 h2{
     color: #72777a;
     font-family: benderblack, sans-serif;
@@ -543,6 +582,21 @@ section.preparing{
   padding: 35px;
   width: 100%;
 }
+  .company_describe:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 360px;
+    top: 0;
+    left: -56px;
+
+    background: url('images/bef2.png') no-repeat 0 0;
+  }
+  .company_describe.open:before{
+    height: 620px;
+    background: url('images/bef3.png') no-repeat 0 0;
+  }
   .company_describe .describe_full {
     display: none;
   }
@@ -552,6 +606,7 @@ section.preparing{
     left: 0;
     z-index: 3;
     background: #faf8f9;
+    height: 620px;
   }
     .company_describe.open .describe_pre{
       display: none;
