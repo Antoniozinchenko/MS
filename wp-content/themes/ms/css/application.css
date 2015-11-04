@@ -308,6 +308,22 @@ header{
 
     background: url('images/pre_slide.png') no-repeat 0 0;
   }
+    .top_slider .remains{
+      width: 154px;
+      height: 81px;
+      position: absolute;
+      z-index: 3;
+      bottom: -55px;
+      right: 30px;
+
+      background: url('images/house_ready.png') no-repeat 0 0;
+
+      -moz-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+      -webkit-transform: rotate(2deg);
+      -o-transform: rotate(2deg); 
+      transform: rotate(2deg);
+    }
     .top_slider .camera {
       display: block;
       position: absolute;
