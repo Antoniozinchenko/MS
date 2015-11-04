@@ -189,20 +189,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     border-bottom-color: rgba(255, 255, 255, 0.58);
 }
 
-.about-1, .about-2 {
-    background: #FAF8F9;
-    position: relative;
-}
-.about-1{
-    padding: 35px;
-    line-height: 24px;
-    margin-bottom: 95px;
-}
-.about-1 p{
-    display: inline;
-    font-size: 14px;
-    color: #72777a;
-}
 .read-more-popup {
     text-decoration: none;
     font-family: benderblack, sans-serif;
