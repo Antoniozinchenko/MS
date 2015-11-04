@@ -9,106 +9,66 @@
                 </h1>
 
                 <div class="top_slider">
-                    <div class="clearfix">
+
+                    <div id="small-top-hexagon" class="clearfix">
+
+
                         <div class="line clearfix first">
-                            <div id="number-apt-1" class="smalligon active" data-number="20" data-title='жк "DIAMANT"' data-link="#1" data-next="2">
-                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <g>
-                                        <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
-                                        </clipPath>
-                                    </g>
-                                    <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
-                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
-                                        <p class="smalligon_mask">1</p>
-                                    </a>
-                                </svg>
-                            </div>
-                            <div id="number-apt-2" class="smalligon" data-number="2" data-title='жк "DIAMANT 2"' data-link="#2" data-next="3">
-                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <g>
-                                        <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
-                                        </clipPath>
-                                    </g>
-                                    <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
-                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/2.jpg" preserveAspectRatio="xMidYMin slice" />
-                                        <p class="smalligon_mask">2</p>
-                                    </a>
-                                </svg>
-                            </div>
-                            <div id="number-apt-3" class="smalligon" data-number="10" data-title='жк "DIAMANT 3"' data-link="#3" data-next="4">
-                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <g>
-                                        <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
-                                        </clipPath>
-                                    </g>
-                                    <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
-                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/3.jpg" preserveAspectRatio="xMidYMin slice" />
-                                        <p class="smalligon_mask">3</p>
-                                    </a>
-                                </svg>
-                            </div> 
+                            <?php
+
+                                $count = 0;
+                                $min_hex_limit = 3;
+                                $min_hex_arg = array(
+                                    'cat' => 7,
+                                    'posts_per_page' => $min_hex_limit,
+                                    'offset'=> 0,
+                                    'order' => 'ASC',
+                                );
+
+                                $big_hex_img;
+                                $big_hex_title;
+                                $big_hex_count_apt;
+                                $big_hex_link;
+
+                                query_posts($min_hex_arg);
+                                while (have_posts()) : the_post();
+                                    $count++;
+
+                                    if( empty($big_hex_img) ) {
+                                        $img_href = wp_get_attachment_image_src(get_post_thumbnail_id(), array(500, 500));
+                                        $big_hex_img = $img_href[0];
+                                    }
+                                    if( empty($big_hex_title) ) $big_hex_title = $post->post_title;
+                                    if( empty($big_hex_count_apt) ) $big_hex_count_apt = types_render_field("left-apartments");
+                                    if( empty($big_hex_link) ) $big_hex_link = get_the_permalink($post->ID);
+
+                                    get_template_part( 'svg', 'hexagon' );
+                                endwhile;
+                            ?>
                         </div>
                         <div class="line clearfix second">
-                            <div id="number-apt-4" class="smalligon" data-number="11" data-title='жк "DIAMANT 4"' data-link="#4" data-next="5">
-                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <g>
-                                        <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
-                                        </clipPath>
-                                    </g>
-                                    <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
-                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/4.jpg" preserveAspectRatio="xMidYMin slice" />
-                                        <p class="smalligon_mask">4</p>
-                                    </a>
-                                </svg>
-                            </div>
-                            <div id="number-apt-5" class="smalligon" data-number="15" data-title='жк "DIAMANT 5"' data-link="#5" data-next="6">
-                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <g>
-                                        <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
-                                        </clipPath>
-                                    </g>
-                                    <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
-                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/5.jpg" preserveAspectRatio="xMidYMin slice" />
-                                        <p class="smalligon_mask">5</p>
-                                    </a>
-                                </svg>
-                            </div>
-                            <div id="number-apt-6" class="smalligon" data-number="27" data-title='жк "DIAMANT 6"' data-link="#6" data-next="1">
-                                <svg class="svg-graphic" width="95" height="96" viewBox="0 0 95 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <g>
-                                        <clipPath id="hex-mask_small">
-                                            <polygon points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" />
-                                        </clipPath>
-                                    </g>
-                                    <a xlink:href="javascript:void(0);">
-                                        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
-                                        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/6.jpg" preserveAspectRatio="xMidYMin slice" />
-                                        <p class="smalligon_mask">6</p>
-                                    </a>
-                                </svg>
-                            </div>
+                            <?php
+                                $min_hex_arg['offset'] += $min_hex_limit;
+
+                                query_posts($min_hex_arg);
+                                while (have_posts()) : the_post();
+                                    $count++;
+                                    get_template_part( 'svg', 'hexagon' );
+                                endwhile;
+                            ?>
                         </div>
 
                     </div>
+
                     <div class="pre_slide">
                     	<a href="javascript:void(0)" class="camera">
                             <span>вебкамера</span>   
                         </a>
                         <div class="content">
-                            <h2 id="big-hex-title" class="title">жк "DIAMANT"</h2>
-                            <span id="big-hex-count" class="count-apartment">20</span>
+                            <h2 id="big-hex-title" class="title"><?php echo $big_hex_title; ?></h2>
+                            <span id="big-hex-count" class="count-apartment"><?php echo $big_hex_count_apt; ?></span>
                             <span class="lost-apartment">квартир <br>залишилось</span>
-                            <a id="big-hex-link" class="more" href="javascript:void(0)">Детальніше</a>
+                            <a id="big-hex-link" class="more" href="<?php echo $big_hex_link; ?>">Детальніше</a>
                         </div>
                     	<i id="next-appartmen-btn" class="fa fa-angle-right next-appartmen"></i>
                     </div>
@@ -122,7 +82,7 @@
 
                             <a xlink:href="javascript:void(0);">
                                 <polygon fill="#fff" points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" transform="translate(1, 1)" />
-                                <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="<?php echo $pwd; ?>img/sots/1.jpg" preserveAspectRatio="xMidYMin slice" />
+                                <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="<?php echo $big_hex_img; ?>" preserveAspectRatio="xMidYMin slice" />
                             </a>
                         </svg>
                     </div>
@@ -256,6 +216,7 @@
                             </div>
                         <?
                         endwhile;
+                        wp_reset_postdata();
                         ?>
 
                     </div>
@@ -413,6 +374,7 @@
                     </div>
                 <?
                 endwhile;
+                wp_reset_postdata();
                 ?>
             </div>
 
@@ -466,6 +428,8 @@
                     </div>
                 <?
                 endwhile;
+
+                wp_reset_postdata();
                 ?>
             </div>
 
@@ -542,7 +506,7 @@
                                     }
                                     ?>
                                     <div class="hexagon-wrap hexagon-right">
-                                        <div class="hexagon-left" style="background: url('<?php echo $img_url[0]; ?>') 50% 0 no-repeat;height:100%;">
+                                        <div class="hexagon-left" style="background: url('<?php echo $img_url[0]; ?>') 50% 0 no-repeat;height:100%;background-size:contain;">
                                             <?php /* ?><img src="<?php echo $img_url[0]; ?>" alt=""><?php //*/ ?>
                                         </div>
                                     </div>
