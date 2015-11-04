@@ -179,7 +179,7 @@
                 </h2>
 
                 <div class="about-company-pefix">
-                    <div class="col-md-6 about-1">
+                    <div class="about-1">
 
                         <!-- test -->
                         <div class="company_describe">
@@ -218,14 +218,14 @@
                         <div style="display:none">
                             <div id="full-content-<?php the_ID();?>"><?php // the_content(); ?></div>
                         </div>
-                        <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> Більше</a>
+                        <!-- <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> Більше</a> -->
                     </div>
                     <?
                     endwhile;
                     // reset post data (important!)
                     wp_reset_postdata();
                     ?>
-                    <div class="col-md-6 about-2">
+                    <div class="about-2">
                         <h2>Наші останні нагороди:</h2>
 
 
