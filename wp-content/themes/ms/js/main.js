@@ -202,6 +202,7 @@ $(document).ready(function() {
             countApartment: document.getElementById('big-hex-count'),
             titleApartment: document.getElementById('big-hex-title'),
             linkApartment: document.getElementById('big-hex-link'),
+            remains: document.getElementById('remains'),
         };
 
         function setBigHexagon(smallHexagone){
@@ -210,6 +211,8 @@ $(document).ready(function() {
 
             sots.$topImg.prop('href').animVal = sots.tmpHrefObj.animVal;
             sots.$topImg.prop('href').baseVal = sots.tmpHrefObj.baseVal;
+
+            $tmpHex.data('number') == 0 ? sots.remains.classList.remove('hide') : sots.remains.classList.add('hide');
 
             sots.countApartment.innerText = $tmpHex.data('number');
             sots.titleApartment.innerText = $tmpHex.data('title');

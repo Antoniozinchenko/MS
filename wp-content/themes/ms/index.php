@@ -70,7 +70,7 @@
                             <span class="lost-apartment">квартир <br>залишилось</span>
                             <a id="big-hex-link" class="more" href="<?php echo $big_hex_link; ?>">Детальніше</a>
                         </div>
-                        <div class="remains"></div>
+                        <div id="remains" class="remains <?php echo $big_hex_count_apt != 0 ? 'hide' : '' ?>"></div>
                     	<i id="next-appartmen-btn" class="fa fa-angle-right next-appartmen"></i>
                     </div>
                     <div class="slide_image">
