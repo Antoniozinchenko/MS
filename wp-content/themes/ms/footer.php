@@ -49,38 +49,5 @@
 	</div>
 </section>
 
-<script>
-    jQuery(document).ready(function () {
-
-        function initialize() {
-            var mapCanvas = document.getElementById('map');
-            var mapOptions = {
-                center: new google.maps.LatLng(49.843374988638054, 24.03210762888193),
-                zoom: 15,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-
-				disableDefaultUI: false,
-				scrollwheel: false,
-				draggable: true
-            };
-
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-
-            var image = '<?php echo pwd(); ?>img/markerTop.png';
-            var marker = new google.maps.Marker({
-                position: mapOptions.center,
-                map: map,
-                icon: image
-            });
-
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-   
-    });
-
-</script>
-
-
 </body>
 </html>
