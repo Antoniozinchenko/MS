@@ -237,6 +237,11 @@ header{
   width: 520px;
   margin: 170px auto 0;
 }
+@media(max-height: 700px){
+  .menus_wrap{
+    margin: 130px auto 0 !important; 
+  }
+}
 /* left menu*/
 #nav-menu{
   width: 210px;
@@ -260,7 +265,6 @@ header{
   padding-left: 50px;
 }
   #nav-our-projects h3 {
-    /*margin-bottom: 30px;*/
     margin-top: -16px;
 
     font-size: 24px;
@@ -270,7 +274,6 @@ header{
     text-transform: uppercase;
   }
   #nav-our-projects li{
-    /*margin-bottom: 30px;*/
   }
   #nav-our-projects a{
     font-size: 24px;
