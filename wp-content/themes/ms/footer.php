@@ -1,5 +1,13 @@
 <?php wp_footer(); ?>
 
+<?php
+	$contact_page_id = 81;
+
+	$vk = get_metadata('post', $contact_page_id, 'wpcf-vk', true);
+	$facebook = get_metadata('post', $contact_page_id, 'wpcf-facebook', true);
+	$skype = get_metadata('post', $contact_page_id, 'wpcf-skype', true);
+?>
+
 <footer>
     <div class="container">
     	<div class="wrap-860">
@@ -26,9 +34,9 @@
 	      			<h2 class="footer_title">
 	      				ми в соцмережах
 	      			</h2>
-      			<a href="https://vk.com/club97751232"><h3><i class="fa fa-vk"></i> ВКОНТАКТІ</h3></a>
-	            <a href="https://www.facebook.com/ms.budimperial"><h3><i class="fa fa-facebook"></i> FACEBOOK</h3></a>
-	            <a href="skype:ms-bud.com.ua?chat"><h3><i class="fa fa-skype"></i> YOUTUBE</h3></a>
+      			<a href="<?php echo $vk ?>" target="_blank"><h3><i class="fa fa-vk"></i> ВКОНТАКТІ</h3></a>
+	            <a href="<?php echo $facebook ?>" target="_blank"><h3><i class="fa fa-facebook"></i> FACEBOOK</h3></a>
+	            <a href="skype:<?php echo $skype ?>?chat" target="_blank"><h3><i class="fa fa-skype"></i> SKYPE</h3></a>
 	      		</div>
 	        </div>
         </div>

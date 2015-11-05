@@ -96,6 +96,9 @@ body{
   font-family: benderblack, sans-serif;
   text-transform: uppercase;
 }
+  .our_projects h1.section_title {
+    max-width: 400px;
+  }
   h1.section_title{
     font-size: 72px;
     line-height: 76px;
