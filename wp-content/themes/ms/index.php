@@ -578,8 +578,8 @@
                     наша команда
                 </h2>
                 <ul class="tabs pull-right clearfix">
-                    <li class="tab active contact-tab-btn" data-tab="lviv" data-lon="49.843374988638054" data-lat="24.03210762888193" data-icon="<?php echo pwd(); ?>img/markerLviv.png">м. Львів</li>
-                    <li class="tab contact-tab-btn" data-tab="chernivtsi" data-lon="49.843374988638054" data-lat="24.03210762888193" data-icon="<?php echo pwd(); ?>img/markerChernivtsi.png">м. Чернівці</li>
+                    <li class="tab active contact-tab-btn" data-tab="lviv" data-lon="49.8358245" data-lat="24.031111099999976" data-icon="<?php echo pwd(); ?>img/marker-lviv.png">м. Львів</li>
+                    <li class="tab contact-tab-btn" data-tab="chernivtsi" data-lon="48.29240329885312" data-lat="25.93664886429906" data-icon="<?php echo pwd(); ?>img/marker-chernivtsi.png">м. Чернівці</li>
                 </ul>
                 <div class="row">
                 </div>
