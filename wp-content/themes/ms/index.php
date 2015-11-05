@@ -579,8 +579,8 @@
                     наша команда
                 </h2>
                 <ul class="tabs pull-right clearfix">
-                    <li class="tab active contact-tab-btn" data-tab="contacons-lviv">м. Львів</li>
-                    <li class="tab contact-tab-btn" data-tab="contacons-chernivci">м. Чернівці</li>
+                    <li class="tab active contact-tab-btn" data-tab="lviv" data-lon="49.8358245" data-lat="24.031111099999976" data-icon="<?php echo pwd(); ?>img/marker-lviv.png">м. Львів</li>
+                    <li class="tab contact-tab-btn" data-tab="chernivtsi" data-lon="48.29240329885312" data-lat="25.93664886429906" data-icon="<?php echo pwd(); ?>img/marker-chernivtsi.png">м. Чернівці</li>
                 </ul>
                 <div class="row">
                 </div>
@@ -755,7 +755,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contacons contacons-chernivci" style="display:none;">
+                <div class="contacons contacons-chernivtsi" style="display:none;">
                     <div class="line first clearfix">
                         <div class="contacon contacon_before">
                             <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -865,7 +865,7 @@
     </section>
 
     <section class="contacts">
-          <div id="map"></div>
+        <div id="map" class="map"></div>
     </section>
 
 <?php get_footer(); ?>

@@ -161,7 +161,7 @@ $(document).ready(function() {
             createNavMenu();
 
             var $btnMenu = $('#nav-main-box').children('.nav-menu-btn');
-            var $btnCloseMenu = $('#nav-menu-close-btn');
+            var $btnCloseMenu = $('#nav-menu-close-btn, #nav-menu a');
 
             $btnMenu.on('click', function(){
                 //$navMain.slideDown();
@@ -189,30 +189,6 @@ $(document).ready(function() {
             });
         };
 
-
-        /**
-         * Contacts tabs switch
-         */
-
-        var delay = 400,
-            tab;
-
-        $('.contact-tab-btn').on('click', function(){
-
-            if(this.classList.contains('active') ){
-                return false;
-            };
-            tab = $(this).data('tab');
-
-            $('.contact-tab-btn').removeClass('active');
-            this.classList.add('active');
-
-            $('.contacons:not(.'+tab+')').fadeOut(delay, function(){
-
-                $('.'+tab).fadeIn(delay);
-            });
-
-        });
 
         /**
          * Header sots switch
@@ -280,3 +256,79 @@ $(document).ready(function() {
     });
 })(window.jQuery);
 
+
+/**
+ * Contacts tabs switch
+ */
+jQuery(document).ready(function () {
+
+    var delay = 400,
+        tab,
+        mapSettings;
+
+    $('.contact-tab-btn').on('click', function(){
+
+        if(this.classList.contains('active') ){
+            return false;
+        };
+
+        var tabData = $(this).data();
+
+        mapSettings = {
+            mapCanvas: document.getElementById('map'),
+            longitude: tabData.lon,
+            latitude: tabData.lat,
+            image: tabData.icon
+        };
+
+        tab = tabData.tab;
+
+        $('.contact-tab-btn').removeClass('active');
+        this.classList.add('active');
+
+        initialize(mapSettings);
+
+        $('.contacons:not(.contacons-'+tab+')').fadeOut(delay, function(){
+            $('.contacons-'+tab).fadeIn(delay);
+        });
+
+    });
+
+    function initialize(option) {
+        var mapOptions = {
+            center: new google.maps.LatLng(option.longitude, option.latitude),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+            disableDefaultUI: false,
+            scrollwheel: false,
+            draggable: true
+        };
+
+        var map = new google.maps.Map(option.mapCanvas, mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: mapOptions.center,
+            map: map,
+            icon: option.image
+        });
+
+    }
+
+    function setMap(){
+
+        var activeTabData = $('.contact-tab-btn.active').data();
+
+        var lvivOption = {
+            mapCanvas: document.getElementById('map'),
+            longitude: activeTabData.lon,
+            latitude: activeTabData.lat,
+            image: activeTabData.icon
+        };
+
+        initialize(lvivOption);
+    };
+
+    google.maps.event.addDomListener(window, 'load', setMap);
+
+});
