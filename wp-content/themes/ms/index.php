@@ -858,6 +858,21 @@
                             <div class="contacon_fake"></div>
                         </div>
                     </div>
+                    <div class="line second clearfix">
+                        <div class="contacon contacon_pre_fake">
+                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                <g>
+                                    <clipPath id="hex-mask_worker">
+                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
+                                    </clipPath>
+                                </g>
+                                <a xlink:href="javascript:void(0);">
+                                    <polygon fill="transparent" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
+                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="" preserveAspectRatio="xMidYMin slice" />
+                                </a>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
