@@ -877,6 +877,10 @@ section.our_team{
       background-size: cover;
       -webkit-background-size: cover;
     }
+    /* add class .contacon_pre_fake for fake contacon in 2nd line*/
+    .contacon.contacon_pre_fake:before{
+      display: none !important;
+    }
     section.our_team .line.second{
       margin-top: -71px;
     }
