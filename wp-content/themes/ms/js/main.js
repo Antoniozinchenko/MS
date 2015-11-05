@@ -203,6 +203,7 @@ $(document).ready(function() {
             titleApartment: document.getElementById('big-hex-title'),
             linkApartment: document.getElementById('big-hex-link'),
             remains: document.getElementById('remains'),
+            textApartment: document.getElementById('lost-apartment-text')
         };
 
         function setBigHexagon(smallHexagone){
@@ -213,6 +214,11 @@ $(document).ready(function() {
             sots.$topImg.prop('href').baseVal = sots.tmpHrefObj.baseVal;
 
             $tmpHex.data('number') == 0 ? sots.remains.classList.remove('hide') : sots.remains.classList.add('hide');
+
+            // var target = $tmpHex.data('link') == 'javascript:void(0)' ? '_self' : '_blank';
+            // sots.linkApartment.setAttribute('target', target );
+
+            sots.textApartment.innerText = $tmpHex.data('sold-text');
 
             sots.countApartment.innerText = $tmpHex.data('number');
             sots.titleApartment.innerText = $tmpHex.data('title');
