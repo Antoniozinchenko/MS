@@ -25,7 +25,7 @@ $page = get_page(4);
                         <div class="describe_full">   
                             <?php echo $page->post_content ?>
                         </div>   
-                        <a href="javascript:void(0);" class="btn_detailed">Більше </a>
+                        <a href="javascript:void(0);" class="btn_detailed" data-more="Більше" data-less="Менше">Більше</a>
                     </div>
                     
                 </div>

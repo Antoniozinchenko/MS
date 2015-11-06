@@ -257,10 +257,29 @@ $(document).ready(function() {
             }, 800);
         });
 
+        function changeText(self) {
+            var data = $(self).data();
+            self.innerText = self.innerText == data.more ? data.less : data.more;
+        }
+
         $('.btn_detailed').on('click', function(){
+
             $(this).parent().toggleClass('open');
+			changeText(this);
         });
 
+        $('.read-more-btn').on('click', function(){
+
+            var box = $(this).parents('.center-content')[0];
+            box.classList.contains('open') ? box.classList.remove('open') : box.classList.add('open');
+
+			changeText(this);
+        });
+
+        $('.feedback').find('.slick-arrow').on('click', function(){
+
+            $('.feedback').find('.center-content.open').removeClass('open');
+        });
 
     });
 })(window.jQuery);

@@ -63,16 +63,22 @@
                 <img src="<?php echo $pwd ?>img/logo.png" alt="">
             </a>
 
+            <?php 
+                $contact_page_id = 81;
+                $tel_lviv = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-lviv', true);
+                $tel_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-chernivtsi', true);
+            ?>
+
             <div class="contacts pull-left">
                 <p>
                     <span class="number">
-                        (095) 231 11 00
+                        <?php echo $tel_lviv; ?>
                     </span>
                     <span class="city"> м.Львів</span></p>
 
                 <p>
                     <span class="number">
-                        (098) 231 77 00
+                        <?php echo $tel_chernivtsi; ?>
                     </span>    
                     <span class="city"> м.Чернівці</span></p>
             </div>
