@@ -235,7 +235,12 @@ header{
     }
 .menus_wrap{
   width: 520px;
-  margin: 230px auto 0;
+  margin: 170px auto 0;
+}
+@media(max-height: 700px){
+  .menus_wrap{
+    margin: 130px auto 0 !important; 
+  }
 }
 /* left menu*/
 #nav-menu{
@@ -243,13 +248,16 @@ header{
   float: left;
   border-right: 1px solid #383d40;
 }
-  #nav-menu li{
-    margin-bottom: 35px;
+  #nav-menu li:first-child a{
+    margin-top: -15px;
   }
   #nav-menu a{
     font-family: benderblack, sans-serif;
     text-transform: uppercase;
     font-size: 18px;
+    line-height: 48px;
+
+    display: inline-block;
   }
 /* right side */
 #nav-our-projects{
@@ -257,21 +265,22 @@ header{
   padding-left: 50px;
 }
   #nav-our-projects h3 {
-    margin-bottom: 30px;
+    margin-top: -16px;
 
     font-size: 24px;
-    line-height: 24px;
+    line-height: 48px;
     color: #676767;
     font-family: benderblack, sans-serif;
     text-transform: uppercase;
   }
   #nav-our-projects li{
-    margin-bottom: 30px;
   }
   #nav-our-projects a{
     font-size: 24px;
-    line-height: 24px;
+    line-height: 48px;
     font-family: bender, sans-serif;
+
+    display: inline-block;
   }
 
 /* our project */
