@@ -6,6 +6,9 @@
 	$vk = get_metadata('post', $contact_page_id, 'wpcf-vk', true);
 	$facebook = get_metadata('post', $contact_page_id, 'wpcf-facebook', true);
 	$skype = get_metadata('post', $contact_page_id, 'wpcf-skype', true);
+
+    $address_lviv = get_metadata('post', $contact_page_id, 'wpcf-address-office-lviv', true);
+    $address_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-address-office-chernivtsi', true);
 ?>
 
 <footer>
@@ -27,8 +30,8 @@
 		      		<h2 class="footer_title">
 								контакти	      			
 		      		</h2>		
-		      		<p><span>М. ЧЕРНІВЦІ</span>ВУЛ. РУСЬКА, 1А</p>
-	        		<p><span>М. ЛЬВІВ </span>М. ЛЬВІВ, ВУЛ. ВОЛОШИНА, 5</p>
+		      		<p><span>М. ЧЕРНІВЦІ</span><?php echo $address_chernivtsi; ?></p>
+	        		<p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p>
 	      		</div>
 	      		<div class="f_socials">
 	      			<h2 class="footer_title">

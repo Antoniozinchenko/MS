@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 <?php $pwd = pwd(); ?>
+<?php
+    $contact_page_id = 81;
+
+    $marker_lviv = get_metadata('post', $contact_page_id, 'wpcf-marker-office-lviv', true);
+    $marker_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-marker-office-chernivtsi', true);
+?>
 
     <?php get_template_part( 'templates/home', 'our-project' ); ?>
 
@@ -303,24 +309,21 @@
                                     }
                                     ?>
                                     <div class="hexagon-wrap hexagon-right">
-                                        <div class="hexagon-left" style="background: url('<?php echo $img_url[0]; ?>') 50% 0 no-repeat;height:100%;background-size:contain;">
+                                        <div class="hexagon-left" style="background: url('<?php echo $img_url[0]; ?>') 50% 0 no-repeat;min-height:100%;background-size:100% auto;">
                                             <?php /* ?><img src="<?php echo $img_url[0]; ?>" alt=""><?php //*/ ?>
                                         </div>
                                     </div>
+                                    <div class="pre-content"></div>
                                     <div class="content-box">
                                         <h4 class><?php the_title(); ?></h4>
                                         <?php
-                                        $position = types_render_field("human-position");
-                                        if( !empty($position) ) {
-                                            echo "<div class='position-humen'>$position</div>";
-                                        }
+                                            $position = types_render_field("human-position");
+                                            if( !empty($position) ) echo "<div class='position-humen'>$position</div>";
                                         ?>
                                         <div class="discription">
-                                            <?php echo get_the_excerpt(); ?>
-                                            <a href="#full-content-<?php the_ID(); ?>" rel= "<?php the_ID(); ?>" class="fancybox read-more-popup"> більше</a>
-                                            <div style="display:none">
-                                                <div id="full-content-<?php the_ID();?>"><?php the_content(); ?></div>
-                                            </div>
+                                            <div class="short-discription"><?php echo get_the_excerpt(); ?></div>
+                                            <div class="full-discription"><?php the_content(); ?></div>
+                                            <a href="javascript:void(0)" class="read-more-btn" data-more="більше" data-less="менше">більше</a>
                                         </div>
                                     </div>
                                 </div>
@@ -341,8 +344,8 @@
                     наша команда
                 </h2>
                 <ul class="tabs pull-right clearfix">
-                    <li class="tab active contact-tab-btn" data-tab="lviv" data-lon="49.8358245" data-lat="24.031111099999976" data-icon="<?php echo pwd(); ?>img/marker-lviv.png">м. Львів</li>
-                    <li class="tab contact-tab-btn" data-tab="chernivtsi" data-lon="48.29240329885312" data-lat="25.93664886429906" data-icon="<?php echo pwd(); ?>img/marker-chernivtsi.png">м. Чернівці</li>
+                    <li class="tab active contact-tab-btn" data-tab="lviv" data-lon="49.8358245" data-lat="24.031111099999976" data-icon="<?php echo $marker_lviv ?>">м. Львів</li>
+                    <li class="tab contact-tab-btn" data-tab="chernivtsi" data-lon="48.29240329885312" data-lat="25.93664886429906" data-icon="<?php echo $marker_chernivtsi ?>">м. Чернівці</li>
                 </ul>
                 <div class="row">
                 </div>

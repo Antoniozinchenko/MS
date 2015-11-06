@@ -404,12 +404,12 @@ header{
     }
     .pre_slide .content{
       margin-top: 224px;
-      margin-left: 70px;
+      margin-left: 65px;
 
       font-family: benderblack, sans-serif;
     }
   .top_slider .title {
-    font-size: 24px;
+    font-size: 23px;
     color: #72777a;
 
     margin-bottom: 12px;
@@ -555,7 +555,8 @@ section.preparing{
     line-height: 21px;
     color: #72777a;
   }
-  .about-1 .btn_detailed{
+  .about-1 .btn_detailed,
+  .read-more-btn{
     font-size: 14px;
     color: #eb8000;
     font-family: benderblack, sans-serif;
@@ -565,7 +566,13 @@ section.preparing{
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
   }
-    .about-1 .btn_detailed:hover{
+  .read-more-btn {
+    display: inline;
+    color: #eb8000!important;
+    outline: none!important;
+  }
+    .about-1 .btn_detailed:hover,
+    .read-more-btn:hover{
       color: #f9b341;
     }
 .about-2{
