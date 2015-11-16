@@ -9,8 +9,8 @@
 
     <?php get_template_part( 'templates/home', 'our-project' ); ?>
 
-    <section class="preparing horizontal_block">
-        <div class="container">
+    <section class="preparing horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/1.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
                     Підготовка до проектування
@@ -29,8 +29,8 @@
 
     <?php get_template_part( 'templates/home', 'about-company' ); ?>
 
-    <section class="supervision horizontal_block">
-        <div class="container">
+    <section class="supervision horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/2.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
                     Авторський нагляд
@@ -127,8 +127,8 @@
         </div>
     </section>
 
-    <section class="brick horizontal_block">
-        <div class="container">
+    <section class="brick horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/3.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
                     Цегла (марка М 125)
@@ -184,8 +184,8 @@
         </div>
     </section>
 
-    <section class="windows horizontal_block">
-        <div class="container">
+    <section class="windows horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/4.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="text_white">
                     Вікна від наших постачальників завозяться виключно з <br>
@@ -248,7 +248,7 @@
     </section>
     -->
 
-    <section id="question-form" class="question_form">
+    <section id="question-form" class="question_form parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/5.jpg">
         <div class="container">
             <div class="wrap-860">
                 <div class="row">

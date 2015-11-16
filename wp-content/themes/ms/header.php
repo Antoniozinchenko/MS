@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" type="image/png" href="<?php echo $pwd ?>img/favicon.png"/>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +38,7 @@
     <script src="<?php echo $pwd ?>js/jquery.simplemodal.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <script src="<?php echo $pwd ?>js/parallax.min.js"></script>
 
 
 

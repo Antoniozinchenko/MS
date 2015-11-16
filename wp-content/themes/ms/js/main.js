@@ -114,6 +114,13 @@ $(document).ready(function() {
 (function($){
 
     $(document).ready(function() {
+
+        // CLOSE PROM POPUP BUTTON
+        $('.close-promo-btn').on('click', function(){
+            $(this).parent().fadeOut(500);
+        });
+        // END CLOSE PROM POPUP BUTTON
+
         var $smallHex = $('#small-top-hexagon .smalligon');
 
         for(var i=0; i<=$smallHex.length; i++) {
@@ -358,5 +365,31 @@ jQuery(document).ready(function () {
     };
 
     google.maps.event.addDomListener(window, 'load', setMap);
+
+    /**
+     * bicycle=((
+     */
+    //var ad = new Image();
+    //ad.src = srcImg;
+    //ad.className = 'pop_ad';
+    function show_ad(){
+        $('body').addClass('blur').css('overflow','hidden');
+       $('#promo-popup').fadeIn(300);
+    }
+    var slideBlock1 = $('.slick-slide[data-slick-index=0]').first().addClass('hover-bicycle').children();
+    $('.hover-bicycle, #modal-promo-link').on('click',function(e){
+        e.preventDefault();
+        show_ad();
+    });
+    var scripts= document.getElementsByTagName('script');
+    var path= scripts[5].src.split('?')[0];      // remove any ?query
+    var mydir= path.split('/').slice(0, -1).join('/')+'/';
+    var srcImg = mydir+'../img/News_2.png';
+    slideBlock1[1].src = srcImg;
+    slideBlock1[1].className = 'bicycle';
+    slideBlock1[2].style.display = 'none';
+    /**
+     * end bicycle
+     */
 
 });

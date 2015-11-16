@@ -52,8 +52,9 @@ $page = get_page($page_id);
                                 if( empty($big_hex_count_text) ) $big_hex_count_text = types_render_field("left-sold-apartment");
                                 
                                 if( empty($big_hex_link) ) {
-                                    $site_address = get_the_permalink($post->ID);
-                                    $big_hex_link = empty($site_address) ? 'javascript:void(0)' : $site_address;
+                                    //$site_address = get_the_permalink($post->ID);
+                                    $site_address = get_metadata('post', $post->ID, 'wpcf-web-site-address', true);
+                                    $big_hex_link = empty($site_address)  ? 'javascript:void(0)' : $site_address;
                                 }
   
                                 get_template_part( 'templates/svg', 'hexagon' );

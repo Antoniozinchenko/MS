@@ -11,6 +11,59 @@
     $address_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-address-office-chernivtsi', true);
 ?>
 
+
+
+<!-- MODAL PROMO POPUP -->
+<div class="modal-promo">
+	<div class="close-promo-btn">
+		<i class="fa fa-times"></i>
+	</div>
+	<div class="modal-promo-img-container">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img_promo_popup.jpg">
+	</div>
+	<div class="modal-promo-content">
+		<h3>Шалена п’ятниця</h3>
+		<h4>знижки на квартири до 120.000 грн.</h4>
+		<p>період дії акції до 13.11.2015</p>
+		<hr>
+		<a href="#" id="modal-promo-link">детальніше</a>
+	</div>
+</div>
+
+
+<!-- fxd menu -->
+<div id="promo-popup">
+    <div class="clearfix wrap-860 box">
+        <i id="promo-popup-close-btn" class="fa fa-close"></i>
+        <div id="our-promo">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/News_2.png">
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+	(function() {
+		$(document).ready(function(){
+			// $('#modal-promo-link').on('click', function(e){
+			// 	e.preventDefault();
+			// 	$('body').animate({
+	  //                   scrollTop: $(".news#custome-nav-title-id-3").offset().top
+	  //               }, 2000);
+			// });
+
+			$('#promo-popup-close-btn').on('click', function(){
+				$('#promo-popup').fadeOut(500);
+				$('body').removeClass('blur');
+				$('body').removeAttr('style');
+			});
+		});
+	})(window.jQuery)
+</script>
+
+<!-- END MODAL PROMO POPUP -->
+
+
 <footer>
     <div class="container">
     	<div class="wrap-860">

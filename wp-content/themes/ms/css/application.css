@@ -194,7 +194,7 @@ header{
 #nav-main-box {
   position: relative;
 }
-#fixed-menu {
+#fixed-menu, #promo-popup {
   display: none;
   position: fixed;
   top: 0;
@@ -204,19 +204,19 @@ header{
   background: rgba(0, 0, 0, 0.8);
   z-index: 199;
 }
-  #fixed-menu a{
+  #fixed-menu a, #promo-popup a{
     -webkit-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
     color: #ee8c01;
   }
-    #fixed-menu a:hover{
+    #fixed-menu a:hover, #promo-popup a:hover{
       color: #fff;
     }
-  #fixed-menu .box {
+  #fixed-menu .box, #promo-popup .box {
     position: relative;
   }
-  #fixed-menu #nav-menu-close-btn {
+  #fixed-menu #nav-menu-close-btn, #promo-popup #promo-popup-close-btn{
     position: absolute;
     right: -85px;
     top: 68px;
@@ -230,16 +230,17 @@ header{
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
   }
-    #fixed-menu #nav-menu-close-btn:hover{
+    #fixed-menu #nav-menu-close-btn:hover, #promo-popup #promo-popup-close-btn:hover{
       color: #b5b4b2;
     }
 .menus_wrap{
+  display: flex;
   width: 520px;
   margin: 170px auto 0;
 }
 @media(max-height: 700px){
   .menus_wrap{
-    margin: 130px auto 0 !important; 
+    margin: 130px auto 0 !important;
   }
 }
 /* left menu*/
@@ -987,7 +988,7 @@ section.our_team{
       }
       .contacon .worker_post .number{
         width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 19px;
 
         font-size: 16px;
         line-height: 16px;
@@ -1157,6 +1158,148 @@ footer{
     .afterfooter .happy:hover{
       color: #ED8C01;
     }
+
+
+  /*PROMO POPUP*/
+
+.modal-promo {
+  position: fixed;
+  z-index: 198;
+  background: #FAF8F9;
+  bottom: 75px;
+  max-height: 145px;
+}
+
+
+.modal-promo:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+
+  border-left: 0px solid transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 30px solid #E5E3E4;
+  right: 0;
+  top: -30px;
+  z-index: 1;
+}
+
+.modal-promo:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+
+  border-top: 15px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 50px solid #FAF8F9;
+  top: -45px;
+  right: 15px;
+  z-index: 0;
+}
+
+
+
+.modal-promo hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.close-promo-btn {
+  color: #C6C6C6;
+  float: right;
+  font-size: 16px;
+  padding: 7px;
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+.close-promo-btn:hover {
+  color: #a9a9a9;
+  transition: color 1s ease-out;
+}
+
+.modal-promo-img-container {
+  float: left;
+}
+
+.modal-promo-content {
+  padding: 15px 5px 9px 20px;
+  float: left;
+}
+
+.modal-promo-content > h3, .modal-promo-content > h4 {
+  text-transform: uppercase;
+  color: #72777A;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.modal-promo-content > h4 {
+  text-transform: lowercase;
+}
+
+.modal-promo-content > p {
+  color: #CACACA;
+  margin: 5px 0 15px 0;
+  font-size: 15px;
+}
+
+.modal-promo-content > a {
+  transition: color 0.5s ease-in;
+  color: #EB8000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.modal-promo-content > a:hover {
+  transition: color 1s ease-out;
+  color: #EFA568;
+}
+  /*END PROMO POPUP*/
+
+/*bicycle*/
+.bicycle{
+  -ms-transform: scale(2.2); /* IE 9 */
+  -webkit-transform: scale(2.2); /* Safari */
+  transform: scale(2.2);
+  position: relative;
+  top:-38px;
+  left: 7px;
+  z-index: 1;
+}
+.bicycle{
+  -ms-transform: scale(2.2); /* IE 9 */
+  -webkit-transform: scale(2.2); /* Safari */
+  transform: scale(2.2);
+  position: relative;
+  top:-38px;
+  left: 7px;
+  z-index: 1;
+  opacity: 0.8;
+}
+.hover-bicycle:hover .bicycle{
+  opacity: 1;
+
+}
+#our-promo {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+#our-promo > img {
+  width: 100%;
+  height: auto;
+}
+/*bicycle end*/
  
 
 
