@@ -12,7 +12,7 @@
 	}
 
 	$sold_text = get_metadata('post', $post->ID, 'wpcf-left-sold-apartment', true);
-	$sold_text = $sold_text == 1 ? 'продано' : 'залишилось';
+	//$sold_text = $sold_text == 1 ? 'продано' : 'залишилось';
 ?>
 
 <?php echo "<div id='number-apt-$count' class='smalligon $is_active' data-number='$left_apt' data-title='$post_title' data-link='$site_address' data-sold-text='$sold_text' data-next=''>" ?>
@@ -26,6 +26,7 @@
 	        <polygon fill="#fff" points="47,0 0,27 0,70 47,96 95,70 95,27 47,0" transform="" />
 	        <image clip-path="url(#hex-mask_small)" height="100%" width="100%" xlink:href="<?php echo $img_href[0]; ?>" preserveAspectRatio="xMidYMin slice" />
 	        <p class="smalligon_mask"><?php echo $count ?></p>
+            <span class="hint"><?php echo $post_title ?></span>
 	    </a>
 	</svg>
 

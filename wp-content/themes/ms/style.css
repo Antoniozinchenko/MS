@@ -1,5 +1,5 @@
 /*
-Theme Name: ms02
+Theme Name: ms-bud
 */
 
 .hexagon {
@@ -55,7 +55,8 @@ Theme Name: ms02
 
 .hexagon-news .slick-slide .title p {
     color: #ee8c01;
-    margin: .4em 0 0;
+    margin: 0;
+    padding: .4em 0 0;
     font-weight: normal;
 }
 
@@ -235,10 +236,10 @@ Theme Name: ms02
     color: #999999;
 }
 .slider-arrow-left {
-    left: 90px;
+    left: -70px;
 }
 .slider-arrow-right {
-    right: 90px;
+    right: -70px;
 }
 .feedback-arrow-left.slider-arrow-left {
     left: -26px;
@@ -560,6 +561,9 @@ label {
     max-width: 1024px;
     margin: 0 auto;
 }
+.display-flex {
+    display: flex;
+}
 
 .wpcf7-form .wpcf7-response-output {
     margin: -10px 0 0;
@@ -585,4 +589,59 @@ span.wpcf7-form-control-wrap {
 .parallax-window {
     min-height: 400px;
     background: transparent!important;
+}
+
+#back-top {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 90px;
+    height: 22px;
+    width: 60px;
+    cursor: pointer;
+    background: #c6c6c6 url('css/images/back-top.png') no-repeat 50% 0;
+}
+#back-top:hover {
+    height: 32px;
+    background-color: #ee8c01;
+}
+#back-top:before {
+    border-right: 16px solid #c6c6c6;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    content: "";
+    color: #FFFFFF;
+    height: 0;
+    left: 22px;
+    bottom: 0;
+    position: absolute;
+    width: 0;
+    
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+#back-top:hover:before {
+    border-right-color: #ee8c01;
+    bottom: 10px;
+}
+#back-top,
+#back-top:before {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+#back-top > i {
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: -8px;
+}
+
+#question-form .consultant {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
 }

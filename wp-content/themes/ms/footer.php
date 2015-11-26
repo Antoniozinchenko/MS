@@ -1,6 +1,7 @@
 <?php wp_footer(); ?>
 
 <?php
+	$pwd = pwd();
 	$contact_page_id = 81;
 
 	$vk = get_metadata('post', $contact_page_id, 'wpcf-vk', true);
@@ -12,7 +13,51 @@
 ?>
 
 
+<!-- fxd menu -->
+<div id="popup-box">
+    <div class="clearfix wrap-860 box">
+        <i id="popup-box-close-btn" class="fa fa-close"></i>
+        <ul id="pop-up-list">
+        <?php
+            $min_hex_arg = array(
+                'cat' => 7,
+                'posts_per_page' => 6,
+                'offset'=> 0,
+                'order' => 'ASC',
+            );
 
+            query_posts($min_hex_arg);
+            while (have_posts()) : the_post();
+            	
+            	$id = $post->ID;
+
+				$camera = get_metadata('post', $id, 'wpcf-online-camera', true);
+
+				if ( !empty($camera) ) {
+
+	            	$title = $post->post_title;
+					$build_address = get_metadata('post', $id, 'wpcf-building-address', true);
+	            	
+	            	$li = "<li id='modal-camera-$id' class='modal-block hide'>";
+						$li .= "<h2 class='title'>$title хід будівництва</h2>";
+						$li .= "<p class='address'>$build_address</p>";
+
+						$li .= "<video id='my-video-$id' class='video-js vjs-default-skin' controls preload='auto' width='648' height='365' data-setup='{}'>";
+			        		$li .= "<source src='$camera' type='rtmp/mp4'>";
+			    		$li .= "</video>";
+
+					$li .= '<li>';
+
+					echo $li;
+				}
+
+            endwhile;
+        ?>
+        </ul>
+    </div>
+</div>
+
+<?php /* ?>
 <!-- MODAL PROMO POPUP -->
 <div class="modal-promo">
 	<div class="close-promo-btn">
@@ -45,22 +90,17 @@
 <script type="text/javascript">
 	(function() {
 		$(document).ready(function(){
-			// $('#modal-promo-link').on('click', function(e){
-			// 	e.preventDefault();
-			// 	$('body').animate({
-	  //                   scrollTop: $(".news#custome-nav-title-id-3").offset().top
-	  //               }, 2000);
-			// });
 
 			$('#promo-popup-close-btn').on('click', function(){
 				$('#promo-popup').fadeOut(500);
 				$('body').removeClass('blur');
 				$('body').removeAttr('style');
 			});
+
 		});
 	})(window.jQuery)
 </script>
-
+<?php //*/ ?>
 <!-- END MODAL PROMO POPUP -->
 
 
@@ -99,6 +139,7 @@
       </div> 
     </div>
 </footer>
+
 <section class="afterfooter">
 	<div class="container">
 		<div class="wrap-1024">
@@ -112,6 +153,10 @@
 		</div>
 	</div>
 </section>
+
+<div id="back-top"></div>
+
+<script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
 
 </body>
 </html>
