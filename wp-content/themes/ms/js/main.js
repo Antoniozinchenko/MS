@@ -1,127 +1,267 @@
-jQuery(document).ready(function () {
+(function($){
 
-    jQuery('#carousel-news').slick({
-        infinite: true,
-        speed: 300,
-        prevArrow: '.news-arrow-left',
-        nextArrow: '.news-arrow-right',
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true
+    $(document).ready(function () {
+
+        var respArgs = [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+            ];
+
+        $('#carousel-news').slick({
+            prevArrow: '.news-arrow-left',
+            nextArrow: '.news-arrow-right',
+            
+            infinite: false,
+            speed: 300,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: respArgs
+        });
+
+        $('#carousel-articles').slick({
+            prevArrow: '.articles-arrow-left',
+            nextArrow: '.articles-arrow-right',
+            
+            infinite: false,
+            speed: 300,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: respArgs
+        });
+
+        $('#carousel-feedback').slick({
+            prevArrow: '.feedback-arrow-left',
+            nextArrow: '.feedback-arrow-right',
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: false,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            ]
+        });
+    });
+})(window.jQuery);
+
+// $(document).ready(function() {
+//     $(".fancybox").fancybox({
+//         'titlePosition' : 'inside',
+//         'transitionIn' : 'none',
+//         'transitionOut' : 'none',
+//         'width': 560,
+//         'showNavArrows': false
+//     });
+// });
+
+(function($){
+    "use strict";
+    /*
+    * Pop Up Constructor
+    */
+
+    $(document).ready(function() {
+
+        var popupBox = document.getElementById('popup-box'),
+            $popupBox = $(popupBox),
+
+            closeBtn = document.getElementById('popup-box-close-btn'),
+
+            list = document.getElementById('pop-up-list'),
+            $list = $(list);
+
+        $(closeBtn).on('click', function(){
+            $popupBox.fadeOut(500);
+            document.body.classList.remove('blur');
+            document.body.style.overflow = '';
+            $list.children().addClass('hide');
+        });
+        
+        $('.modal-pop-up').on('click', function(e){
+            e.preventDefault();
+            showPopUp(e.target, $(this).data() );
+        });
+
+        function showPopUp(target, data){
+            document.body.classList.add('blur');
+            document.body.style.overflow = 'hidden';
+            $popupBox.fadeIn(300);
+
+            var tmpTarget = target;
+            var tmpData = data;
+
+
+            if( target.classList.contains('camera') ) {
+
+                var modalID = 'modal-camera-' + data.modal;
+                var el = document.getElementById(modalID);
+
+                // console.log( 'modalID = ' + modalID );
+                // console.log( 'el = ' + el );
+                el.classList.remove('hide');
+
+                return false;
+
+                // if(!el) {
+                //     var div = document.createElement('div');
+                //     div.id = modalID;
+                //     div.innerHTML = 'Title';
+
+                //     // var video = document.createElement('video');
+                //     // video.id = 'online-video-' + data.modal;
+                //     // video.className = 'video-js vjs-default-skin';
+                //     // video.controls = 'controls';
+                //     // video.preload = 'auto';
+                //     // video.width = '640';
+                //     // video.height = '268';
+
+                //     // var source = document.createElement('source');
+                //     // source.src = 'rtmp://193.108.170.185:1935/camera3/stream';
+                //     // source.type = 'rtmp/mp4';
+
+                //     // video.appendChild(source);
+
+                //     var video = '<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268" data-setup="{}">'+
+                //         '<source src="rtmp://193.108.170.185:1935/camera3/stream" type="rtmp/mp4">'+
+                //     '</video>';
+
+
+                //     var li = document.createElement('li');
+                //     li.appendChild(div);
+                //     $(li).append( video );
+                //     // $(video).data('setup', '{}');
+
+                //     list.appendChild(li);
+                // } else {
+
+                // }
+                //console.log( 'el = ' + el.length );
             }
-        ]
-    });
 
-    jQuery('#carousel-articles').slick({
-        infinite: true,
-        speed: 300,
-        prevArrow: '.articles-arrow-left',
-        nextArrow: '.articles-arrow-right',
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            if ( bildModal('article', tmpTarget, tmpData) === 'done') {
+                return false;
             }
-        ]
-    });
 
-    jQuery('#carousel-feedback').slick({
-        infinite: true,
-        speed: 300,
-        prevArrow: '.feedback-arrow-left',
-        nextArrow: '.feedback-arrow-right',
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            if ( bildModal('news', tmpTarget, tmpData) === 'done') {
+                return false;
             }
-        ]
-    });
-});
+        }
 
-$(document).ready(function() {
-    $(".fancybox").fancybox({
-        'titlePosition' : 'inside',
-        'transitionIn' : 'none',
-        'transitionOut' : 'none',
-        'width': 560,
-        'showNavArrows': false
+        function bildModal(element, targetDom, dataDom){
+
+            if( $(targetDom).parents('.modal-' + element) ) {
+                console.dir($(targetDom).parents('.modal-' + element));
+
+                var modalID = 'modal-' + element + '-' + dataDom.modal;
+                var el = document.getElementById(modalID);
+
+                console.log( 'modal = ' + element );
+                console.log( dataDom );
+                console.log( 'modalID = ' + modalID );
+                
+                if(el) {
+                    el.classList.remove('hide');
+                } else {
+                    var $targetDom2 = $(targetDom).parents('.modal-' + element);
+                    console.dir($targetDom2);
+
+                    console.log( 'not el');
+                    var h2 = document.createElement('h2');
+                    h2.id = modalID;
+                    h2.innerHTML = $targetDom2.find('.title h4').text();
+                    h2.className = 'title';
+
+                    var p = document.createElement('p');
+                    p.id = modalID;
+                    p.innerHTML = $targetDom2.find('.title p').text();
+                    p.className = 'address';
+
+                    var img = document.createElement('img');
+                    img.id = modalID;
+                    img.src = $targetDom2.find('img').prop('src');
+
+                    var li = document.createElement('li');
+                    li.id = modalID;
+                    li.className = 'modal-block';
+
+                    li.appendChild(h2);
+                    li.appendChild(p);
+                    li.appendChild(img);
+
+                    list.appendChild(li);
+                }
+
+                return 'done';
+
+            }
+
+            return 'no-done';
+        }
+
     });
-});
+
+})(window.jQuery);
 
 (function($){
 
     $(document).ready(function() {
+
+        // CLOSE PROM POPUP BUTTON
+        $('.close-promo-btn').on('click', function(){
+            $(this).parent().fadeOut(500);
+        });
+        // END CLOSE PROM POPUP BUTTON
+
         var $smallHex = $('#small-top-hexagon .smalligon');
 
-        for(var i=0; i<=$smallHex.length; i++) {
+        for(var i = 0, j ,max = $smallHex.length; i <= max; i++) {
             j = (i+2) > $smallHex.length ? 1 : (i+2);
             $($smallHex[i]).data('next', j);
         }
-
-
 
         /**
          * Create Nav Menu
@@ -132,7 +272,7 @@ $(document).ready(function() {
 
             var listHtml = '';
 
-            for(var i = 0; i < $mainSection.length; i++){
+            for(var i = 1, max = $mainSection.length; i < max; i++){
                 listHtml += _createLiHtml($mainSection[i], i);
             }
 
@@ -199,6 +339,8 @@ $(document).ready(function() {
             baseVal: '',
             tmpHrefObj: {},
             $topImg: $('.slide_image').find('image'),
+            camera: document.getElementById('big-hex-camera'),
+            $camera: $( document.getElementById('big-hex-camera') ),
             countApartment: document.getElementById('big-hex-count'),
             titleApartment: document.getElementById('big-hex-title'),
             linkApartment: document.getElementById('big-hex-link'),
@@ -207,22 +349,29 @@ $(document).ready(function() {
         };
 
         function setBigHexagon(smallHexagone){
-            var $tmpHex = $(smallHexagone);
+            var $tmpHex = $(smallHexagone),
+                tmpHexData = $tmpHex.data();
+
             sots.tmpHrefObj = $tmpHex.find('image').prop('href');
 
             sots.$topImg.prop('href').animVal = sots.tmpHrefObj.animVal;
             sots.$topImg.prop('href').baseVal = sots.tmpHrefObj.baseVal;
 
-            $tmpHex.data('number') == 0 ? sots.remains.classList.remove('hide') : sots.remains.classList.add('hide');
+            tmpHexData.number === 0 ? sots.remains.classList.remove('hide') : sots.remains.classList.add('hide');
+            tmpHexData.link === 'noset' ? sots.linkApartment.classList.add('hide') : sots.linkApartment.classList.remove('hide');
 
-            // var target = $tmpHex.data('link') == 'javascript:void(0)' ? '_self' : '_blank';
-            // sots.linkApartment.setAttribute('target', target );
+            if(tmpHexData.camera === 'noset') {
+                sots.camera.classList.add('hide');
+                sots.$camera.data('modal', '');
+            } else {
+                sots.camera.classList.remove('hide');
+                sots.$camera.data('modal', tmpHexData.id);
+            };
 
-            sots.textApartment.innerText = $tmpHex.data('sold-text');
-
-            sots.countApartment.innerText = $tmpHex.data('number');
-            sots.titleApartment.innerText = $tmpHex.data('title');
-            sots.linkApartment.setAttribute('href', $tmpHex.data('link') );
+            sots.textApartment.innerText = tmpHexData.soldtext;
+            sots.countApartment.innerText = tmpHexData.number;
+            sots.titleApartment.innerText = tmpHexData.title;
+            sots.linkApartment.setAttribute('href', tmpHexData.link );
 
             smallHexagone.classList.add('active');
         }
@@ -290,7 +439,9 @@ $(document).ready(function() {
  */
 jQuery(document).ready(function () {
 
-    var delay = 400,
+    "use strict";
+
+    var DELAY = 400,
         tab,
         mapSettings;
 
@@ -316,8 +467,8 @@ jQuery(document).ready(function () {
 
         initialize(mapSettings);
 
-        $('.contacons:not(.contacons-'+tab+')').fadeOut(delay, function(){
-            $('.contacons-'+tab).fadeIn(delay);
+        $('.contacons:not(.contacons-'+tab+')').fadeOut(DELAY, function(){
+            $('.contacons-'+tab).fadeIn(DELAY);
         });
 
     });
@@ -340,7 +491,6 @@ jQuery(document).ready(function () {
             map: map,
             icon: option.image
         });
-
     }
 
     function setMap(){
@@ -360,3 +510,54 @@ jQuery(document).ready(function () {
     google.maps.event.addDomListener(window, 'load', setMap);
 
 });
+
+(function($){
+    
+    // fade in #back-top
+
+    var backTopBtn = document.getElementById('back-top'),
+        $backTopBtn = $(backTopBtn);
+
+    $backTopBtn.hide(0);
+
+    $(window).scroll(function() {
+        $(this).scrollTop() > 100 ? $backTopBtn.fadeIn(200) : $backTopBtn.fadeOut(200);
+    });
+
+    // scroll body to 0px on click
+    $backTopBtn.on('click', function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+})(window.jQuery);
+
+/*
+jQuery(document).ready(function () {
+
+    // bicycle=((
+    
+    function show_ad(){
+        $('body').addClass('blur').css('overflow','hidden');
+        $('#promo-popup').fadeIn(300);
+    }
+    var slideBlock1 = $('.slick-slide[data-slick-index=0]').first().addClass('hover-bicycle').children();
+    
+    $('.hover-bicycle, #modal-promo-link').on('click',function(e){
+        e.preventDefault();
+        show_ad();
+    });
+
+    var scripts= document.getElementsByTagName('script');
+    var path= scripts[5].src.split('?')[0];      // remove any ?query
+    var mydir= path.split('/').slice(0, -1).join('/')+'/';
+    var srcImg = mydir+'../img/News_2.png';
+    slideBlock1[1].src = srcImg;
+    slideBlock1[1].className = 'bicycle';
+    slideBlock1[2].style.display = 'none';
+    
+    // end bicycle
+    
+});*/

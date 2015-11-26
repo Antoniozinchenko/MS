@@ -1,17 +1,5 @@
 /*
-Theme Name: ms
-Theme URI: https://wordpress.org/themes/twentythirteen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
-Version: 1.6
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, accessibility-ready
-Text Domain: twentythirteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Theme Name: ms-bud
 */
 
 .hexagon {
@@ -67,7 +55,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .hexagon-news .slick-slide .title p {
     color: #ee8c01;
-    margin: .4em 0 0;
+    margin: 0;
+    padding: .4em 0 0;
     font-weight: normal;
 }
 
@@ -247,10 +236,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     color: #999999;
 }
 .slider-arrow-left {
-    left: 90px;
+    left: -70px;
 }
 .slider-arrow-right {
-    right: 90px;
+    right: -70px;
 }
 .feedback-arrow-left.slider-arrow-left {
     left: -26px;
@@ -323,7 +312,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .full-discription {
     display: none;
 }
-.short-discription ,
+.short-discription,
 .open .full-discription {
     display: inline;
 }
@@ -572,6 +561,9 @@ label {
     max-width: 1024px;
     margin: 0 auto;
 }
+.display-flex {
+    display: flex;
+}
 
 .wpcf7-form .wpcf7-response-output {
     margin: -10px 0 0;
@@ -592,4 +584,64 @@ span.wpcf7-form-control-wrap {
 }
 .wpcf7-form-control-wrap + br {
     display: none;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent!important;
+}
+
+#back-top {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 90px;
+    height: 22px;
+    width: 60px;
+    cursor: pointer;
+    background: #c6c6c6 url('css/images/back-top.png') no-repeat 50% 0;
+}
+#back-top:hover {
+    height: 32px;
+    background-color: #ee8c01;
+}
+#back-top:before {
+    border-right: 16px solid #c6c6c6;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    content: "";
+    color: #FFFFFF;
+    height: 0;
+    left: 22px;
+    bottom: 0;
+    position: absolute;
+    width: 0;
+    
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+#back-top:hover:before {
+    border-right-color: #ee8c01;
+    bottom: 10px;
+}
+#back-top,
+#back-top:before {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+#back-top > i {
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: -8px;
+}
+
+#question-form .consultant {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
 }

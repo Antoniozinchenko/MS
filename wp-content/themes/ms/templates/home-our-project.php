@@ -34,11 +34,6 @@ $page = get_page($page_id);
                                 'order' => 'ASC',
                             );
 
-                            // $big_hex_img;
-                            // $big_hex_title;
-                            // $big_hex_count_apt;
-                            // $big_hex_link;
-
                             query_posts($min_hex_arg);
                             while (have_posts()) : the_post();
                                 $count++;
@@ -52,11 +47,22 @@ $page = get_page($page_id);
                                 if( empty($big_hex_count_text) ) $big_hex_count_text = types_render_field("left-sold-apartment");
                                 
                                 if( empty($big_hex_link) ) {
-                                    $site_address = get_the_permalink($post->ID);
-                                    $big_hex_link = empty($site_address) ? 'javascript:void(0)' : $site_address;
+                                    $site_address = get_metadata('post', $post->ID, 'wpcf-web-site-address', true);
+                                    empty($site_address)  ? $big_hex_class = 'hide' : $big_hex_link = $site_address;
+                                }
+
+                                if ( empty($big_hex_camera) ) {
+                                    $camera = get_metadata('post', $post->ID, 'wpcf-online-camera', true);
+
+                                    if( empty($camera) ) {
+                                        $camera_class = 'hide';
+                                        $camera = 'noset';
+                                    } else {
+                                        $big_hex_camera = $camera;
+                                    }
                                 }
   
-                                get_template_part( 'templates/svg', 'hexagon' );
+                                get_template_part('templates/home', 'svg-hexagon');
                             endwhile;
                         ?>
                     </div>
@@ -67,7 +73,7 @@ $page = get_page($page_id);
                             query_posts($min_hex_arg);
                             while (have_posts()) : the_post();
                                 $count++;
-                                get_template_part( 'templates/svg', 'hexagon' );
+                                get_template_part('templates/home', 'svg-hexagon');
                             endwhile;
                         ?>
                     </div>
@@ -75,7 +81,7 @@ $page = get_page($page_id);
                 </div>
 
                 <div class="pre_slide">
-                    <a href="javascript:void(0)" class="camera">
+                    <a id="big-hex-camera" href="javascript:void(0)" data-modal="" class="camera modal-pop-up <?php echo $camera_class ?>">
                         <span>вебкамера</span>   
                     </a>
                     <div class="content">
@@ -85,7 +91,7 @@ $page = get_page($page_id);
                             квартир <br>
                             <span id="lost-apartment-text"><?php echo $big_hex_count_text ?></span>
                         </span>
-                        <a id="big-hex-link" class="more" href="<?php echo $big_hex_link; ?>" target="_blank" >Детальніше</a>
+                        <a id="big-hex-link" class="more <?php echo $big_hex_class ?>" href="<?php echo $big_hex_link ?>" target="_blank" >Детальніше</a>
                     </div>
                     <div id="remains" class="remains <?php echo $big_hex_count_apt != 0 ? 'hide' : '' ?>"></div>
                     <i id="next-appartmen-btn" class="fa fa-angle-right next-appartmen"></i>
@@ -94,68 +100,66 @@ $page = get_page($page_id);
                     <svg class="svg-graphic" width="488" height="497" viewBox="0 0 488 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                         <g>
                             <clipPath id="hex-mask">
-                                <polygon points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" />
+                                <polygon points="244 0 0 139 0 341 244 497 497 341 497 139 244 0" />
                             </clipPath>
                         </g>
 
                         <a xlink:href="javascript:void(0);">
-                            <polygon fill="#fff" points="244 0 0 130 0 350 244 497 497 350 497 130 244 0" transform="translate(1, 1)" />
+                            <polygon fill="#fff" points="244 0 0 139 0 341 244 497 497 341 497 139 244 0" transform="translate(1, 1)" />
                             <image clip-path="url(#hex-mask)" height="100%" width="100%" xlink:href="<?php echo $big_hex_img; ?>" preserveAspectRatio="xMidYMin slice" />
                         </a>
                     </svg>
                 </div>
             </div>
 
-            <div class="project_about">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="ico_wr">
-                            <i class="ico ico_01"></i>
-                        </div>
-                        <div class="number">
-                            <?php echo get_metadata('post', $page_id, 'wpcf-architects-designers', true); ?>
-                        </div>
-                        <div class="text">
-                            архітекторів-
-                            <br> 
-                            проектантів  
-                        </div>
+            <ul class="project_about">
+                <li>
+                    <div class="ico_wr">
+                        <i class="ico ico_01"></i>
                     </div>
-                    <div class="col-md-6">
-                        <div class="ico_wr">
-                            <i class="ico ico_02"></i>
-                        </div>
-                        <div class="number">
-                            <?php echo get_metadata('post', $page_id, 'wpcf-experts', true); ?>
-                        </div>
-                        <div class="text">
-                            фахівців
-                        </div>
+                    <div class="number">
+                        <?php echo get_metadata('post', $page_id, 'wpcf-architects-designers', true); ?>
                     </div>
-                    <div class="col-md-6">
-                        <div class="ico_wr">
-                            <i class="ico ico_03"></i>
-                        </div>
-                        <div class="number">
-                            <?php echo get_metadata('post', $page_id, 'wpcf-hours-planning', true); ?>
-                        </div>
-                        <div class="text">
-                            годин <br> проектування
-                        </div>
+                    <div class="text">
+                        архітекторів-
+                        <br> 
+                        проектантів  
                     </div>
-                    <div class="col-md-6">
-                        <div class="ico_wr">
-                            <i class="ico ico_04"></i>
-                        </div>
-                        <div class="number">
-                            <?php echo get_metadata('post', $page_id, 'wpcf-happily-families', true); ?>
-                        </div>
-                        <div class="text">
-                            щасливих <br> сімей
-                        </div>
+                </li>
+                <li>
+                    <div class="ico_wr">
+                        <i class="ico ico_02"></i>
                     </div>
-                </div>
-            </div>
+                    <div class="number">
+                        <?php echo get_metadata('post', $page_id, 'wpcf-experts', true); ?>
+                    </div>
+                    <div class="text">
+                        фахівців
+                    </div>
+                </li>
+                <li>
+                    <div class="ico_wr">
+                        <i class="ico ico_03"></i>
+                    </div>
+                    <div class="number">
+                        <?php echo get_metadata('post', $page_id, 'wpcf-hours-planning', true); ?>
+                    </div>
+                    <div class="text">
+                        годин <br> проектування
+                    </div>
+                </li>
+                <li>
+                    <div class="ico_wr">
+                        <i class="ico ico_04"></i>
+                    </div>
+                    <div class="number">
+                        <?php echo get_metadata('post', $page_id, 'wpcf-happily-families', true); ?>
+                    </div>
+                    <div class="text">
+                        щасливих <br> сімей
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

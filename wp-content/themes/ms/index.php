@@ -9,8 +9,8 @@
 
     <?php get_template_part( 'templates/home', 'our-project' ); ?>
 
-    <section class="preparing horizontal_block">
-        <div class="container">
+    <section class="preparing horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/1.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
                     Підготовка до проектування
@@ -29,8 +29,8 @@
 
     <?php get_template_part( 'templates/home', 'about-company' ); ?>
 
-    <section class="supervision horizontal_block">
-        <div class="container">
+    <section class="supervision horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/2.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
                     Авторський нагляд
@@ -43,92 +43,10 @@
         </div>
     </section>
 
-    <section class="advantages">
-        <div class="container">
-            <div class="wrap-860">
-                <h2 class="section_title text-center">
-                    наші переваги
-                </h2>
+	<?php get_template_part( 'templates/home', 'our-advantages' ); ?>
 
-                <div class="row">
-                    <div class="col-md-6 cel-left">
-                        <div class="ico_wr">
-                            <i class="ico ico_06"></i>
-                        </div>
-                        <div class="text">
-                            Відеоспостереження території <br>
-                            та можливість перегляду <br>
-                            прямо із смартфону
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-right">
-                        <div class="ico_wr">
-                            <i class="ico ico_05"></i>
-                        </div>
-                        <div class="text">
-                            Розвинена зовнішня <br>
-                            та внутрішня інфраструктура
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-left">
-                        <div class="ico_wr">
-                            <i class="ico ico_07"></i>
-                        </div>
-                        <div class="text">
-                            Економія впродовж життя <br>
-                            на комунальні послуги
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-right">
-                        <div class="ico_wr">
-                            <i class="ico ico_08"></i>
-                        </div>
-                        <div class="text">
-                            Сучасне комфортабельне <br>
-                            планування
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-left">
-                        <div class="ico_wr">
-                            <i class="ico ico_09"></i>
-                        </div>
-                        <div class="text">
-                            Безперебійне <br>
-                            електропостачання
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-right">
-                        <div class="ico_wr">
-                            <i class="ico ico_10"></i>
-                        </div>
-                        <div class="text">
-                            Чиста вода <br>
-                            у Вашому помешканні
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-left">
-                        <div class="ico_wr">
-                            <i class="ico ico_11"></i>
-                        </div>
-                        <div class="text">
-                            Доступна ціна
-                        </div>
-                    </div>
-                    <div class="col-md-6 cel-right">
-                        <div class="ico_wr">
-                            <i class="ico ico_12"></i>
-                        </div>
-                        <div class="text">
-                            Власна паркова зона
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="brick horizontal_block">
-        <div class="container">
+    <section class="brick horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/3.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
                     Цегла (марка М 125)
@@ -145,47 +63,11 @@
             </div>
         </div>
     </section>
+    
+    <?php get_template_part( 'templates/home', 'news' ); ?>
 
-    <section class="news">
-        <div class="container">
-            <h2 class="section_title text-center">
-                Новини
-            </h2>
-            <i class="news-arrow-left slider-arrow-left fa fa-angle-left"></i>
-            <i class="news-arrow-right slider-arrow-right fa fa-angle-right"></i>
-            <div id="carousel-news" class="hexagon-news">
-                <?php
-                query_posts(array(
-                    'cat' => 3,
-                    'posts_per_page' => 16,
-                    'order' => 'ASC'
-                ));
-                while (have_posts()) : the_post(); ?>
-                    <div>
-                        <div class="border-box"></div>
-                        <?php
-                        if (has_post_thumbnail()) {
-                            $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
-                        } else {
-                            $large_image_url = 'img/no-image.jpg';
-                        }
-                        ?>
-                        <img src="<?php echo $large_image_url[0]; ?>" alt="">
-                        <h4 class="title"><?php the_title(); ?>
-                            <p><?php echo get_the_date('d.m.Y'); ?></p>
-                        </h4>
-                    </div>
-                <?
-                endwhile;
-                wp_reset_postdata();
-                ?>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="windows horizontal_block">
-        <div class="container">
+    <section class="windows horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/4.jpg">
+        <div class="container hide">
             <div class="wrap-860">
                 <div class="text_white">
                     Вікна від наших постачальників завозяться виключно з <br>
@@ -200,142 +82,11 @@
         </div>
     </section>
 
-    <section class="news articles">
-        <div class="container">
-            <h2 class="section_title text-center">
-                Статті
-            </h2>
-            <i class="articles-arrow-left slider-arrow-left fa fa-angle-left"></i>
-            <i class="articles-arrow-right slider-arrow-right fa fa-angle-right"></i>
-            <div id="carousel-articles" class="hexagon-news">
-                <?php
-                query_posts(array(
-                    'cat' => 5,
-                    'posts_per_page' => 16,
-                    'order' => 'ASC'
-                ));
-                while (have_posts()) : the_post(); ?>
-                    <div>
-                        <div class="border-box"></div>
-                        <?php
-                        if (has_post_thumbnail()) {
-                            $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
-                        } else {
-                            $large_image_url[0] = 'img/no-image.jpg';
-                        }
-                        ?>
-                        <img src="<?php echo $large_image_url[0]; ?>" alt="">
-                        <h4 class="title"><?php the_title(); ?>
-                            <p><?php echo get_the_date('d.m.Y'); ?></p>
-                        </h4>
-                    </div>
-                <?
-                endwhile;
+    <?php get_template_part( 'templates/home', 'articles' ); ?>
 
-                wp_reset_postdata();
-                ?>
-            </div>
+    <?php get_template_part( 'templates/home', 'question-form' ); ?>
 
-        </div>
-    </section>
-    <!--
-    <section class="gallery">
-      <div class="container">
-        <h2 class="section_title">
-          Галерея
-        </h2>
-      </div>
-    </section>
-    -->
-
-    <section id="question-form" class="question_form">
-        <div class="container">
-            <div class="wrap-860">
-                <div class="row">
-                    <div class="col-left">
-                        <h2 class="section_title">
-                            Залишились<br>
-                            запитання?
-                        </h2>
-                        <div class="text">
-                            Заповни форму і наш менеджер зв’яжеться з Вами <br>
-                            протягом 15-ти хвилин і відповість на усі Ваші запитання
-                        </div>
-                        <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
-                    </div>
-                    <div class="col-md-5 consultant">
-                        <img src="<?php echo $pwd ?>img/consultant.png" alt="">
-                        <div class="consultant_info text-center">
-                            <p>
-                                Галина Найда
-                                <br>
-                                <span>персональний консультант</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="feedback">
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <h2 class="section_title text-center">
-                    Відгуки
-                </h2>
-
-                <div class="text text-center">
-                    Взнайте більше про нас словами наших клієнтів
-                </div>
-                <div class="row carousel-wrap">
-                    <i class="feedback-arrow-left slider-arrow-left fa fa-angle-left"></i>
-                    <i class="feedback-arrow-right slider-arrow-right fa fa-angle-right"></i>
-                    <div id="carousel-feedback" class="hexagon-feedback">
-                        <?php
-                        query_posts(array(
-                            'cat' => 4,
-                            'posts_per_page' => 10,
-                            'order' => 'DESC'
-                        ));
-                        while (have_posts()) : the_post(); ?>
-                            <div>
-                                <div class="center-content">
-                                    <?php
-                                    if (has_post_thumbnail()) {
-                                        $img_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
-                                    } else {
-                                        $img_url[0] = 'img/no-image.jpg';
-                                    }
-                                    ?>
-                                    <div class="hexagon-wrap hexagon-right">
-                                        <div class="hexagon-left" style="background: url('<?php echo $img_url[0]; ?>') 50% 0 no-repeat;min-height:100%;background-size:100% auto;">
-                                            <?php /* ?><img src="<?php echo $img_url[0]; ?>" alt=""><?php //*/ ?>
-                                        </div>
-                                    </div>
-                                    <div class="pre-content"></div>
-                                    <div class="content-box">
-                                        <h4 class><?php the_title(); ?></h4>
-                                        <?php
-                                            $position = types_render_field("human-position");
-                                            if( !empty($position) ) echo "<div class='position-humen'>$position</div>";
-                                        ?>
-                                        <div class="discription">
-                                            <div class="short-discription"><?php echo get_the_excerpt(); ?></div>
-                                            <div class="full-discription"><?php the_content(); ?></div>
-                                            <a href="javascript:void(0)" class="read-more-btn" data-more="більше" data-less="менше">більше</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?
-                        endwhile;
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part( 'templates/home', 'feedback' ); ?>
 
     <section class="our_team">
         <div class="container">

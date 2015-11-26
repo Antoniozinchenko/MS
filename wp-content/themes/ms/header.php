@@ -4,6 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" type="image/png" href="<?php echo $pwd ?>img/favicon.png"/>
+    <link rel="apple-touch-icon" href="<?php echo $pwd ?>img/favicon_apple.png"/>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +18,17 @@
 
     <!--CSS-->
     <link href="<?php echo $pwd ?>css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+    <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+
     <link href="<?php echo $pwd ?>css/reset.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/poligons.css" rel="stylesheet">
@@ -36,23 +50,14 @@
     <script src="<?php echo $pwd ?>js/jquery.simplemodal.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <script src="<?php echo $pwd ?>js/parallax.min.js"></script>
 
-
-
-<!-- Add fancyBox -->
-<link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-<!-- Optionally add helpers - button, thumbnail and/or media -->
-<link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-<link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-<script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-    <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
-
+    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="http://vjs.zencdn.net/4.11/video.js"></script>
+    
 </head>
 <body>
 
