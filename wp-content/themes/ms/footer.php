@@ -15,8 +15,8 @@
 
 <!-- fxd menu -->
 <div id="popup-box">
+    <i id="popup-box-close-btn" class="fa fa-close"></i>
     <div class="clearfix wrap-860 box">
-        <i id="popup-box-close-btn" class="fa fa-close"></i>
         <ul id="pop-up-list">
         <?php
             $min_hex_arg = array(
@@ -50,6 +50,70 @@
 
 					echo $li;
 				}
+
+            endwhile;
+        ?>
+
+        <?php
+            $min_hex_arg = array(
+                'cat' => 3,
+                'posts_per_page' => -1,
+                'order' => 'ASC',
+            );
+
+            query_posts($min_hex_arg);
+            while (have_posts()) : the_post();
+            	
+            	$id = $post->ID;
+
+				$camera = get_metadata('post', $id, 'wpcf-online-camera', true);
+
+            	$title = $post->post_title;
+				$build_address = get_metadata('post', $id, 'wpcf-building-address', true);
+
+                $large_image_url = has_post_thumbnail() ? wp_get_attachment_image_src(get_post_thumbnail_id(), array(800, 800)) : 'img/no-image.jpg';
+                
+            	
+            	$li = "<li id='modal-news-$id' class='modal-block hide'>";
+					$li .= "<h2 class='title'>$title</h2>";
+					$li .= "<p class='address'>$build_address</p>";
+					$li .= "<img src='$large_image_url[0]' alt=''>";
+					$li .= "<h2 class='title'>" . get_the_content() . "</h2>";
+
+				$li .= '</li>';
+
+				echo $li;
+
+            endwhile;
+        ?>
+
+        <?php
+            $min_hex_arg = array(
+                'cat' => 5,
+                'posts_per_page' => -1,
+                'order' => 'ASC',
+            );
+
+            query_posts($min_hex_arg);
+            while (have_posts()) : the_post();
+            	
+            	$id = $post->ID;
+
+            	$title = $post->post_title;
+				$build_address = get_metadata('post', $id, 'wpcf-building-address', true);
+
+                $large_image_url = has_post_thumbnail() ? wp_get_attachment_image_src(get_post_thumbnail_id(), array(800, 800)) : 'img/no-image.jpg';
+                
+            	
+            	$li = "<li id='modal-article-$id' class='modal-block hide'>";
+					$li .= "<h2 class='title'>$title</h2>";
+					$li .= "<p class='address'>$build_address</p>";
+					$li .= "<img src='$large_image_url[0]' alt=''>";
+					$li .= "<h2 class='title'>" . get_the_content() . "</h2>";
+
+				$li .= '</li>';
+
+				echo $li;
 
             endwhile;
         ?>

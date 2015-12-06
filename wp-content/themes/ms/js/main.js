@@ -134,6 +134,9 @@
             var tmpTarget = target;
             var tmpData = data;
 
+            console.log( 'className: ' + target.className );
+            console.log( 'class contains: ' + target.classList.contains('modal-news') );
+
 
             if( target.classList.contains('camera') ) {
 
@@ -145,48 +148,13 @@
                 el.classList.remove('hide');
 
                 return false;
-
-                // if(!el) {
-                //     var div = document.createElement('div');
-                //     div.id = modalID;
-                //     div.innerHTML = 'Title';
-
-                //     // var video = document.createElement('video');
-                //     // video.id = 'online-video-' + data.modal;
-                //     // video.className = 'video-js vjs-default-skin';
-                //     // video.controls = 'controls';
-                //     // video.preload = 'auto';
-                //     // video.width = '640';
-                //     // video.height = '268';
-
-                //     // var source = document.createElement('source');
-                //     // source.src = 'rtmp://193.108.170.185:1935/camera3/stream';
-                //     // source.type = 'rtmp/mp4';
-
-                //     // video.appendChild(source);
-
-                //     var video = '<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268" data-setup="{}">'+
-                //         '<source src="rtmp://193.108.170.185:1935/camera3/stream" type="rtmp/mp4">'+
-                //     '</video>';
-
-
-                //     var li = document.createElement('li');
-                //     li.appendChild(div);
-                //     $(li).append( video );
-                //     // $(video).data('setup', '{}');
-
-                //     list.appendChild(li);
-                // } else {
-
-                // }
-                //console.log( 'el = ' + el.length );
             }
 
-            if ( bildModal('article', tmpTarget, tmpData) === 'done') {
+            if( target.classList.contains('modal-article') && bildModal('article', tmpTarget, tmpData) === 'done') {
                 return false;
             }
 
-            if ( bildModal('news', tmpTarget, tmpData) === 'done') {
+            if( target.classList.contains('modal-news') && bildModal('news', tmpTarget, tmpData) === 'done') {
                 return false;
             }
         }

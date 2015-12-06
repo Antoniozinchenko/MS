@@ -239,6 +239,9 @@ header{
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
   }
+  #popup-box-close-btn {
+    right: 80px;
+  }
     #fixed-menu #nav-menu-close-btn:hover,
     #promo-popup #promo-popup-close-btn:hover,
     #popup-box-close-btn {
@@ -293,6 +296,7 @@ header{
     font-family: bender, sans-serif;
 
     display: inline-block;
+    white-space: nowrap;
   }
 
 /* our project */

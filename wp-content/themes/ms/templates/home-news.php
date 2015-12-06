@@ -24,21 +24,28 @@ $page = get_page(4);
                 'order' => 'ASC'
             ));
             while (have_posts()) : the_post(); ?>
-                <div>
-                    <div class="<?php /*echo modal-pop-up modal-news*/ ?>" data-modal="<?php echo $post->ID; ?>">
-                        <div class="border-box"></div>
-                        <?php
-                        if (has_post_thumbnail()) {
-                            $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
-                        } else {
-                            $large_image_url = 'img/no-image.jpg';
-                        }
-                        ?>
-                        <img src="<?php echo $large_image_url[0]; ?>" alt="">
-                        <div class="title">
-                            <h4><?php the_title(); ?></h4>
-                            <p><?php echo get_the_date('d.m.Y'); ?></p>
-                        </div>
+                <div class="<?php echo 'modal-pop-up modal-news' ?>" data-modal="<?php echo $post->ID; ?>">
+                    <div class="border-box"></div>
+                    <?php
+                    if (has_post_thumbnail()) {
+                        $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
+                    } else {
+                        $large_image_url = 'img/no-image.jpg';
+                    }
+                    ?>
+                    <img src="<?php echo $large_image_url[0]; ?>" alt="">
+                    <div class="title">
+                        <h4>
+                            <?php
+                                $title = get_the_title();
+                                $max_length = 40;
+                                if(mb_strlen($title) > $max_length ) {
+                                    $title = substr($title, 0, $max_length) . '...';
+                                }
+                                echo $title;
+                            ?>
+                        </h4>
+                        <p><?php echo get_the_date('d.m.Y'); ?></p>
                     </div>
                 </div>
             <?

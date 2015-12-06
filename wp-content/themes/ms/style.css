@@ -645,3 +645,17 @@ span.wpcf7-form-control-wrap {
     padding-right: 15px;
     width: 50%;
 }
+
+.modal-pop-up:after {
+    content: '';
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 11100000;
+    position: absolute;
+    top: 0;
+}
+.modal-block img {
+    width: 100%;
+}

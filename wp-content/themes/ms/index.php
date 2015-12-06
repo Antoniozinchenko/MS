@@ -191,7 +191,7 @@
                                             savchuk@ms-bud.com.ua
                                         </span>
                                         <span class="number">
-                                            097 321 00 77
+                                            097 231 00 77
                                         </span>
                                         <span class="get_call">
                                             замовити дзвінок
