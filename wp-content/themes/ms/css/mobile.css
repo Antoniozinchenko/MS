@@ -1,6 +1,12 @@
+.hidden-lg{
+    display: none;
+}
 @media (max-width: 720px){
     
     /* def */
+    .hidden-lg{
+        display: block !important;
+    }
     .hidden-mb{
         display: none;
     }
@@ -9,6 +15,9 @@
     }
     body{
         background: #fff;
+    }
+    .parallax-mirror{
+        display: none;
     }
 
     /* header */
@@ -32,6 +41,25 @@
             width: 50% !important;
         }
         section.our_projects .ico{
+            margin: 0 auto;
+        }
+
+    /* question_form_mobile */
+
+    /* recent_awards_mobile */
+
+    /* advantages  */
+    section.advantages .cel-left,
+    section.advantages .cel-right{
+        display: table;
+        width: 100%;
+        margin: 0;
+    }
+        section.advantages .col-md-6 div{
+            width: 50%;
+            padding: 0;
+        }
+        section.advantages .ico{
             margin: 0 auto;
         }
 

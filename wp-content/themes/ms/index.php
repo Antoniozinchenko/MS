@@ -9,7 +9,7 @@
 
     <?php get_template_part( 'templates/home', 'our-project' ); ?>
 
-    <section class="preparing horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/1.jpg">
+    <section class="preparing horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/1.jpg">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
@@ -28,8 +28,18 @@
     </section>
 
     <?php get_template_part( 'templates/home', 'about-company' ); ?>
+    
+    <!-- mobile -->
+    <section class="question_form_mobile hidden-lg">
+        mobile form
+    </section>
 
-    <section class="supervision horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/2.jpg">
+    <section class="recent_awards_mobile hidden-lg">
+        recent_awards_mobile
+    </section>
+    <!--  -->
+
+    <section class="supervision horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/2.jpg">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
@@ -45,7 +55,7 @@
 
 	<?php get_template_part( 'templates/home', 'our-advantages' ); ?>
 
-    <section class="brick horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/3.jpg">
+    <section class="brick horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/3.jpg">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
@@ -66,7 +76,7 @@
     
     <?php get_template_part( 'templates/home', 'news' ); ?>
 
-    <section class="windows horizontal_block parallax-window" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/4.jpg">
+    <section class="windows horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/4.jpg">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="text_white">
@@ -88,7 +98,7 @@
 
     <?php get_template_part( 'templates/home', 'feedback' ); ?>
 
-    <section class="our_team">
+    <section class="our_team hidden-mb">
         <div class="container">
             <div class="wrap-860">
                 <h2 class="section_title">
