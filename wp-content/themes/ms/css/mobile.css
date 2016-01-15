@@ -27,6 +27,12 @@
         text-align: left;
         padding-left: 65px;
     }
+    .slider-arrow-left{ 
+        left: 33px !important;
+    }
+    .slider-arrow-right{
+        right: 33px !important;
+    }
 
     /* header */
     header{
@@ -148,6 +154,10 @@
             font-size: 31px;
             font-family: benderbold, sans-serif;
         }
+            section.question_form_mobile .btn_style:hover{
+                color: #fff;
+            }
+
     /* recent_awards_mobile */
     section.recent_awards_mobile{
         margin-top: 90px;
@@ -160,7 +170,7 @@
     section.advantages .cel-right{
         display: table;
         width: 100%;
-        margin: 0;
+        margin: 0 0 110px;
     }
         section.advantages .col-md-6 div{
             width: 50%;
@@ -169,5 +179,15 @@
         section.advantages .ico{
             margin: 0 auto;
         }
+        section.advantages .text{
+            font-size: 31px;
+            color: #72777a;
+            line-height: 36px;        
+        }    
+    
+    /* news */
+    section.news > .wrap-860{
+        padding: 0 75px;
+    }
 
 }
