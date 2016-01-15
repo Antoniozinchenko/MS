@@ -33,6 +33,7 @@
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/poligons.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
+    <link href="<?php echo $pwd ?>css/mobile.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
     <!-- <link rel="stylesheet" href="<?php echo $pwd ?>css/font-awesome.min.css"> -->
@@ -63,7 +64,7 @@
 
 <header>
     <div class="container">
-        <div class="wrap-860">
+        <div class="wrap-860 clearfix">
             <a href="<?php echo $get_hd; ?>" class="logo pull-left">
                 <img src="<?php echo $pwd ?>img/logo.png" alt="">
             </a>
@@ -74,7 +75,7 @@
                 $tel_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-chernivtsi', true);
             ?>
 
-            <div class="contacts pull-left">
+            <div class="contacts pull-left hidden-mb">
                 <p>
                     <span class="number">
                         <?php echo $tel_lviv; ?>

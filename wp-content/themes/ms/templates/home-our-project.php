@@ -16,7 +16,7 @@ $page = get_page($page_id);
                 <?php echo $page->post_title ?>
             </h1>
 
-            <div class="top_slider">
+            <div class="top_slider hidden-mb">
 
                 <div id="small-top-hexagon" class="clearfix">
 
@@ -117,46 +117,54 @@ $page = get_page($page_id);
                     <div class="ico_wr">
                         <i class="ico ico_01"></i>
                     </div>
-                    <div class="number">
-                        <?php echo get_metadata('post', $page_id, 'wpcf-architects-designers', true); ?>
-                    </div>
-                    <div class="text">
-                        архітекторів-
-                        <br> 
-                        проектантів  
+                    <div class="clearfix">
+                        <div class="number">
+                            <?php echo get_metadata('post', $page_id, 'wpcf-architects-designers', true); ?>
+                        </div>
+                        <div class="text">
+                            архітекторів-
+                            <br> 
+                            проектантів  
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="ico_wr">
                         <i class="ico ico_02"></i>
                     </div>
-                    <div class="number">
-                        <?php echo get_metadata('post', $page_id, 'wpcf-experts', true); ?>
-                    </div>
-                    <div class="text">
-                        фахівців
+                    <div class="clearfix">
+                        <div class="number">
+                            <?php echo get_metadata('post', $page_id, 'wpcf-experts', true); ?>
+                        </div>
+                        <div class="text">
+                            фахівців
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="ico_wr">
                         <i class="ico ico_03"></i>
                     </div>
-                    <div class="number">
-                        <?php echo get_metadata('post', $page_id, 'wpcf-hours-planning', true); ?>
-                    </div>
-                    <div class="text">
-                        годин <br> проектування
+                    <div class="clearfix">
+                        <div class="number">
+                            <?php echo get_metadata('post', $page_id, 'wpcf-hours-planning', true); ?>
+                        </div>
+                        <div class="text">
+                            годин <br> проектування
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="ico_wr">
                         <i class="ico ico_04"></i>
                     </div>
-                    <div class="number">
-                        <?php echo get_metadata('post', $page_id, 'wpcf-happily-families', true); ?>
-                    </div>
-                    <div class="text">
-                        щасливих <br> сімей
+                    <div class="clearfix">
+                        <div class="number">
+                            <?php echo get_metadata('post', $page_id, 'wpcf-happily-families', true); ?>
+                        </div>
+                        <div class="text">
+                            щасливих <br> сімей
+                        </div>
                     </div>
                 </li>
             </ul>
