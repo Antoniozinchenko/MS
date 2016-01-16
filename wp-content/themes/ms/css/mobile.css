@@ -19,6 +19,14 @@
     .parallax-mirror{
         display: none;
     }
+    .section_title,
+    h1.section_title{
+        font-family: benderbold, sans-serif;
+        font-size: 53px;
+        color: #72777a;
+        text-align: left;
+        padding-left: 65px;
+    }
 
     /* header */
     header{
@@ -26,12 +34,30 @@
         border-bottom: 1px solid #ececeb;
     }
         header .logo{
-            margin-left: 70px;
+            margin-left: 65px;
         }
         header .nav-menu-btn{
             margin-right: 25px;
         }
-
+        header .nav-menu-btn i,
+        header .nav-menu-btn:before,
+        header .nav-menu-btn:after{
+            height: 7px;
+        }
+        .nav-menu-btn:before{
+            width: 41px;
+        }
+        .nav-menu-btn i{
+            width: 29px;
+            margin: 7px 0;
+        }
+        .nav-menu-btn:after{
+            width: 36px;
+        }
+    /* our projects */
+    .our_projects h1.section_title{
+        max-width: 100%;
+    }
     /* project_about */
     section.our_projects .project_about{
         margin: 0 -15px;
@@ -55,7 +81,32 @@
         }
         section.our_projects .ico{
             margin: 0 auto;
+            background-position: 0 0;
         }
+            section.our_projects .ico_01{
+                background: url('images/pa_1.png') no-repeat;
+
+                width: 123px;
+                height: 184px;
+            }
+            section.our_projects .ico_02{
+                background: url('images/pa_2.png') no-repeat;
+
+                width: 141px;
+                height: 136px;
+            }
+            section.our_projects .ico_03{
+                background: url('images/pa_4.png') no-repeat;
+                
+                width: 135px;
+                height: 135px;
+            }
+            section.our_projects .ico_04{
+                background: url('images/pa_3.png') no-repeat;
+
+                width: 196px;
+                height: 118px;
+            }
         .project_about .number{
             display: block;
             font-size: 107px;
@@ -70,8 +121,39 @@
         }
 
     /* question_form_mobile */
+    section.question_form_mobile{
+        height: 704px;
+        padding: 160px 75px 0;
+        
+        background: url('images/mobile_form.png') no-repeat right top;
+    }
+        section.question_form_mobile .section_title{
+            color: #ffffff;
+            padding: 0;
 
+            margin-bottom: 55px;
+        }
+        section.question_form_mobile p {
+            font-size: 31px;
+            color: #fff;
+            line-height: 36px;
+
+            margin-bottom: 90px;
+        }
+        section.question_form_mobile .btn_style{
+            display: inline-block;
+            height: 83px;
+            line-height: 83px;
+
+            font-size: 31px;
+            font-family: benderbold, sans-serif;
+        }
     /* recent_awards_mobile */
+    section.recent_awards_mobile{
+        margin-top: 90px;
+    }
+        section.recent_awards_mobile .section_title{
+        }
 
     /* advantages  */
     section.advantages .cel-left,

@@ -31,11 +31,29 @@
     
     <!-- mobile -->
     <section class="question_form_mobile hidden-lg">
-        mobile form
+        <div class="container">
+            <h2 class="section_title">
+                замов дзвінок
+            </h2>
+            <p>
+                Замовте дзвінок і наш менеджер
+                <br>
+                зв’яжеться з Вами протягом
+                <br>
+                15-ти хилин
+            </p>
+            <a href="#javascript:;" class="btn_style">
+                замовити дзвінок
+            </a>
+        </div>
     </section>
 
     <section class="recent_awards_mobile hidden-lg">
-        recent_awards_mobile
+        <div class="container">
+            <h2 class="section_title">
+                останні нагороди
+            </h2>
+        </div>
     </section>
     <!--  -->
 
