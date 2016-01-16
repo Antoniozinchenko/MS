@@ -1382,3 +1382,7 @@ footer{
     .vjs-default-skin .vjs-volume-level {
       background-color: #E6BC11;
     }
+
+footer #close-footer-contact-form {
+  display: none;
+}

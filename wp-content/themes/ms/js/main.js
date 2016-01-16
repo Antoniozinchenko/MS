@@ -18,7 +18,14 @@
                         dots: true,
                         customPaging: function(slider, i) {
                             return '<span class="carousel-mobile-navigation">-</span>';
-                        } 
+                        },
+
+                        init: function(slider) {
+                            console.log(slick);
+                            $('.carousel-mobile-navigation').on('click', function(){
+                                console.log(123);
+                            });
+                        }
                     }
                 }
                 // ,
@@ -575,3 +582,12 @@ jQuery(document).ready(function () {
     // end bicycle
     
 });*/
+
+
+(function($){
+    $(document).ready(function(){
+        $('#close-footer-contact-form').on('click', function(){
+            $(this).parent().css('display', 'none');
+        });
+    });
+})(window.jQuery)

@@ -108,8 +108,9 @@
     <div class="container">
     	<div class="wrap-860">
     		<div class="row">
-	        <div class="col-md-6 hidden-mb">
-	            <h2 class="footer_title">
+	        <div class="col-md-6 hidden-mb footer-contact-form">
+				<i class="fa fa-times" id="close-footer-contact-form"></i>
+	            <h2 class="footer_title clearfix">
 	                Залишились запитання?
 	            </h2>
 	            <div class="footer_text">
