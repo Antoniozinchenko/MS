@@ -81,9 +81,9 @@
         }
         section.our_projects .ico{
             margin: 0 auto;
-            background-position: 0 0;
+            /*background-position: 0 0;*/
         }
-            section.our_projects .ico_01{
+            /*section.our_projects .ico_01{
                 background: url('images/pa_1.png') no-repeat;
 
                 width: 123px;
@@ -106,7 +106,7 @@
 
                 width: 196px;
                 height: 118px;
-            }
+            }*/
         .project_about .number{
             display: block;
             font-size: 107px;
