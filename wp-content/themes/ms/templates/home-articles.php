@@ -8,7 +8,7 @@ $page = get_page(4);
 
 ?> 
 
-<section class="news articles">
+<section class="news articles hidden-mb">
     <div class="container wrap-860">
         <h2 class="section_title text-center">
             Статті

@@ -108,7 +108,7 @@
     <div class="container">
     	<div class="wrap-860">
     		<div class="row">
-	        <div class="col-md-6">
+	        <div class="col-md-6 hidden-mb">
 	            <h2 class="footer_title">
 	                Залишились запитання?
 	            </h2>

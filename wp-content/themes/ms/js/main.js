@@ -11,19 +11,20 @@
                     }
                 },
                 {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
+                    breakpoint: 720,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 }
+                // ,
+                // {
+                //     breakpoint: 480,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1
+                //     }
+                // }
             ];
 
         $('#carousel-news').slick({
@@ -36,7 +37,8 @@
             speed: 300,
             slidesToShow: 4,
             slidesToScroll: 1,
-            responsive: respArgs
+            responsive: respArgs,
+            adaptiveHeight: true
         });
 
         $('#carousel-articles').slick({

@@ -29,7 +29,7 @@ $page = get_page(4);
                     </div>
                     
                 </div>
-                <div class="about-2">
+                <div class="about-2 hidden-mb">
                     <h2>Наші останні нагороди:</h2>
 
                     <?php

@@ -112,7 +112,7 @@ $page = get_page($page_id);
                 </div>
             </div>
 
-            <ul class="project_about">
+            <ul class="project_about clearfix">
                 <li>
                     <div class="ico_wr">
                         <i class="ico ico_01"></i>
