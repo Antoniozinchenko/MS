@@ -15,10 +15,7 @@
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: true,
-                        customPaging: function(slider, i) {
-                            return '<span class="carousel-mobile-navigation">-</span>';
-                        }
+                        dots: true
                     }
                 }
                 // ,
@@ -41,6 +38,9 @@
             speed: 300,
             slidesToShow: 4,
             slidesToScroll: 1,
+            customPaging: function(slider, i) {
+                return '<span class="carousel-mobile-navigation">-</span>';
+            },
             responsive: respArgs,
             adaptiveHeight: true
         });
@@ -55,6 +55,9 @@
             speed: 300,
             slidesToShow: 4,
             slidesToScroll: 1,
+            customPaging: function(slider, i) {
+                return '<span class="carousel-mobile-navigation">-</span>';
+            },
             responsive: respArgs
         });
 
@@ -65,6 +68,9 @@
             speed: 300,
             slidesToShow: 2,
             slidesToScroll: 1,
+            customPaging: function(slider, i) {
+                return '<span class="carousel-mobile-navigation">-</span>';
+            },
             responsive: [
                 {
                     breakpoint: 1024,
@@ -76,14 +82,16 @@
                     }
                 },
                 {
+                    breakpoint: 720,
+                    settings: {
+                        dots: true
+                    }
+                },
+                {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2,
-                        dots: true,
-                        customPaging: function(slider, i) {
-                            return '<span class="carousel-mobile-navigation">-</span>';
-                        } 
+                        slidesToScroll: 2
                     }
                 },
                 {
@@ -91,10 +99,7 @@
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: true,
-                        customPaging: function(slider, i) {
-                            return '<span class="carousel-mobile-navigation">-</span>';
-                        } 
+                        dots: true
                     }
                 }
             ]
