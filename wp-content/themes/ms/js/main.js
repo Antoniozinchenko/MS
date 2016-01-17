@@ -31,9 +31,6 @@
         $('#carousel-news').slick({
             prevArrow: '.news-arrow-left',
             nextArrow: '.news-arrow-right',
-            
-            infinite: false,
-            speed: 300,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
@@ -48,9 +45,6 @@
         $('#carousel-articles').slick({
             prevArrow: '.articles-arrow-left',
             nextArrow: '.articles-arrow-right',
-            
-            infinite: false,
-            speed: 300,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
@@ -713,6 +707,22 @@ jQuery(document).ready(function () {
 
             contacts_popup.fadeIn(300);
             $('body').addClass('blur').css('overflow', 'hidden');
+        });
+
+
+        //FIX PARALLAX AFTER RESIZE OF WINDOW
+
+        var resizeTimer;
+
+        $(window).on('resize', function(e) {
+
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+
+                $(window).resize();
+
+            }, 250);
+
         });
     });
 })(window.jQuery)
