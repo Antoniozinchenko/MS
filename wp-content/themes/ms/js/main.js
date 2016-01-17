@@ -18,13 +18,6 @@
                         dots: true,
                         customPaging: function(slider, i) {
                             return '<span class="carousel-mobile-navigation">-</span>';
-                        },
-
-                        init: function(slider) {
-                            console.log(slick);
-                            $('.carousel-mobile-navigation').on('click', function(){
-                                console.log(123);
-                            });
                         }
                     }
                 }
