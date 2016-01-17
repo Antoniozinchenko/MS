@@ -16,6 +16,14 @@ $page = get_page($page_id);
                 <?php echo $page->post_title ?>
             </h1>
 
+            <!-- MOBILE SLIDER START -->
+
+            <div class="mobile-slider">
+
+            </div>
+
+            <!-- MOBILE SLIDER END -->
+
             <div class="top_slider hidden-mb">
 
                 <div id="small-top-hexagon" class="clearfix">

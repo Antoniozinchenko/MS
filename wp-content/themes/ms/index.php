@@ -53,6 +53,31 @@
             <h2 class="section_title">
                 останні нагороди
             </h2>
+
+            <i class="rewards-mobile-arrow-left slider-arrow-left fa fa-angle-left"></i>
+            <i class="rewards-mobile-arrow-right slider-arrow-right fa fa-angle-right"></i>
+
+            <div id="our-rewards-mobile-slider">
+                <?php
+                query_posts(array(
+                    'cat' => 2,
+                    'posts_per_page' => 2,
+                    'order' => 'ASC'
+                ));
+                while (have_posts()) : the_post();
+                    ?>
+                    <div class="col-md-6 text-center">
+                        <?php if (has_post_thumbnail()) { the_post_thumbnail(); } ?>
+                        <div class="border">
+                            <h5><?php the_excerpt() ?></h5>
+                            <h4 class="orange-caption"><?php the_title(); ?></h4>
+                        </div>
+                    </div>
+                    <?
+                endwhile;
+                wp_reset_postdata();
+                ?>
+            </div>
         </div>
     </section>
     <!--  -->

@@ -28,6 +28,30 @@
                 // }
             ];
 
+        $('#our-rewards-mobile-slider').slick({
+
+            prevArrow: '.rewards-mobile-arrow-left',
+            nextArrow: '.rewards-mobile-arrow-right',
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            customPaging: function(slider, i) {
+                return '<span class="carousel-mobile-navigation">-</span>';
+            },
+            responsive: [
+                {
+                    breakpoint: 720,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true
+                    }
+                }
+            ]
+
+        });
+
         $('#carousel-news').slick({
             prevArrow: '.news-arrow-left',
             nextArrow: '.news-arrow-right',
