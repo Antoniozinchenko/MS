@@ -512,6 +512,8 @@ jQuery(document).ready(function () {
         var directionsService = new google.maps.DirectionsService;
         var directionsDisplay = new google.maps.DirectionsRenderer;
 
+        //#ee8c01
+
         var map = new google.maps.Map(option.mapCanvas, mapOptions);
 
         var marker = new google.maps.Marker({
@@ -521,6 +523,15 @@ jQuery(document).ready(function () {
         });
 
         directionsDisplay.setMap(map);
+
+        directionsDisplay.setOptions({
+            polylineOptions: {
+                strokeWeight: 6,
+                strokeOpacity: 0.8,
+                strokeColor:  '#ee8c01'
+            },
+            suppressMarkers:true
+        });
 
 
         var searchBox = new google.maps.places.SearchBox(boxStart.querySelector('#set-route-form-input'));
@@ -542,7 +553,7 @@ jQuery(document).ready(function () {
                 // map.setCenter(marker.getPosition());
                 // console.log(place.geometry);
 
-                calculateAndDisplayRoute(directionsService, directionsDisplay, place.geometry.location, map.getCenter());
+                calculateAndDisplayRoute(directionsService, directionsDisplay, place.geometry.location, mapOptions.center);
             });
         });
 
@@ -555,7 +566,7 @@ jQuery(document).ready(function () {
                         lng: position.coords.longitude
                     };
 
-                    calculateAndDisplayRoute(directionsService, directionsDisplay, pos, map.getCenter());
+                    calculateAndDisplayRoute(directionsService, directionsDisplay, pos, mapOptions.center);
 
                 }, function() {
                     handleLocationError(true);
@@ -570,9 +581,11 @@ jQuery(document).ready(function () {
 
         document.querySelector('.get_route_form').addEventListener('click', function(){
             if($('#set-route-form').css('display') == 'none') {
-                $('.set-route-form').slideDown(400);
-                google.maps.event.trigger(map, 'resize');
-                $('.get_route_form').hide(0);
+
+                $('.get_route_form').fadeOut(400, function(){
+                    $('.set-route-form').slideDown(400);
+                    google.maps.event.trigger(map, 'resize');
+                });
             }
         });
     }
@@ -612,8 +625,9 @@ jQuery(document).ready(function () {
                 directionsDisplay.setDirections(response);
 
                 if($('#set-route-form').css('display') == 'block') {
-                    $('#set-route-form').slideUp(400);
-                    $('.get_route_form').show(0);
+                    $('#set-route-form').slideUp(400 , function(){
+                        $('.get_route_form').fadeIn(400);
+                    });
                 }
             } else {
                 window.alert('Directions request failed due to ' + status);
@@ -627,8 +641,9 @@ jQuery(document).ready(function () {
 
     //MAp routes handlers
     $('#route-form-close').on('click', function(){
-        $(this).parent().slideUp(400);
-        $('.get_route_form').show(0);
+        $(this).parent().slideUp(400, function(){
+            $('.get_route_form').fadeIn(400);
+        });
     });
 
 });
