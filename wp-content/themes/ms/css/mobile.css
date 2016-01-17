@@ -190,6 +190,7 @@
     /* recent_awards_mobile */
     section.recent_awards_mobile{
         margin-top: 90px;
+        position: relative;
     }
         section.recent_awards_mobile .section_title{
         }
@@ -408,8 +409,9 @@
             color: #575f67;
             background-color: #9a9ea2;
         }
-        footer .m_socials a:hover{
-        }
+
+        footer .m_socials a:hover{}
+            
 
     footer .footer-contact-form {
         position: fixed;
@@ -418,6 +420,10 @@
         height: 100%;
         z-index: 1;
         background: rgba(0, 0, 0, 0.8);
+    }
+
+    .our_projects .mobile-slider-our-projects {
+        display: block;
     }
 
 }

@@ -1387,3 +1387,7 @@ footer{
     .vjs-default-skin .vjs-volume-level {
       background-color: #E6BC11;
     }
+
+    .our_projects .mobile-slider-our-projects {
+      display: none;
+    }

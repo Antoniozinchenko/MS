@@ -17,11 +17,29 @@ $page = get_page($page_id);
             </h1>
 
             <!-- MOBILE SLIDER START -->
+            <div class="mobile-slider-our-projects">
+                <i class="mobile-slider-our-projects-arrow-left slider-arrow-left fa fa-angle-left"></i>
+                <i class="mobile-slider-our-projects-arrow-right slider-arrow-right fa fa-angle-right"></i>
+                <div id="mobile-slider-our-projects-container">
 
-            <div class="mobile-slider">
-
+                    <?php
+                    $count = 0;
+                    $min_hex_limit = 10;
+                    $min_hex_arg = array(
+                        'cat' => 7,
+                        'posts_per_page' => $min_hex_limit,
+                        'offset'=> 0,
+                        'order' => 'ASC',
+                    );
+                    wp_reset_query();
+                    query_posts($min_hex_arg);
+                    while(have_posts()) : the_post();
+                        get_template_part('templates/mobile', 'home-svg-hexagon');
+                    endwhile;
+                    wp_reset_query();
+                    ?>
+                </div>
             </div>
-
             <!-- MOBILE SLIDER END -->
 
             <div class="top_slider hidden-mb">
