@@ -82,11 +82,16 @@
                     }
                 },
                 {
+                    breakpoint: 720,
+                    settings: {
+                        dots: true
+                    }
+                },
+                {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2,
-                        dots: true
+                        slidesToScroll: 2
                     }
                 },
                 {
