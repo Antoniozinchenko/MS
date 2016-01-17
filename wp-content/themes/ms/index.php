@@ -42,7 +42,7 @@
                 <br>
                 15-ти хилин
             </p>
-            <a href="#javascript:;" class="btn_style">
+            <a href="javascript:;" class="btn_style get_call">
                 замовити дзвінок
             </a>
         </div>

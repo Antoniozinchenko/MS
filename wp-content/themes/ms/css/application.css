@@ -196,7 +196,8 @@ header{
 }
 #fixed-menu,
 #promo-popup,
-#popup-box {
+#popup-box,
+#contact-popup-box {
   display: none;
   position: fixed;
   top: 0;
@@ -208,7 +209,8 @@ header{
 }
   #fixed-menu a,
   #promo-popup a,
-  #popup-box a {
+  #popup-box a
+  #contact-popup-box a{
     -webkit-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
@@ -216,16 +218,19 @@ header{
   }
     #fixed-menu a:hover,
     #promo-popup a:hover,
-    #popup-box a:hover {
+    #popup-box a:hover,
+    #contact-popup-box a:hover{
       color: #fff;
     }
   #fixed-menu .box,
   #promo-popup .box,
-  #popup-box .box {
+  #popup-box .box,
+  #contact-popup-box .box {
     position: relative;
   }
   #fixed-menu #nav-menu-close-btn,
-  #popup-box-close-btn {
+  #popup-box-close-btn,
+  #close-footer-contact-form {
     position: absolute;
     right: -85px;
     top: 68px;
@@ -241,7 +246,7 @@ header{
   }
     #fixed-menu #nav-menu-close-btn:hover,
     #promo-popup #promo-popup-close-btn:hover,
-    #popup-box-close-btn {
+    #popup-box-close-btn, #close-footer-contact-form:hover {
       color: #b5b4b2;
     }
 .menus_wrap{
@@ -1382,7 +1387,3 @@ footer{
     .vjs-default-skin .vjs-volume-level {
       background-color: #E6BC11;
     }
-
-footer #close-footer-contact-form {
-  display: none;
-}

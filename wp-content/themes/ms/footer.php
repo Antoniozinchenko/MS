@@ -57,6 +57,15 @@
     </div>
 </div>
 
+
+<!-- fxd menu -->
+<div id="contact-popup-box">
+	<div class="clearfix wrap-860 box">
+		<i class="fa fa-times" id="close-footer-contact-form"></i>
+
+	</div>
+</div>
+
 <?php /* ?>
 <!-- MODAL PROMO POPUP -->
 <div class="modal-promo">
@@ -108,8 +117,7 @@
     <div class="container hidden-mb">
       <div class="wrap-860">
         <div class="row">
-          <div class="col-md-6 footer-contact-form">
-              <i class="fa fa-times" id="close-footer-contact-form"></i>
+          <div class="col-md-6 footer-contact-form clear-both">
               <h2 class="footer_title clearfix">
                   Залишились запитання?
               </h2>
@@ -153,7 +161,7 @@
       <span class="m_telephone">
         063 231-1-231
       </span>
-      <a href="" class="get_call btn_style">
+      <a href="javascript:;" class="get_call btn_style">
         ЗАМОВИТИ ДЗВІНОК
       </a>
       <div class="m_socials clearfix">

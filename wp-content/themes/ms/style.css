@@ -689,3 +689,20 @@ section.relative-contacts .set-route-form #route-form-close:hover {
 .clear-both {
     clear: both;
 }
+
+#close-footer-contact-form {
+    position: static;
+    float: right;
+ }
+
+#contact-popup-box .box {
+    padding: 15px;
+}
+
+#contact-popup-box .footer_title {
+    font-size: 24px;
+    color: #b8bbbc;
+    text-transform: uppercase;
+    font-family: benderblack, sans-serif;
+    margin-bottom: 15px;
+}

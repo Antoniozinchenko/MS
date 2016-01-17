@@ -703,7 +703,18 @@ jQuery(document).ready(function () {
 (function($){
     $(document).ready(function(){
         $('#close-footer-contact-form').on('click', function(){
-            $(this).parent().css('display', 'none');
+            $('#contact-popup-box').fadeOut(300);
+            $('body').removeClass('blur').css('overflow', '');
+        });
+
+        $('.get_call').on('click', function(){
+            var contacts_popup = $('#contact-popup-box');
+            if(typeof(contacts_popup.find('.footer-contact-form').html()) === "undefined") {
+                contacts_popup.find('.box').append($('footer').find('.footer-contact-form').clone()).html();
+            }
+
+            contacts_popup.fadeIn(300);
+            $('body').addClass('blur').css('overflow', 'hidden');
         });
     });
 })(window.jQuery)
