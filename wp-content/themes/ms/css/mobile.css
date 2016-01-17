@@ -60,10 +60,7 @@
         .nav-menu-btn:after{
             width: 36px;
         }
-    /* our projects */
-    .our_projects h1.section_title{
-        max-width: 100%;
-    }
+
     /* project_about */
     section.our_projects .project_about{
         margin: 0 -15px;
@@ -75,6 +72,9 @@
         -webkit-background-size: cover;
         background-size: cover;
     }
+        section.our_projects h1.section_title{
+            max-width: 100%;
+        }
         section.our_projects .project_about li{
             width: 100%;
             margin-bottom: 70px;
@@ -87,9 +87,9 @@
         }
         section.our_projects .ico{
             margin: 0 auto;
-            /*background-position: 0 0;*/
+            background-position: 0 0;
         }
-            /*section.our_projects .ico_01{
+            section.our_projects .ico_01{
                 background: url('images/pa_1.png') no-repeat;
 
                 width: 123px;
@@ -112,7 +112,7 @@
 
                 width: 196px;
                 height: 118px;
-            }*/
+            }
         .project_about .number{
             display: block;
             font-size: 107px;
@@ -124,6 +124,32 @@
         .project_about .text{
             font-size: 36px;
             color: #72777a;
+        }
+    
+    /* about_company */
+    section.about_company{}
+        section.about_company .about-1{
+            width: 100%;
+            background: none;
+            height: auto;
+        }
+        section.about_company .about-1 .company_describe:before{
+            display: none;
+        }
+        section.about_company .company_describe{
+            color: #72777a;
+            font-size: 31px;
+            line-height: 36px;
+
+            padding: 35px 75px;
+        }
+        section.about_company .company_describe{
+            position: relative;
+            height: auto;
+        }
+        .about-1 .btn_detailed{
+            font-size: 30px;
+            font-family: benderbold, sans-serif;
         }
 
     /* question_form_mobile */
@@ -186,9 +212,75 @@
         }    
     
     /* news */
+    section.news{
+        background: #f7f7f6;
+        position: relative;
+        margin-bottom: 262px;
+    }
+        section.news .section_title{
+            margin-top: 0;       
+        }
+        section.news:before{
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: -132px;
+            left: 0;
+            width: 100%;
+            height: 132px;
+            display: block;
+
+            background: url('images/mobile_news_top.png') no-repeat 0 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        section.news:after{
+            content: '';
+            position: absolute;
+            z-index: 2;
+            bottom: -131px;
+            left: 0;
+            width: 100%;
+            height: 132px;
+            display: block;
+
+            background: url('images/mobile_news_bottom.png') no-repeat 0 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
     section.news > .wrap-860{
         padding: 0 75px;
+        /*background: #f7f7f6;*/
     }
+        section.news .slick-dots{
+            margin-top: 35px;
+        }
+
+    /* feedback */
+    section.feedback{
+        padding-top: 0;
+    }
+    section.feedback .section_title{}
+    /* stylize dots position, etc*/
+    .slick-dots{
+        text-align: center;
+    }
+        .slick-dots li{
+            display: inline-block;
+            margin: 0 6px;
+            cursor: pointer;
+        }
+        .slick-dots span{
+            display: block;
+            width: 30px;
+            height: 5px;
+            text-indent: -9999px;
+
+            background: #d4d3d3;
+        }
+        .slick-dots li.slick-active span{
+            background: #ff9707;
+        }
 
 
     /* footer contact form */
