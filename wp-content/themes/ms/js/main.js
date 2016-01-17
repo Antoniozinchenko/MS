@@ -565,6 +565,16 @@ jQuery(document).ready(function () {
                 handleLocationError(false);
             }
         });
+
+
+
+        document.querySelector('.get_route_form').addEventListener('click', function(){
+            if($('#set-route-form').css('display') == 'none') {
+                $('.set-route-form').slideDown(400);
+                google.maps.event.trigger(map, 'resize');
+                $('.get_route_form').hide(0);
+            }
+        });
     }
 
     function setMap(){
@@ -603,6 +613,7 @@ jQuery(document).ready(function () {
 
                 if($('#set-route-form').css('display') == 'block') {
                     $('#set-route-form').slideUp(400);
+                    $('.get_route_form').show(0);
                 }
             } else {
                 window.alert('Directions request failed due to ' + status);
@@ -611,6 +622,13 @@ jQuery(document).ready(function () {
     }
 
     google.maps.event.addDomListener(window, 'load', setMap);
+
+
+
+    //MAp routes handlers
+    $('#route-form-close').on('click', function(){
+        $(this).parent().slideUp(400);
+    });
 
 });
 
@@ -670,10 +688,6 @@ jQuery(document).ready(function () {
     $(document).ready(function(){
         $('#close-footer-contact-form').on('click', function(){
             $(this).parent().css('display', 'none');
-        });
-
-        $('#route-form-close').on('click', function(){
-            $(this).parent().slideUp(400);
         });
     });
 })(window.jQuery)
