@@ -410,6 +410,7 @@
 
     <section class="contacts">
         <div id="map" class="map"></div>
+        <a href="" class="btn_style get_route">прокласти маршрут</a>
     </section>
 
 <?php get_footer(); ?>

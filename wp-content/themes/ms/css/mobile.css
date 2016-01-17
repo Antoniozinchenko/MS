@@ -133,6 +133,9 @@
             background: none;
             height: auto;
         }
+            section.about_company .about-1:before{
+                display: none;
+            }
         section.about_company .about-1 .company_describe:before{
             display: none;
         }
@@ -281,7 +284,18 @@
         .slick-dots li.slick-active span{
             background: #ff9707;
         }
-
+    
+    section.contacts{
+        position: relative;
+    }
+        section.contacts .get_route{
+            position: absolute;
+            bottom: 120px;
+            left: 50%;
+            margin-left: -287px;
+            width: 565px;
+            z-index: 3;
+        }
 
     /* footer contact form */
     footer #close-footer-contact-form {
@@ -296,5 +310,49 @@
     footer #close-footer-contact-form:hover {
         color: #b5b4b2;
     }
+    /**/
+    footer{
+        background: #525b63;
+        padding: 45px 65px 70px;
+    }
+    footer .location{
+        margin-bottom: 92px;
+        font-size: 30px;
+    }
+        footer .location img{
+            margin-bottom: 25px;
+        }
+    footer .m_telephone{
+        height: 75px;
+        line-height: 75px;
+        display: inline-block;
+
+        font-size: 53px;
+        color: #fff;
+        font-family: benderbold, sans-serif;
+
+        margin-bottom: 50px;
+        padding-left: 115px;
+        background: url('images/m_footer_telephone.png') no-repeat 0 50%;
+    }
+    footer .get_call{
+        margin: 105px 0 158px;
+        display: block;
+    }
+    footer .m_socials{
+    }
+        footer .m_socials a{
+            display: inline-block;
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+
+            font-size: 40px;
+            border-radius: 50%;
+            color: #575f67;
+            background-color: #9a9ea2;
+        }
+        footer .m_socials a:hover{
+            
 
 }
