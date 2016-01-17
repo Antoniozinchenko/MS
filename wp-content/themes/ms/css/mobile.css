@@ -222,7 +222,8 @@
         margin-bottom: 262px;
     }
         section.news .section_title{
-            margin-top: 0;       
+            margin-top: 0;
+            padding-left: 0;       
         }
         section.news:before{
             content: '';
@@ -408,6 +409,7 @@
             color: #575f67;
             background-color: #9a9ea2;
         }
+
         footer .m_socials a:hover{}
             
 
