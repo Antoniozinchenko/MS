@@ -710,7 +710,7 @@ jQuery(document).ready(function () {
         $('.get_call').on('click', function(){
             var contacts_popup = $('#contact-popup-box');
             if(typeof(contacts_popup.find('.footer-contact-form').html()) === "undefined") {
-                contacts_popup.find('.box').append($('footer').find('.footer-contact-form').clone()).html();
+                //contacts_popup.find('.box').append($('footer').find('.footer-contact-form').clone()).html();
             }
 
             contacts_popup.fadeIn(300);

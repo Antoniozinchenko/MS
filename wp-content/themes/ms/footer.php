@@ -63,6 +63,17 @@
 	<div class="clearfix wrap-860 box">
 		<i class="fa fa-times" id="close-footer-contact-form"></i>
 
+		<div class="col-md-6 footer-contact-form clear-both">
+			<h2 class="footer_title clearfix">
+				Залишились запитання?
+			</h2>
+			<div class="footer_text">
+				Заповни форму і наш менеджер зв’яжеться з Вами <br>
+				протягом 15-ти хвилин і відповість на усі Ваші запитання
+			</div>
+			<?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
+		</div>
+
 	</div>
 </div>
 
