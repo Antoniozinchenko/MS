@@ -628,6 +628,7 @@ jQuery(document).ready(function () {
     //MAp routes handlers
     $('#route-form-close').on('click', function(){
         $(this).parent().slideUp(400);
+        $('.get_route_form').show(0);
     });
 
 });
