@@ -26,15 +26,17 @@ $page = get_page(4);
             while (have_posts()) : the_post(); ?>
                 <div>
                     <div class="<?php /*echo modal-pop-up modal-news*/ ?>" data-modal="<?php echo $post->ID; ?>">
-                        <div class="border-box"></div>
-                        <?php
-                        if (has_post_thumbnail()) {
-                            $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
-                        } else {
-                            $large_image_url = 'img/no-image.jpg';
-                        }
-                        ?>
-                        <img src="<?php echo $large_image_url[0]; ?>" alt="">
+                        <div class="clearfix news_skull">
+                            <div class="border-box"></div>
+                            <?php
+                            if (has_post_thumbnail()) {
+                                $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
+                            } else {
+                                $large_image_url = 'img/no-image.jpg';
+                            }
+                            ?>
+                            <img src="<?php echo $large_image_url[0]; ?>" alt="">
+                        </div>
                         <div class="title">
                             <h4><?php the_title(); ?></h4>
                             <p><?php echo get_the_date('d.m.Y'); ?></p>
