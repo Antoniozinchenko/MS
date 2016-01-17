@@ -408,7 +408,13 @@
         <div class="fake"></div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts relative-contacts">
+        <div class="set-route-form" id="set-route-form">
+            <i class="fa fa-times" id="route-form-close"></i>
+            <input type="text" class="inp_style clear-both set-route-form-input" id="set-route-form-input" placeholder="Введіть початкову адресу">
+            <div class="text-center text set-route-form-text">Або</div>
+            <a href="javascript:;" class="btn_style set-route-form-btn" id="get-geolocation-btn">Прокласти маршрут з поточного місця</a>
+        </div>
         <div id="map" class="map"></div>
     </section>
 

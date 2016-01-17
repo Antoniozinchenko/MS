@@ -649,3 +649,42 @@ span.wpcf7-form-control-wrap {
 footer #close-footer-contact-form {
     display: none;
 }
+
+section.relative-contacts {
+    position: relative;
+}
+
+section.relative-contacts .set-route-form {
+    position: absolute;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 10px;
+}
+
+section.relative-contacts .set-route-form .set-route-form-text {
+    font-size: 20px;
+    color: #a9a9a9;
+    margin-bottom: 33px;
+}
+
+section.relative-contacts .set-route-form .set-route-form-btn {
+    display: block;
+}
+
+section.relative-contacts .set-route-form #route-form-close {
+    color: #a9a9a9;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 25px;
+    transition: color 0.5s ease-in-out;
+}
+
+section.relative-contacts .set-route-form #route-form-close:hover {
+    color: #EE8C01;
+}
+
+.clear-both {
+    clear: both;
+}

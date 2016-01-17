@@ -494,6 +494,9 @@ jQuery(document).ready(function () {
 
     });
 
+
+    var boxStart = document.getElementById('set-route-form');
+
     function initialize(option) {
         var mapOptions = {
             center: new google.maps.LatLng(option.longitude, option.latitude),
@@ -505,12 +508,62 @@ jQuery(document).ready(function () {
             draggable: true
         };
 
+
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+
         var map = new google.maps.Map(option.mapCanvas, mapOptions);
 
         var marker = new google.maps.Marker({
             position: mapOptions.center,
             map: map,
             icon: option.image
+        });
+
+        directionsDisplay.setMap(map);
+
+
+        var searchBox = new google.maps.places.SearchBox(boxStart.querySelector('#set-route-form-input'));
+        map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(boxStart);
+
+        searchBox.addListener('places_changed', function() {
+            var places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            places.forEach(function(place) {
+
+                //placeMarkerAndPanTo(place.geometry.location, map, marker);
+
+                // marker.setTitle(place.name);
+                // marker.setPosition(place.geometry.location);
+                // map.setCenter(marker.getPosition());
+                // console.log(place.geometry);
+
+                calculateAndDisplayRoute(directionsService, directionsDisplay, place.geometry.location, map.getCenter());
+            });
+        });
+
+
+        boxStart.querySelector('#get-geolocation-btn').addEventListener('click', function(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    calculateAndDisplayRoute(directionsService, directionsDisplay, pos, map.getCenter());
+
+                }, function() {
+                    handleLocationError(true);
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false);
+            }
         });
     }
 
@@ -527,6 +580,35 @@ jQuery(document).ready(function () {
 
         initialize(lvivOption);
     };
+
+
+    function handleLocationError(browserHasGeolocation) {
+        window.alert(browserHasGeolocation ?
+            'Error: The Geolocation service failed.' :
+            'Error: Your browser doesn\'t support geolocation.');
+    }
+
+
+
+    function calculateAndDisplayRoute(directionsService, directionsDisplay, startLatLng, endLatLng) {
+        console.log(endLatLng);
+        console.log(startLatLng);
+        directionsService.route({
+            origin: startLatLng,
+            destination: endLatLng,
+            travelMode: google.maps.TravelMode.DRIVING
+        }, function(response, status) {
+            if (status === google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(response);
+
+                if($('#set-route-form').css('display') == 'block') {
+                    $('#set-route-form').slideUp(400);
+                }
+            } else {
+                window.alert('Directions request failed due to ' + status);
+            }
+        });
+    }
 
     google.maps.event.addDomListener(window, 'load', setMap);
 
@@ -588,6 +670,10 @@ jQuery(document).ready(function () {
     $(document).ready(function(){
         $('#close-footer-contact-form').on('click', function(){
             $(this).parent().css('display', 'none');
+        });
+
+        $('#route-form-close').on('click', function(){
+            $(this).parent().slideUp(400);
         });
     });
 })(window.jQuery)
