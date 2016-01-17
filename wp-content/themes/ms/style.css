@@ -645,3 +645,7 @@ span.wpcf7-form-control-wrap {
     padding-right: 15px;
     width: 50%;
 }
+
+footer #close-footer-contact-form {
+    display: none;
+}
