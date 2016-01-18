@@ -283,10 +283,8 @@ Theme Name: ms-bud
     height: 150px;
 }
 #carousel-feedback .center-content {
-    width: 392px;
     width: 376px;
     margin: 0 auto;
-    height: 360px;
     height: 424px;
 }
 #carousel-feedback .center-content .content-box,
@@ -348,7 +346,7 @@ Theme Name: ms-bud
 .hexagon-block .center-content .content-box:after {
     content: '';
     display: block;
-    background: red;
+    /*background: red;*/
     height: 49px;
     background: url('css/images/feedback_bottom.png') no-repeat;
     position: absolute;
