@@ -126,13 +126,14 @@
                 {
                     breakpoint: 720,
                     settings: {
+                        slidesToShow: 1,
                         dots: true
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 2
                     }
                 },

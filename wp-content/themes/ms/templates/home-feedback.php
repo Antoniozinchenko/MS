@@ -15,7 +15,7 @@ $page = get_page(4);
                 Відгуки
             </h2>
 
-            <div class="text text-center">
+            <div class="text text-center hidden-mb">
                 Взнайте більше про нас словами наших клієнтів
             </div>
             <div class="row carousel-wrap">
