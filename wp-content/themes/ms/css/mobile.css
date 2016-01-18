@@ -72,6 +72,40 @@
         -webkit-background-size: cover;
         background-size: cover;
     }
+        /* slider */
+        section.our_projects .mobile-slider-our-projects {
+            display: block;
+        }
+        .mobile-slider-our-projects .title{
+            font-size: 53px;
+            color: #ff9707;
+            font-family: nemderbold, sans-serif;
+            margin: 50px 0 25px;
+        }
+        .mobile-slider-our-projects .count-apartment,
+        .mobile-slider-our-projects .lost-apartment{
+            display: block;
+
+            font-size: 31px;
+            color: #c1c1c1;
+            font-family: nemderbold, sans-serif;
+        }
+        .mobile-slider-our-projects .lost-apartment{
+            margin-bottom: 25px;
+        }
+        .mobile-slider-our-projects img{
+            margin: 0 auto;
+        }
+        .mobile-slider-our-projects .btn_style{
+            display: block;
+            margin: 25px 0;
+        }
+        .mobile-slider-our-projects .slider-arrow-left, 
+        .mobile-slider-our-projects .slider-arrow-right{
+            bottom: -250px !important;
+        }
+
+        /**/
         section.our_projects h1.section_title{
             max-width: 100%;
         }
@@ -541,8 +575,5 @@
         background: rgba(0, 0, 0, 0.8);
     }
 
-    .our_projects .mobile-slider-our-projects {
-        display: block;
-    }
 
 }
