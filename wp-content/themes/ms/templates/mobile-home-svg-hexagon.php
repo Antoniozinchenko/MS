@@ -39,16 +39,16 @@ $left_sold_text = get_metadata('post', $id, 'wpcf-left-sold-apartment', true);
             <span id=""><?php echo $left_sold_text //текст залишилось/продано ?></span>
         </span>
         <?php if(!empty($site_address)): ?>
-            <a id="" class="more" href="<?php echo $site_address ?>" target="_blank" >Детальніше</a>
+            <a id="" class="more btn_style" href="<?php echo $site_address ?>" target="_blank" >Детальніше</a>
         <?php endif; ?>
 
-        <?php if(!empty($camera)): ?>
+        <!--<?php if(!empty($camera)): ?>
             <div class="pre_slide">
                 <a id="big-hex-camera" href="javascript:void(0)" data-modal="" class="camera modal-pop-up">
                     <span>вебкамера</span>
                 </a>
             </div>
-        <?php endif; ?>
+        <?php endif; ?>-->
     </div>
 
 </div>

@@ -17,7 +17,7 @@ $page = get_page($page_id);
             </h1>
 
             <!-- MOBILE SLIDER START -->
-            <div class="mobile-slider-our-projects">
+            <div class="mobile-slider-our-projects text-center">
                 <i class="mobile-slider-our-projects-arrow-left slider-arrow-left fa fa-angle-left"></i>
                 <i class="mobile-slider-our-projects-arrow-right slider-arrow-right fa fa-angle-right"></i>
                 <div id="mobile-slider-our-projects-container">
