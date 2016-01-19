@@ -1,7 +1,7 @@
 .hidden-lg{
     display: none;
 }
-@media only screen and (max-device-width: 720px){
+@media only screen and (max-device-width: 721px){
     
     /* def */
     .hidden-lg{
