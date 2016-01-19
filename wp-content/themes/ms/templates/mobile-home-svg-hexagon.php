@@ -13,7 +13,7 @@ $left_sold_text = get_metadata('post', $id, 'wpcf-left-sold-apartment', true);
 ?>
 
 <div class="our-projects-mob-slider-elem">
-    <div>
+    <div class="mobile_top_slider_img clearfix">
         <img src="<?php echo $img_href[0]; ?>" alt="">
     </div>
 
