@@ -106,6 +106,119 @@ body{
     margin-bottom: 65px;
   }
 
+
+/* secondary-header */
+
+.secondary-header {
+  top:-150px;
+  position:fixed;
+  width:100%;
+  z-index:100;
+  -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.secondary-header.is-down {top:0px;}
+.secondary-header .inner-wrap {
+  position:relative;
+}
+.secondary-header .inner-wrap:before{
+content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/left-part-menu.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    height: 87px;
+    width: 152px;
+    top: -2pxpx;
+    left: -128px;
+}
+.secondary-header .inner-wrap:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/right-part-menu.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    height: 98px;
+    width: 107px;
+    top: 0px;
+    right: -76px;
+}
+.secondary-header .inner-inner-wrap {
+  padding: 5px 10px;
+  background: #FBF9FA;
+  position:relative;
+  z-index:2;
+}
+.secondary-header .inner-inner-wrap:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/bottom-part-menu.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    height: 10px;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+
+}
+  .secondary-header .logo{
+    display: block;
+  padding-left:20px;
+  }
+.secondary-header .logo img{
+  height: 55px;
+}
+  .secondary-header .contacts{
+    margin-top:10px;
+  margin-left: 35px;
+    padding-left: 30px;
+    height: 40px;
+
+    border-left: 1px solid #c6c6c6;
+    font-size: 16px;
+
+  }
+    .secondary-header .contacts p{
+      line-height: 20px;
+    }
+    .secondary-header .contacts span{
+      display: inline-block;
+    }
+    .secondary-header .contacts .number{
+      color: #c6c6c6;
+      width: 120px;
+    }
+    .secondary-header .contacts .city{
+      margin-left: 15px;
+      font-family: benderbold, sans-serif;
+      color: #72777a;
+    }
+.secondary-header .scroll-to-contact {
+    outline: none;
+    background: none;
+    color: #EE8C01;
+    border: 1px solid #EE8C01;
+    line-height: 30px;
+    margin: 15px;
+    padding: 0 20px;
+    font-family: benderbold, sans-serif;
+  -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.secondary-header .scroll-to-contact:hover{
+background: #EE8C01;
+    color: #ffffff;
+}
+.secondary-header .nav-menu-btn {
+      cursor: pointer;
+    margin-top:20px;
+    margin-right:20px;
+
+    }
+
+
 /* header */
 header{
   height: 165px;

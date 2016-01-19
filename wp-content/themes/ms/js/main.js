@@ -712,6 +712,29 @@ jQuery(document).ready(function () {
 
 })(window.jQuery);
 
+$(document).ready(function(){
+    $('.scroll-to-contact').on('click', function(){
+        $('html, body').animate({
+            scrollTop: $("#question-form").offset().top
+        }, 1000);
+    });
+
+    var y = $(this).scrollTop();
+    if (y > 100) {
+        $('.secondary-header').addClass('is-down');
+    } else {
+        $('.secondary-header').removeClass('is-down');
+    }
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+            $('.secondary-header').addClass('is-down');
+        } else {
+            $('.secondary-header').removeClass('is-down');
+        }
+    });
+});
+
 /*
 jQuery(document).ready(function () {
 
