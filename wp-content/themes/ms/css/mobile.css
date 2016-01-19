@@ -68,13 +68,19 @@
         padding-top: 132px;
         padding-bottom: 60px;
 
-        background: url(images/project_about_mobile.png) no-repeat 0 0;
+        background: url('images/project_about_mobile.png') no-repeat 0 0;
         -webkit-background-size: cover;
         background-size: cover;
     }
         /* slider */
         section.our_projects .mobile-slider-our-projects {
             display: block;
+            background: url('images/mobile_top_slider_bg.png') no-repeat 50% 0;
+            margin: 0 -15px;
+        }
+        .mobile_top_slider_img{
+            text-align: right;
+            height: 575px;
         }
         .mobile-slider-our-projects .title{
             font-size: 53px;
@@ -84,7 +90,7 @@
         }
         .mobile-slider-our-projects .count-apartment,
         .mobile-slider-our-projects .lost-apartment{
-            display: block;
+            display: inline-block;
 
             font-size: 31px;
             color: #c1c1c1;
@@ -93,21 +99,26 @@
         .mobile-slider-our-projects .lost-apartment{
             margin-bottom: 25px;
         }
-        .mobile-slider-our-projects img{
-            margin: 0 auto;
-        }
+            .mobile-slider-our-projects .lost-apartment br{
+                display: none;
+            }
         .mobile-slider-our-projects .btn_style{
             display: block;
             margin: 25px 0;
         }
         .mobile-slider-our-projects .slider-arrow-left, 
         .mobile-slider-our-projects .slider-arrow-right{
-            bottom: -250px !important;
+            bottom: -170px !important;
+        }
+        .our-projects-mob-slider-elem > .container{
+            padding: 0 85px;
         }
 
         /**/
         section.our_projects h1.section_title{
             max-width: 100%;
+            margin-bottom: 35px;
+            margin-top: 65px;
         }
         section.our_projects .project_about li{
             width: 100%;
@@ -469,6 +480,7 @@
     }
         .slick-slide img{
             height: auto !important;
+            display: inline-block !important;
         }
     .slick-dots{
         text-align: center;
@@ -489,7 +501,14 @@
         .slick-dots li.slick-active span{
             background: #ff9707;
         }
-    
+    /* sldier arrows*/
+    .slider-arrow-left, 
+    .slider-arrow-right{
+        font-size: 100px !important;
+        line-height: 60px !important;
+    }
+
+    /* contacts */
     section.contacts{
         position: relative;
     }
