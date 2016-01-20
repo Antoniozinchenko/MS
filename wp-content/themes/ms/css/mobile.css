@@ -677,6 +677,10 @@
         section.recent_awards_mobile h4{
             font-size: 35px;
         }
+        section.recent_awards_mobile .slider-arrow-left, 
+        section.recent_awards_mobile .slider-arrow-right{
+            bottom: 118px !important;
+        }
     
     /* advantages */
     section.advantages .row{
@@ -700,6 +704,10 @@
         section.news .title h4{
             font-size: 35px;
         }
+    section.news .slider-arrow-left, 
+    section.news .slider-arrow-right{
+        bottom: 10px !important;
+    }
 
     /* feedback */
     #carousel-feedback .center-content .content-box{
@@ -718,6 +726,10 @@
     #carousel-feedback .content-box .discription{
         font-size: 16px !important;
         line-height: 21px !important;
+    }
+    section.feedback .slider-arrow-left, 
+    section.feedback .slider-arrow-right{
+        bottom: 58px !important;
     }
     /*section.feedback .read-more-btn{
         font-size: 14px !important;
