@@ -1,8 +1,8 @@
 .hidden-lg{
     display: none;
 }
-@media (max-width: 721px){
-/*@media only screen and (max-device-width: 721px){*/
+/*@media (max-width: 721px){*/
+@media only screen and (max-device-width: 721px){
     
     /* def */
     .hidden-lg{
@@ -41,7 +41,7 @@
         border-bottom: 1px solid #ececeb;
     }
         header .logo{
-            /*margin-left: 65px;*/
+            margin-left: 65px;
         }
         header .nav-menu-btn{
             margin-right: 25px;
@@ -113,7 +113,7 @@
             bottom: 160px !important;
         }
         .our-projects-mob-slider-elem > .container{
-            /*padding: 0 85px;*/
+            padding: 0 85px;
         }
 
         /**/
@@ -191,10 +191,8 @@
             font-size: 31px;
             line-height: 36px;
 
-            /*padding: 35px 65px;*/
-            padding: 35px 0;
-        }
-        section.about_company .company_describe{
+            padding: 35px 65px;
+            /*padding: 35px 0;*/
             position: relative;
             height: auto;
         }
@@ -206,8 +204,7 @@
     /* question_form_mobile */
     section.question_form_mobile{
         height: 704px;
-        /*padding: 160px 65px 0;*/
-        padding: 160px 0px 0;
+        padding: 160px 65px 0;
         
         background: url('images/mobile_form.png') no-repeat right top;
     }
@@ -242,7 +239,7 @@
         margin-top: -1px;
     }
         section.recent_awards_mobile .section_title{
-            padding-left: 0;
+            padding-left: 65px;
         }
         section.recent_awards_mobile .container{
             /*padding: 90px 80px 0;*/
@@ -280,17 +277,24 @@
         margin: 0 0 110px;
     }
         section.advantages .col-md-6 div{
-            width: 50%;
+            /*width: 50%;*/
             padding: 0;
         }
-        section.advantages .ico{
-            margin: 0 auto;
-        }
-        section.advantages .text{
-            font-size: 31px;
-            color: #72777a;
-            line-height: 36px;        
-        }    
+            section.advantages .ico_wr{
+                width: 30%;
+            }
+                section.advantages .ico{
+                    margin: 0 auto;
+                }
+            section.advantages .text{
+                font-size: 31px;
+                color: #72777a;
+                line-height: 36px;  
+
+                width: 70%;      
+            }  
+        
+          
     
     /* news */
     section.news{
@@ -331,7 +335,7 @@
             background-size: cover;
         }
     section.news > .wrap-860{
-        /*padding: 0 75px;*/
+        padding: 0 75px;
     }   
         /* news slider */
         .slider-arrow-left, 
@@ -625,8 +629,8 @@
 
 }
 
-@media (max-width: 481px){
-/*@media only screen and (max-device-width: 721px){*/
+/*@media (max-width: 481px){*/
+@media only screen and (max-device-width: 481px){
 
     /* def's */
     .section_title,
@@ -654,6 +658,7 @@
     header .logo{
         max-width: 180px;
         margin-top: 55px;
+        margin-left: 0;
     }
         header .logo img{
             display: block;
@@ -664,6 +669,7 @@
         max-width: 60%;
         margin: 0 auto;
     }
+
     /* top */
     .mobile_top_slider_img{
         display: table-cell;
@@ -672,6 +678,9 @@
     }
     .mobile-slider-our-projects .title{
         font-size: 35px;
+    }
+    .our-projects-mob-slider-elem > .container{
+        padding: 0 15px;
     }
     
     /* our project */
@@ -695,11 +704,18 @@
         display: block;
     }
 
+    /* question form*/
+    section.question_form_mobile{
+        padding: 165px 0 0;
+    }
+
     /* about */
     section.about_company .company_describe{
         font-size: 18px;
         line-height: 21px;
+        padding: 35px 0;
     }
+
     
     /* awards */
     section.recent_awards_mobile .container{
@@ -743,6 +759,9 @@
     section.news .slider-arrow-right{
         bottom: 100px !important;
     }
+    section.news > .wrap-860{
+        padding: 0 15px;
+    } 
 
     /* feedback */
     #carousel-feedback .center-content .content-box{
@@ -769,9 +788,6 @@
     section.feedback .slider-arrow-right{
         bottom: 58px !important;
     }
-    /*section.feedback .read-more-btn{
-        font-size: 14px !important;
-    }*/
     
     /* contacts */
     section.contacts{

@@ -129,22 +129,23 @@
                         slidesToShow: 1,
                         dots: true
                     }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true
-                    }
                 }
+                // ,
+                // {
+                //     breakpoint: 600,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 2
+                //     }
+                // },
+                // {
+                //     breakpoint: 480,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1,
+                //         dots: true
+                //     }
+                // }
             ]
         });
 
