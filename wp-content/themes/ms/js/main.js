@@ -147,36 +147,6 @@
                 }
             ]
         });
-
-
-        $('.maps-navigation .navigation-elements').slick({
-            prevArrow: '.maps-navigation-arrow-left',
-            nextArrow: '.maps-navigation-arrow-right',
-            infinite: true,
-            speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            customPaging: function(slider, i) {
-            return '<span class="carousel-mobile-navigation">-</span>';
-        },
-        responsive: [
-            {
-                breakpoint: 720,
-                settings: {
-                    slidesToShow: 1,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true
-                }
-            }
-        ]
-    });
     });
 })(window.jQuery);
 
@@ -565,6 +535,59 @@ jQuery(document).ready(function () {
         });
 
     });
+
+
+
+    //MOBILE MAPS NAVIGATION
+
+
+    $('.maps-navigation .navigation-elements').slick({
+        prevArrow: '.maps-navigation-arrow-left',
+        nextArrow: '.maps-navigation-arrow-right',
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        customPaging: function(slider, i) {
+            return '<span class="carousel-mobile-navigation">-</span>';
+        },
+        responsive: [
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    $('.maps-navigation .navigation-elements').on('afterChange', function(event,slider){
+        var current_city_data = $(slider.$slides[slider.currentSlide]).data();
+        var map_city = $('#map');
+
+        if(map_city.data('city') != current_city_data.city) {
+            mapSettings = {
+                mapCanvas: document.getElementById('map'),
+                longitude: current_city_data.lon,
+                latitude: current_city_data.lat,
+                image: current_city_data.icon
+            };
+            initialize(mapSettings);
+
+            map_city.data('city', current_city_data.city);
+        }
+
+    });
+
 
 
     var boxStart = document.getElementById('set-route-form');

@@ -439,8 +439,8 @@
             <i class="maps-navigation-arrow-left slider-arrow-left fa fa-angle-left slick-arrow" style="display: block;"></i>
             <i class="maps-navigation-arrow-right slider-arrow-right fa fa-angle-right slick-arrow" style="display: block;"></i>
             <div class="navigation-elements">
-                <div>Львів</div>
-                <div>Чернівці</div>
+                <div data-city="1" data-tab="lviv" data-lon="49.8358245" data-lat="24.031111099999976" data-icon="<?php echo $marker_lviv ?>" >Львів</div>
+                <div data-city="2" data-tab="chernivtsi" data-lon="48.29240329885312" data-lat="25.93664886429906" data-icon="<?php echo $marker_chernivtsi ?>">Чернівці</div>
             </div>
         </div>
         <div class="set-route-form" id="set-route-form">
@@ -449,7 +449,7 @@
             <div class="text-center text set-route-form-text">Або</div>
             <a href="javascript:;" class="btn_style set-route-form-btn" id="get-geolocation-btn">Прокласти маршрут з поточного місця</a>
         </div>
-        <div id="map" class="map"></div>
+        <div id="map" data-city="1" class="map"></div>
         <a href="javascript:;" style="display:none;" class="btn_style get_route get_route_form">прокласти маршрут</a>
     </section>
 
