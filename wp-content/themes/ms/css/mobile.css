@@ -631,7 +631,10 @@
             max-width: 100%;
             height: auto;
         }
-    
+    .slick-dots{
+        max-width: 50%;
+        margin: 0 auto;
+    }
     /* top */
     .mobile_top_slider_img{
         display: table-cell;
@@ -706,7 +709,7 @@
         }
     section.news .slider-arrow-left, 
     section.news .slider-arrow-right{
-        bottom: 10px !important;
+        bottom: 100px !important;
     }
 
     /* feedback */
