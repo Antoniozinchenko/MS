@@ -35,6 +35,37 @@
         right: 33px !important;
     }
 
+    /* fxd menu*/
+    #fixed-menu{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .menus_wrap{
+        margin-top: 0 !important;
+        width: 100%;
+        text-align: center;
+        display: block !important;
+    }
+    #nav-menu,
+    #nav-our-projects{
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+        #nav-menu{
+            margin-top: 25px !important;
+            margin-bottom: 25px !important;
+            border-right: none;
+        }
+        #nav-our-projects{
+            padding: 0 !important;
+        }
+    
+    #fixed-menu #nav-menu-close-btn, #popup-box-close-btn, #close-footer-contact-form{
+        top: 25px !important;
+        right: 25px !important;
+    }
+
     /* header */
     header{
         background: none;
@@ -384,7 +415,7 @@
 
         }
         section.news .slick-slide img{
-            min-height: 571px;
+            /*min-height: 571px;*/
         }
 
     /* feedback */
@@ -426,7 +457,8 @@
             z-index: 11 !important;
             width: 320px !important;
             height: 320px !important;
-            left: 290px !important;
+            left: 0px !important;
+            margin: 0 auto;
         }
         #carousel-feedback .content-box .discription{
             width: 100% !important;
@@ -526,9 +558,8 @@
             display: block;
             position: absolute;
             bottom: 120px;
-            left: 50%;
-            margin-left: -287px;
-            width: 565px;
+            left: 11%;
+            width: 78%;
             z-index: 3;
         }
     section.contacts .maps-navigation{
@@ -556,7 +587,6 @@
     /* contacts & map*/
     .map{
         margin-top: 0 !important;
-        height: 835px !important;
     }
 
     /* footer contact form */
