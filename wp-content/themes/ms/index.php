@@ -450,7 +450,7 @@
             <a href="javascript:;" class="btn_style set-route-form-btn" id="get-geolocation-btn">Прокласти маршрут з поточного місця</a>
         </div>
         <div id="map" data-city="1" class="map"></div>
-        <a href="javascript:;" style="display:none;" class="btn_style get_route get_route_form">прокласти маршрут</a>
+        <a href="javascript:;" class="btn_style get_route get_route_form">прокласти маршрут</a>
     </section>
 
 <?php get_footer(); ?>

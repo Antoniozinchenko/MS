@@ -1504,3 +1504,8 @@ footer{
     .our_projects .mobile-slider-our-projects {
       display: none;
     }
+
+
+  .get_route_form {
+    display: none;
+  }
