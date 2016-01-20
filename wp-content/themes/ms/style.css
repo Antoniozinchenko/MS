@@ -714,3 +714,7 @@ section.relative-contacts .set-route-form #route-form-close:hover {
     font-family: benderblack, sans-serif;
     margin-bottom: 15px;
 }
+
+.maps-navigation {
+    position: relative;
+}

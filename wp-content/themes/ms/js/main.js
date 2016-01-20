@@ -147,6 +147,36 @@
                 }
             ]
         });
+
+
+        $('.maps-navigation .navigation-elements').slick({
+            prevArrow: '.maps-navigation-arrow-left',
+            nextArrow: '.maps-navigation-arrow-right',
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            customPaging: function(slider, i) {
+            return '<span class="carousel-mobile-navigation">-</span>';
+        },
+        responsive: [
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
+    });
     });
 })(window.jQuery);
 
@@ -159,6 +189,7 @@
 //         'showNavArrows': false
 //     });
 // });
+
 
 (function($){
     "use strict";

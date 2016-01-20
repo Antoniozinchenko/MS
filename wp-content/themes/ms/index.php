@@ -435,6 +435,14 @@
     </section>
 
     <section class="contacts relative-contacts">
+        <div class="maps-navigation">
+            <i class="maps-navigation-arrow-left slider-arrow-left fa fa-angle-left slick-arrow" style="display: block;"></i>
+            <i class="maps-navigation-arrow-right slider-arrow-right fa fa-angle-right slick-arrow" style="display: block;"></i>
+            <div class="navigation-elements">
+                <div>Львів</div>
+                <div>Чернівці</div>
+            </div>
+        </div>
         <div class="set-route-form" id="set-route-form">
             <i class="fa fa-times" id="route-form-close"></i>
             <input type="text" class="inp_style clear-both set-route-form-input" id="set-route-form-input" placeholder="Введіть початкову адресу">
