@@ -1,7 +1,8 @@
 .hidden-lg{
     display: none;
 }
-@media only screen and (max-device-width: 721px){
+@media (max-width: 721px){
+/*@media only screen and (max-device-width: 721px){*/
     
     /* def */
     .hidden-lg{
@@ -40,7 +41,7 @@
         border-bottom: 1px solid #ececeb;
     }
         header .logo{
-            margin-left: 65px;
+            /*margin-left: 65px;*/
         }
         header .nav-menu-btn{
             margin-right: 25px;
@@ -112,7 +113,7 @@
             bottom: 160px !important;
         }
         .our-projects-mob-slider-elem > .container{
-            padding: 0 85px;
+            /*padding: 0 85px;*/
         }
 
         /**/
@@ -133,9 +134,9 @@
         }
         section.our_projects .ico{
             margin: 0 auto;
-            background-position: 0 0;
+            /*background-position: 0 0;*/
         }
-            section.our_projects .ico_01{
+           /* section.our_projects .ico_01{
                 background: url('images/pa_1.png') no-repeat;
 
                 width: 123px;
@@ -158,7 +159,7 @@
 
                 width: 196px;
                 height: 118px;
-            }
+            }*/
         .project_about .number{
             display: block;
             font-size: 107px;
@@ -190,7 +191,8 @@
             font-size: 31px;
             line-height: 36px;
 
-            padding: 35px 65px;
+            /*padding: 35px 65px;*/
+            padding: 35px 0;
         }
         section.about_company .company_describe{
             position: relative;
@@ -204,7 +206,8 @@
     /* question_form_mobile */
     section.question_form_mobile{
         height: 704px;
-        padding: 160px 65px 0;
+        /*padding: 160px 65px 0;*/
+        padding: 160px 0px 0;
         
         background: url('images/mobile_form.png') no-repeat right top;
     }
@@ -242,7 +245,8 @@
             padding-left: 0;
         }
         section.recent_awards_mobile .container{
-            padding: 90px 80px 0;
+            /*padding: 90px 80px 0;*/
+            padding: 90px 0px 0;
             background: #f7f6f5;    
         }
         section.recent_awards_mobile .ra_bot{
@@ -327,7 +331,7 @@
             background-size: cover;
         }
     section.news > .wrap-860{
-        padding: 0 75px;
+        /*padding: 0 75px;*/
     }   
         /* news slider */
         .slider-arrow-left, 
@@ -482,6 +486,7 @@
         .slick-slide img{
             height: auto !important;
             display: inline-block !important;
+            max-width: 100%;
         }
     .slick-dots{
         text-align: center;
@@ -596,4 +601,158 @@
     }
 
 
+}
+
+@media (max-width: 481px){
+/*@media only screen and (max-device-width: 721px){*/
+
+    /* def's */
+    .section_title,
+    h1.section_title{
+        font-size: 40px;
+        padding: 0;
+        text-align: center !important;
+    }
+    .btn_style{
+        font-size: 22px !important;
+    }
+    .about-1 .btn_detailed, 
+    section.feedback .read-more-btn{
+        font-size: 18px !important;
+    }
+
+    /* header */
+    header .logo{
+        max-width: 180px;
+        margin-top: 55px;
+    }
+        header .logo img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    
+    /* top */
+    .mobile_top_slider_img{
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .mobile-slider-our-projects .title{
+        font-size: 35px;
+    }
+    
+    /* our project */
+    section.our_projects .project_about{
+        text-align: center;
+        padding-top: 55px;
+    }
+        section.our_projects .project_about li{
+            margin-bottom: 25px;
+        }
+        section.our_projects .project_about li > div{
+            float: none;
+            width: 100% !important;
+            display: inline-block;
+        }
+
+    .project_about .text{
+        display: block;
+    }
+
+    /* about */
+    section.about_company .company_describe{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+    /* awards */
+    section.recent_awards_mobile .container{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+        section.recent_awards_mobile .section_title{
+            padding-left: 15px;
+        }
+        section.recent_awards_mobile h4{
+            font-size: 35px;
+        }
+        section.recent_awards_mobile .slider-arrow-left, 
+        section.recent_awards_mobile .slider-arrow-right{
+            bottom: 118px !important;
+        }
+    
+    /* advantages */
+    section.advantages .row{
+        margin: 0;
+        /*word-break: break-all;*/
+        text-align: center; 
+    }
+        section.advantages .cel-left, section.advantages .cel-right{
+            margin: 0 0 55px;
+            height: auto;
+        }
+        section.advantages .col-md-6 div{
+            display: block !important;
+            width: 100%;
+        }
+    
+    /* news */
+    section.news .slick-slide img{
+        min-height: 100% !important;
+    }
+        section.news .title h4{
+            font-size: 35px;
+        }
+    section.news .slider-arrow-left, 
+    section.news .slider-arrow-right{
+        bottom: 10px !important;
+    }
+
+    /* feedback */
+    #carousel-feedback .center-content .content-box{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    #carousel-feedback .hexagon-wrap{
+        left: 0 !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    #carousel-feedback .content-box .position-humen{
+        font-size: 14px !important;
+    }
+    #carousel-feedback .content-box .discription{
+        font-size: 16px !important;
+        line-height: 21px !important;
+    }
+    section.feedback .slider-arrow-left, 
+    section.feedback .slider-arrow-right{
+        bottom: 58px !important;
+    }
+    /*section.feedback .read-more-btn{
+        font-size: 14px !important;
+    }*/
+    
+    /* contacts */
+    section.contacts{
+        overflow: hidden;
+    }
+    
+    /* footer */
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        footer .col-xs-4{
+            padding: 0;
+        }
+        footer .m_telephone{
+            padding-left: 0;
+            background: none;
+            font-size: 35px;
+            height: 35px;
+            line-height: 35px;
+        }
 }
