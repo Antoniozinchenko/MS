@@ -601,7 +601,7 @@ jQuery(document).ready(function () {
 
             disableDefaultUI: false,
             scrollwheel: false,
-            draggable: true
+            draggable: !("ontouchend" in document)
         };
 
 
