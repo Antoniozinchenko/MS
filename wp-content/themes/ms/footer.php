@@ -209,7 +209,7 @@
   </div>
 </section>
 
-<div id="back-top"></div>
+<div id="back-top" class="hidden-mb"></div>
 
 <script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
 

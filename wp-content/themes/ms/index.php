@@ -435,7 +435,10 @@
     </section>
 
     <section class="contacts relative-contacts">
-        <div class="maps-navigation hidden-lg">
+        <h2 class="section_title visible-mb">
+            Розташування
+        </h2>
+        <div class="maps-navigation">
             <i class="maps-navigation-arrow-left slider-arrow-left fa fa-angle-left slick-arrow" style="display: block;"></i>
             <i class="maps-navigation-arrow-right slider-arrow-right fa fa-angle-right slick-arrow" style="display: block;"></i>
             <div class="navigation-elements">

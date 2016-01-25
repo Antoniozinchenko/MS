@@ -66,7 +66,7 @@
     <div class="container">
         <div class="wrap-860 clearfix">
             <a href="<?php echo $get_hd; ?>" class="logo pull-left">
-                <img src="<?php echo $pwd ?>img/logo.png" alt="">
+                <img src="<?php echo $pwd ?>img/logo.png" alt="logo" class="img-responsive">
             </a>
 
             <?php 
