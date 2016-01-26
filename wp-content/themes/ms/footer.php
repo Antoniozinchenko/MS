@@ -163,7 +163,7 @@
       <p class="location">
         <img src="<?php echo $pwd ?>img/m_footer_location.png" alt="">
         <br>
-        Офіс м. Львів, вул. Волошина, 6
+        м. Львів, вул. Волошина, 6
       </p>
       <span class="m_telephone">
         095 231-1-231

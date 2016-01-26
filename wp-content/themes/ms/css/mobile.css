@@ -914,6 +914,9 @@
     section.contacts{
         overflow: hidden;
     }
+        section.contacts .slick-slide{
+            font-size: 24px;
+        }
     section.contacts .maps-navigation{
         font-size: 35px !important;
         text-transform: uppercase;
@@ -931,8 +934,7 @@
     
     /* footer */
     footer{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 25px 15px;
     }
         footer .col-xs-4{
             padding: 0;
@@ -940,19 +942,28 @@
         footer .m_telephone{
             padding-left: 0;
             background: none;
-            font-size: 35px;
-            height: 35px;
-            line-height: 35px;
+            font-size: 24px;
+            height: 24px;
+            line-height: 24px;
+            margin-bottom: 25px;
         }
-    footer .m_socials a{
-        width: 35px;
-        height: 35px;
-        line-height: 35px !important;
-        font-size: 15px;
-    }
-    footer .get_call{
-        margin-bottom: 105px;
-    }
+        footer .m_socials a{
+            width: 35px;
+            height: 35px;
+            line-height: 35px !important;
+            font-size: 15px;
+        }
+        footer .get_call{
+            margin-bottom: 60px;
+        }
+        footer .location{
+            font-size: 12px;
+            margin-bottom: 35px;
+        }
+            footer .location img{
+                width: 6%;
+                margin-bottom: 10px;
+            }
     
     /* slider */
     .slick-dots li{
