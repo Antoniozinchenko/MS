@@ -674,13 +674,11 @@
         font-size: 24px;
         line-height: 26px;
         padding: 0;
-        /*text-align: center !important;*/
     }
     h1.section_title{
         margin: 35px 0 !important;
     }
     .btn_style{
-        /*font-size: 22px !important;*/
         font-size: 14px;
         height: 44px;
         line-height: 44px;
@@ -721,7 +719,6 @@
         vertical-align: middle;
     }
     .mobile-slider-our-projects .title{
-        /*font-size: 35px;*/
         font-size: 24px;
         line-height: 26px;
     }
@@ -750,11 +747,7 @@
                 text-align: left;
                 font-size: 14px;
             }
-        /*section.our_projects .project_about li > div{
-            float: none;
-            width: 100% !important;
-            display: inline-block;
-        }*/
+
     .mobile-slider-our-projects .slider-arrow-left, 
     .mobile-slider-our-projects .slider-arrow-right{
         bottom: -5px !important;
@@ -784,8 +777,6 @@
 
     /* about */
     section.about_company .company_describe{
-        /*font-size: 18px;
-        line-height: 21px;*/
         font-size: 14px;
         line-height: 18px;
         padding: 35px 0;
@@ -821,6 +812,7 @@
 
         section.recent_awards_mobile img{
             width: auto;
+            margin: 25px 0;
         }
         section.recent_awards_mobile h5{
             font-size: 14px;
@@ -831,9 +823,11 @@
         }
     
     /* advantages */
+    section.advantages{
+        margin-top: -100px;
+    }
     section.advantages .row{
         margin: 0;
-        /*word-break: break-all;*/
         text-align: center; 
     }
         section.advantages .col-md-6 div{
@@ -843,10 +837,6 @@
             margin: 0 0 25px;
             height: auto;
         }
-        /*section.advantages .col-md-6 div{
-            display: block !important;
-            width: 100%;
-        }*/
         section.advantages .text{
             font-size: 14px;
             line-height: 18px;
@@ -874,6 +864,11 @@
             font-size: 24px;
             line-height: 26px;
         }
+    section.news .news_skull{
+        height: 250px;
+        margin: 0 25px;
+        overflow: hidden;
+    }
     section.news .slider-arrow-left, 
     section.news .slider-arrow-right{
         bottom: 100px !important;
@@ -919,6 +914,9 @@
     section.contacts{
         overflow: hidden;
     }
+        section.contacts .slick-slide{
+            font-size: 24px;
+        }
     section.contacts .maps-navigation{
         font-size: 35px !important;
         text-transform: uppercase;
@@ -936,8 +934,7 @@
     
     /* footer */
     footer{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 25px 15px;
     }
         footer .col-xs-4{
             padding: 0;
@@ -945,19 +942,28 @@
         footer .m_telephone{
             padding-left: 0;
             background: none;
-            font-size: 35px;
-            height: 35px;
-            line-height: 35px;
+            font-size: 24px;
+            height: 24px;
+            line-height: 24px;
+            margin-bottom: 25px;
         }
-    footer .m_socials a{
-        width: 35px;
-        height: 35px;
-        line-height: 35px !important;
-        font-size: 15px;
-    }
-    footer .get_call{
-        margin-bottom: 105px;
-    }
+        footer .m_socials a{
+            width: 35px;
+            height: 35px;
+            line-height: 35px !important;
+            font-size: 15px;
+        }
+        footer .get_call{
+            margin-bottom: 60px;
+        }
+        footer .location{
+            font-size: 12px;
+            margin-bottom: 35px;
+        }
+            footer .location img{
+                width: 6%;
+                margin-bottom: 10px;
+            }
     
     /* slider */
     .slick-dots li{
