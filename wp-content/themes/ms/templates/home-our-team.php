@@ -101,21 +101,21 @@ $pwd = pwd();
                             </g>
                             <a xlink:href="javascript:void(0);">
                                 <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
+                                <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/konuh_adr.png" preserveAspectRatio="xMidYMin slice" />
                                 <p class="worker_pre">
                                     <span class="name">
-                                        Василь Савчук
+                                        Конюх Адріан
                                     </span>
                                     <span class="position">
-                                        персональний консультант
+                                        персональний менеджер
                                     </span>
                                 </p>
                                 <p class="worker_post">
                                     <span class="mail">
-                                        savchuk@ms-bud.com.ua
+                                        adrian.msbud@gmail.com
                                     </span>
                                     <span class="number">
-                                        097 321 00 77
+                                        068-231-00-22
                                     </span>
                                     <span class="get_call">
                                         замовити дзвінок

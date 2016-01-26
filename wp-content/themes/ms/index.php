@@ -231,21 +231,21 @@
                                 </g>
                                 <a xlink:href="javascript:void(0);">
                                     <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
+                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/konuh_adr.png" preserveAspectRatio="xMidYMin slice" />
                                     <p class="worker_pre">
                                         <span class="name">
-                                            Василь Савчук
+                                            Конюх Адріан
                                         </span>
                                         <span class="position">
-                                            персональний консультант
+                                            персональний <br> менеджер
                                         </span>
                                     </p>
                                     <p class="worker_post">
                                         <span class="mail">
-                                            savchuk@ms-bud.com.ua
+                                            adrian.msbud@gmail.com
                                         </span>
                                         <span class="number">
-                                            097 321 00 77
+                                            068-231-00-22
                                         </span>
                                         <span class="get_call">
                                             замовити дзвінок
@@ -439,8 +439,8 @@
             Розташування
         </h2>
         <div class="maps-navigation">
-            <i class="maps-navigation-arrow-left slider-arrow-left fa fa-angle-left slick-arrow" style="display: block;"></i>
-            <i class="maps-navigation-arrow-right slider-arrow-right fa fa-angle-right slick-arrow" style="display: block;"></i>
+            <i class="hidden-lg maps-navigation-arrow-left slider-arrow-left fa fa-angle-left slick-arrow" style="display: block;"></i>
+            <i class="hidden-lg maps-navigation-arrow-right slider-arrow-right fa fa-angle-right slick-arrow" style="display: block;"></i>
             <div class="navigation-elements">
                 <div data-city="1" data-tab="lviv" data-lon="49.8358245" data-lat="24.031111099999976" data-icon="<?php echo $marker_lviv ?>" >Львів</div>
                 <div data-city="2" data-tab="chernivtsi" data-lon="48.29240329885312" data-lat="25.93664886429906" data-icon="<?php echo $marker_chernivtsi ?>">Чернівці</div>
