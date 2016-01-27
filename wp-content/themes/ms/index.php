@@ -31,6 +31,7 @@
     
     <!-- mobile -->
     <section class="question_form_mobile hidden-lg">
+        <img src="<?php echo $pwd ?>img/mobile_form.png" alt="" class="visible-mb-480 img-responsive">
         <div class="container">
             <h2 class="section_title">
                 замов дзвінок
