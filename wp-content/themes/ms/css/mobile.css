@@ -34,6 +34,9 @@
     .slider-arrow-right{
         right: 33px !important;
     }
+    .visible-mb-480{
+        display: none !important;
+    }
 
     /* fxd menu*/
     #fixed-menu{
@@ -218,6 +221,9 @@
         }
             section.about_company .about-1:before{
                 display: none;
+            }
+            .company_describe.open{
+                background: #fff;
             }
         section.about_company .about-1 .company_describe:before{
             display: none;
@@ -731,8 +737,8 @@
         text-align: center;
         padding-top: 55px;
 
-        -webkit-background-size: contain;
-        background-size: contain;
+        /*-webkit-background-size: contain;
+        background-size: contain;*/
 
         height: auto !important;
     }
@@ -757,14 +763,25 @@
     }
 
     /* question form*/
-    section.question_form_mobile{
-        padding: 50px 0 0;
-        height: auto;
-        min-height: 313px;
-
-        -webkit-background-size: contain;
-        background-size: contain;
+    .visible-mb-480{
+        display: block !important;
     }
+    section.question_form_mobile{
+        padding: 0;
+        height: auto;
+        position: relative;
+        /*min-height: 313px;*/
+
+        /*-webkit-background-size: contain;
+        background-size: contain;*/
+        background: none;
+    }
+        section.question_form_mobile .container{
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            left: 0;
+        }
         section.question_form_mobile .section_title{
             margin-bottom: 25px;
         }
