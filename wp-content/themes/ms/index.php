@@ -6,35 +6,29 @@ $contact_page_id = 81;
 $marker_lviv = get_metadata('post', $contact_page_id, 'wpcf-marker-office-lviv', true);
 $marker_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-marker-office-chernivtsi', true);
 
+?>
 
+<?php
 //MS INIT BACKGROUNDS
-
-//217
-//220
-//223
-//226
-//229
-
-$parallax = [];
+//$parallax = [];
 $img_url = wp_get_attachment_url( get_post_thumbnail_id(217));
-$parallax[0] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/1.jpg' : $img_url;
+$parallax[0] = empty($img_url) ? $pwd.'/css/images/1.jpg' : $img_url;
 
 $img_url = wp_get_attachment_url( get_post_thumbnail_id(220));
-$parallax[1] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/2.jpg' : $img_url;
+$parallax[1] = empty($img_url) ? $pwd.'/css/images/2.jpg' : $img_url;
 
 $img_url = wp_get_attachment_url( get_post_thumbnail_id(223));
-$parallax[2] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/3.jpg' : $img_url;
+$parallax[2] = empty($img_url) ? $pwd.'/css/images/3.jpg' : $img_url;
 
 $img_url = wp_get_attachment_url( get_post_thumbnail_id(226));
-$parallax[3] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/4.jpg' : $img_url;
+$parallax[3] = empty($img_url) ? $pwd.'/css/images/4.jpg' : $img_url;
 
 $img_url = wp_get_attachment_url( get_post_thumbnail_id(229));
-$parallax[4] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/5.jpg' : $img_url;
+$parallax[4] = empty($img_url) ? $pwd.'/css/images/5.jpg' : $img_url;
+
 
 //MS INIT OUR TEAM
-
-
-$our_team = [];
+//$our_team = [];
 
 $args = array(
     'posts_per_page'   => 5,
