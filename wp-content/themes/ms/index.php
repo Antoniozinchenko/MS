@@ -215,7 +215,9 @@ endforeach;
 
     <?php get_template_part( 'templates/home', 'articles' ); ?>
 
-    <?php get_template_part( 'templates/home', 'question-form' ); ?>
+    <?php
+    set_query_var('question_form_img', $parallax[4]);
+    get_template_part( 'templates/home', 'question-form' ); ?>
 
     <?php get_template_part( 'templates/home', 'feedback' ); ?>
 

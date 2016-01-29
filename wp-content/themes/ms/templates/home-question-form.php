@@ -6,9 +6,11 @@
 
 $pwd = pwd();
 
+$question_form_img = get_query_var('question_form_img');
+
 ?> 
 
-<section id="question-form" class="question_form parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $parallax[4] ?>">
+<section id="question-form" class="question_form parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $question_form_img; ?>">
     <div class="wrap-860 clearfix display-flex">
         <div class="col-left">
             <h2 class="section_title">
