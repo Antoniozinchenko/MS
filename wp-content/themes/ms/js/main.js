@@ -187,7 +187,8 @@
         
         $('.modal-pop-up').on('click', function(e){
             e.preventDefault();
-            showPopUp(e.target, $(this).data() );
+            //console.log(this);
+            showPopUp(this, $(this).data() ); //e.target
         });
 
         function showPopUp(target, data){
@@ -257,23 +258,22 @@
 
         function bildModal(element, targetDom, dataDom){
 
-            if( $(targetDom).parents('.modal-' + element) ) {
-                console.dir($(targetDom).parents('.modal-' + element));
+            //if( $(targetDom).parents('.modal-' + element) ) {
+                //console.dir($(targetDom).parents('.modal-' + element));
 
                 var modalID = 'modal-' + element + '-' + dataDom.modal;
                 var el = document.getElementById(modalID);
 
                 console.log( 'modal = ' + element );
-                console.log( dataDom );
+                //console.log( dataDom );
                 console.log( 'modalID = ' + modalID );
                 
                 if(el) {
                     el.classList.remove('hide');
                 } else {
-                    var $targetDom2 = $(targetDom).parents('.modal-' + element);
-                    console.dir($targetDom2);
-
-                    console.log( 'not el');
+                    var $targetDom2 = $(targetDom);//.parents('.modal-' + element);
+                    //console.dir($targetDom2);
+                    //console.log( 'not el');
                     var h2 = document.createElement('h2');
                     h2.id = modalID;
                     h2.innerHTML = $targetDom2.find('.title h4').text();
@@ -301,9 +301,9 @@
 
                 return 'done';
 
-            }
+            //}
 
-            return 'no-done';
+            //return 'no-done';
         }
 
     });
