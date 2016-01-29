@@ -34,6 +34,53 @@ $parallax[4] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/
 //MS INIT OUR TEAM
 
 
+$our_team = [];
+
+$args = array(
+    'posts_per_page'   => 5,
+    'limit'            => 5,
+    'offset'           => 0,
+    'category'         => 11,
+    'orderby'          => 'date',
+    'order'            => 'ASC',
+    'post_type'        => 'post',
+    'post_status'      => 'publish',
+    'suppress_filters' => true
+);
+
+$our_team['lviv'] = get_posts( $args );
+
+
+foreach ($our_team['lviv'] as $v):
+    $v->employee_position = do_shortcode('[types id='.$v->ID.' field="employee_position"][/types]');
+    $v->employee_email = do_shortcode('[types id='.$v->ID.' field="employee_email"][/types]');
+    $v->employee_phone = do_shortcode('[types id='.$v->ID.' field="employee_phone"][/types]');
+    $v->photo = wp_get_attachment_url( get_post_thumbnail_id($v->ID));
+endforeach;
+
+
+$args = array(
+    'posts_per_page'   => 5,
+    'limit'            => 5,
+    'offset'           => 0,
+    'category'         => 12,
+    'orderby'          => 'date',
+    'order'            => 'ASC',
+    'post_type'        => 'post',
+    'post_status'      => 'publish',
+    'suppress_filters' => true
+);
+
+$our_team['chernivtsi'] = get_posts( $args );
+
+
+foreach ($our_team['chernivtsi'] as $v):
+    $v->employee_position = do_shortcode('[types id='.$v->ID.' field="employee_position"][/types]');
+    $v->employee_email = do_shortcode('[types id='.$v->ID.' field="employee_email"][/types]');
+    $v->employee_phone = do_shortcode('[types id='.$v->ID.' field="employee_phone"][/types]');
+    $v->photo = wp_get_attachment_url( get_post_thumbnail_id($v->ID));
+endforeach;
+
 ?>
 
     <?php get_template_part( 'templates/home', 'our-project' ); ?>
@@ -185,279 +232,46 @@ $parallax[4] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/
                 <div class="row">
                 </div>
                 <div class="contacons contacons-lviv">
-                    <div class="line first clearfix">
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/ira_senuk.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Іра Сеник
-                                        </span>
-                                        <span class="position">
-                                            персональний консультант
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            ira@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            067 231 00 22
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galia_peskova.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Галя Пєскова
-                                        </span>
-                                        <span class="position">
-                                            персональний консультант
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            galya@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            095 231 12 31
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/konuh_adr.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Конюх Адріан
-                                        </span>
-                                        <span class="position">
-                                            персональний <br> менеджер
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            adrian.msbud@gmail.com
-                                        </span>
-                                        <span class="number">
-                                            068-231-00-22
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                    </div>
-                    <div class="line second clearfix">
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/nadia_lukashuk.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Надія Лукащук
-                                        </span>
-                                        <span class="position">
-                                            заступник керівника відділу продажу
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            hello@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            067 673 67 10
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/birma_zaharova.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Бірма Захарова
-                                        </span>
-                                        <span class="position">
-                                            керівник відділу <br> продажу
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            ms@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            (032) 26 01 333
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                    </div>
+                    <?php
+                    $i = 0;
+                    foreach($our_team['lviv'] as $v ): ?>
+                        <?php
+                        $i++;
+                        if($i == 1) {
+                            echo '<div class="line first clearfix">';
+                        }
+                        if($i == 4){
+                            echo '<div class="line second clearfix">';
+                        }
+
+                        set_query_var('our_team', $v);
+                        get_template_part('templates/our', 'team-element');
+
+                         if($i == 3 || $i == 5) {
+                            echo '</div>';
+                        } ?>
+                    <?php endforeach; ?>
                 </div>
                 <div class="contacons contacons-chernivtsi" style="display:none;">
-                    <div class="line first clearfix">
-                        <div class="contacon contacon_before">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/sviatoslav_lucushun.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Святослав Луцишин
-                                        </span>
-                                        <span class="position">
-                                           керівник відділу <br> продажу
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            sv@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            050 430 33 34
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/irina_romanuk.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Ірина Романюк
-                                        </span>
-                                        <span class="position">
-                                            заступник керівника <br>
-                                            відділу продажу
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            iryna@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            098 231 77 00
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                        <div class="contacon">
-                            <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                <g>
-                                    <clipPath id="hex-mask_worker">
-                                        <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
-                                    </clipPath>
-                                </g>
-                                <a xlink:href="javascript:void(0);">
-                                    <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
-                                    <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galina_nayda.png" preserveAspectRatio="xMidYMin slice" />
-                                    <p class="worker_pre">
-                                        <span class="name">
-                                            Галина Найда
-                                        </span>
-                                        <span class="position">
-                                            персональний <br> консультант
-                                        </span>
-                                    </p>
-                                    <p class="worker_post">
-                                        <span class="mail">
-                                            gn@ms-bud.com.ua
-                                        </span>
-                                        <span class="number">
-                                            050 430 93 33
-                                        </span>
-                                        <span class="get_call">
-                                            замовити дзвінок
-                                        </span>
-                                    </p>
-                                </a>
-                            </svg>
-                            <div class="contacon_fake"></div>
-                        </div>
-                    </div>
+                    <?php
+                    $i = 0;
+                    foreach($our_team['chernivtsi'] as $v ): ?>
+                        <?php
+                        $i++;
+                        if($i == 1) {
+                            echo '<div class="line first clearfix">';
+                        }
+                        if($i == 4){
+                            echo '<div class="line second clearfix">';
+                        }
+
+                        set_query_var('our_team', $v);
+                        get_template_part('templates/our', 'team-element');
+
+                        if($i == 3 || $i == 5) {
+                            echo '</div>';
+                        } ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
