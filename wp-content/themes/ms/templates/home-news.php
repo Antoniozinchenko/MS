@@ -25,7 +25,7 @@ $page = get_page(4);
             ));
             while (have_posts()) : the_post(); ?>
                 <div>
-                    <div class="<?php /*echo modal-pop-up modal-news*/ ?>" data-modal="<?php echo $post->ID; ?>">
+                    <div class="<?php echo "modal-pop-up modal-news" ?>" data-modal="<?php echo $post->ID; ?>">
                         <div class="clearfix news_skull">
                             <div class="border-box"></div>
                             <?php
