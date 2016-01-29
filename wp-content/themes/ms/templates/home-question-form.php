@@ -8,7 +8,7 @@ $pwd = pwd();
 
 ?> 
 
-<section id="question-form" class="question_form parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/5.jpg">
+<section id="question-form" class="question_form parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $parallax[4] ?>">
     <div class="wrap-860 clearfix display-flex">
         <div class="col-left">
             <h2 class="section_title">

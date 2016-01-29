@@ -1,15 +1,44 @@
 <?php get_header(); ?>
 <?php $pwd = pwd(); ?>
 <?php
-    $contact_page_id = 81;
+$contact_page_id = 81;
 
-    $marker_lviv = get_metadata('post', $contact_page_id, 'wpcf-marker-office-lviv', true);
-    $marker_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-marker-office-chernivtsi', true);
+$marker_lviv = get_metadata('post', $contact_page_id, 'wpcf-marker-office-lviv', true);
+$marker_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-marker-office-chernivtsi', true);
+
+
+//MS INIT BACKGROUNDS
+
+//217
+//220
+//223
+//226
+//229
+
+$parallax = [];
+$img_url = wp_get_attachment_url( get_post_thumbnail_id(217));
+$parallax[0] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/1.jpg' : $img_url;
+
+$img_url = wp_get_attachment_url( get_post_thumbnail_id(220));
+$parallax[1] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/2.jpg' : $img_url;
+
+$img_url = wp_get_attachment_url( get_post_thumbnail_id(223));
+$parallax[2] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/3.jpg' : $img_url;
+
+$img_url = wp_get_attachment_url( get_post_thumbnail_id(226));
+$parallax[3] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/4.jpg' : $img_url;
+
+$img_url = wp_get_attachment_url( get_post_thumbnail_id(229));
+$parallax[4] = empty($img_url) ? 'http://ms-bud.com.ua/wp-content/themes/ms/css/images/5.jpg' : $img_url;
+
+//MS INIT OUR TEAM
+
+
 ?>
 
     <?php get_template_part( 'templates/home', 'our-project' ); ?>
 
-    <section class="preparing horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/1.jpg">
+    <section class="preparing horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $parallax[0] ?>">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
@@ -84,7 +113,7 @@
     </section>
     <!--  -->
 
-    <section class="supervision horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/2.jpg">
+    <section class="supervision horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $parallax[1] ?>" >
         <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
@@ -100,7 +129,7 @@
 
 	<?php get_template_part( 'templates/home', 'our-advantages' ); ?>
 
-    <section class="brick horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/3.jpg">
+    <section class="brick horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $parallax[2] ?>">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="title_white">
@@ -121,7 +150,7 @@
     
     <?php get_template_part( 'templates/home', 'news' ); ?>
 
-    <section class="windows horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $pwd ?>css/images/4.jpg">
+    <section class="windows horizontal_block parallax-window hidden-mb" data-parallax="scroll" data-image-src="<?php echo $parallax[3] ?>">
         <div class="container hide">
             <div class="wrap-860">
                 <div class="text_white">
