@@ -215,3 +215,18 @@
 
 </body>
 </html>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+<!-- <link rel="stylesheet" href="<?php echo $pwd ?>css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="<?php echo $pwd ?>style.css" rel="stylesheet">

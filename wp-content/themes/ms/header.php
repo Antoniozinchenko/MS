@@ -19,15 +19,7 @@
     <!--CSS-->
     <link href="<?php echo $pwd ?>css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-
-    <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-
-    <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+    
 
     <link href="<?php echo $pwd ?>css/reset.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
@@ -35,10 +27,7 @@
     <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/mobile.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
-    <!-- <link rel="stylesheet" href="<?php echo $pwd ?>css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="<?php echo $pwd ?>style.css" rel="stylesheet">
+    
 
 
     <!--[if lt IE 9]>
@@ -61,46 +50,6 @@
     
 </head>
 <body>
-
-
-<div class="secondary-header hidden-mb">
-    <div class="container">
-        <div class="wrap-860">
-            <div class="inner-wrap">
-                <div class="inner-inner-wrap">
-                    <a href="<?php echo $get_hd; ?>" class="logo pull-left">
-                        <img src="<?php echo $pwd ?>img/logo.png" alt="logo" class="img-responsive">
-                    </a>
-    
-                    <?php
-                        $contact_page_id = 81;
-                        $tel_lviv = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-lviv', true);
-                        $tel_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-chernivtsi', true);
-                    ?>
-    
-                    <div class="contacts pull-left hidden-mb">
-                        <p>
-                            <span class="number">
-                                <?php echo $tel_lviv; ?>
-                            </span>
-                            <span class="city"> м.Львів</span></p>
-    
-                        <p>
-                            <span class="number">
-                                <?php echo $tel_chernivtsi; ?>
-                            </span>
-                            <span class="city"> м.Чернівці</span></p>
-                    </div>
-                    <div id="nav-main-box-2" class="pull-right">
-                        <div class="nav-menu-btn"><i></i></div>
-                    </div>
-                    <button class="scroll-to-contact pull-right">ОТРИМАЙТЕ КОНСУЛЬТАЦІЮ</button>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <header>
     <div class="container">
@@ -150,13 +99,9 @@
                     <?php
                     query_posts('cat=7&posts_per_page=6&order=ASC');
                     while (have_posts()) : the_post();
-
-                        $site_address = get_metadata('post', $post->ID, 'wpcf-web-site-address', true);
-
-                            $target = empty($site_address) ? '_self' : '_blank';
-                            if ( empty($site_address) ) $site_address = '#';
-
-                            echo "<li><a href='$site_address' target=$target>".get_the_title()."</a></li>";
+                        ?>
+                        <li><a href="<?php echo get_the_permalink($post->ID) ?>"><?php the_title(); ?></a></li>
+                    <?
                     endwhile;
                     ?>
                 </ul>
