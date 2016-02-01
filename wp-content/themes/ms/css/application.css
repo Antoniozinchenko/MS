@@ -346,12 +346,12 @@ header{
   #close-footer-contact-form {
     position: absolute;
     right: -85px;
-    top: 68px;
+    top: 90px; /*68*/
 
     cursor: pointer;
     color: #575656;
-    font-size: 25px;
-    line-height: 20px;
+    font-size: 40px; /*25*/
+    line-height: 30px; /*20*/
 
     -webkit-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;

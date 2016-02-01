@@ -38,6 +38,10 @@ $page = get_page(4);
                             <h4><?php the_title(); ?></h4>
                             <p><?php echo get_the_date('d.m.Y'); ?></p>
                         </div>
+
+                        <div class="post-content d-none">
+                            <?php echo $post->post_content; ?>
+                        </div>
                     </div>
                 </div>
             <?

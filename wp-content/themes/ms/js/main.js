@@ -288,6 +288,10 @@
                     img.id = modalID;
                     img.src = $targetDom2.find('img').prop('src');
 
+                    var div = document.createElement('div');
+                    div.className = 'post-content';
+                    div.innerHTML = $targetDom2.find('.post-content').text();
+
                     var li = document.createElement('li');
                     li.id = modalID;
                     li.className = 'modal-block';
@@ -295,6 +299,7 @@
                     li.appendChild(h2);
                     li.appendChild(p);
                     li.appendChild(img);
+                    li.appendChild(div);
 
                     list.appendChild(li);
                 }

@@ -718,3 +718,20 @@ section.relative-contacts .set-route-form #route-form-close:hover {
 .maps-navigation {
     position: relative;
 }
+
+
+.d-none {
+    display: none;
+}
+
+
+#popup-box .post-content {
+    margin-top: 10px;
+    padding: 10px 0;
+    color: #c6c6c6;
+}
+
+#popup-box .modal-block img {
+    display: block;
+    margin: 0 auto;
+}
