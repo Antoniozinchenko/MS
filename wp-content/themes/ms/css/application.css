@@ -1127,7 +1127,7 @@ section.our_team{
       }
       .contacon span.position{
         display: block;
-        width: 80%;
+        width: 72%; /*80*/
         margin: 4px auto 0;
 
         font-size: 14px;
