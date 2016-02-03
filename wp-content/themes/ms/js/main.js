@@ -369,7 +369,7 @@
 
             createNavMenu();
 
-            var $btnMenu = $('#nav-main-box').children('.nav-menu-btn');
+            var $btnMenu = $('#nav-main-box, #nav-main-box-2').children('.nav-menu-btn');
             var $btnCloseMenu = $('#nav-menu-close-btn, #nav-menu a');
 
             $btnMenu.on('click', function(){
@@ -554,6 +554,7 @@ jQuery(document).ready(function () {
         speed: 300,
         slidesToShow: 2,
         slidesToScroll: 1,
+        dots: false,
         customPaging: function(slider, i) {
             return '<span class="carousel-mobile-navigation">-</span>';
         },
