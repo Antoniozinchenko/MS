@@ -30,7 +30,7 @@ $page = get_page(4);
                             <div class="border-box"></div>
                             <?php
                             if (has_post_thumbnail()) {
-                                $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), array(200, 200));
+                                $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'big'); //array(200, 200)
                             } else {
                                 $large_image_url = 'img/no-image.jpg';
                             }

@@ -734,4 +734,9 @@ section.relative-contacts .set-route-form #route-form-close:hover {
 #popup-box .modal-block img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+}
+
+#popup-box {
+    overflow-y: auto;
 }
