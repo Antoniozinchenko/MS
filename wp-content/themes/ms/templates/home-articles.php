@@ -19,7 +19,7 @@ $page = get_page(4);
             <?php
             query_posts(array(
                 'cat' => 5,
-                'posts_per_page' => 16,
+                'posts_per_page' => 30,
                 'order_by' => 'date',
                 'order' => 'DESC'
             ));
