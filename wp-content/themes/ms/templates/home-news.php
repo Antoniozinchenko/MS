@@ -21,7 +21,8 @@ $page = get_page(4);
             query_posts(array(
                 'cat' => 3,
                 'posts_per_page' => 16,
-                'order' => 'ASC'
+                'order_by' => 'date',
+                'order' => 'DESC'
             ));
             while (have_posts()) : the_post(); ?>
                 <div>
