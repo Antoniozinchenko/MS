@@ -211,10 +211,7 @@
 
 <div id="back-top" class="hidden-mb"></div>
 
-<script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
 
-</body>
-</html>
 
 <!-- Add fancyBox -->
 <link rel="stylesheet" href="<?php echo $pwd ?>fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -230,3 +227,7 @@
 <!-- <link rel="stylesheet" href="<?php echo $pwd ?>css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="<?php echo $pwd ?>style.css" rel="stylesheet">
+
+<script src="<?php echo $pwd ?>js/main.js" type="text/javascript"></script>
+</body>
+</html>
