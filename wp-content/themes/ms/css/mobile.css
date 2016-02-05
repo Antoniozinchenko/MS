@@ -1,10 +1,15 @@
 .hidden-lg{
-    display: none;
+    display: none !important;
 }
 @media (max-width: 721px){
 /*@media only screen and (max-device-width: 721px){*/
     
     /* def */
+
+    /* rewrite bootstrap */
+    /*.container{
+        width: 100%;
+    }*/
     .hidden-lg{
         display: block !important;
     }
@@ -173,32 +178,7 @@
         }
         section.our_projects .ico{
             margin: 0 auto;
-            /*background-position: 0 0;*/
         }
-           /* section.our_projects .ico_01{
-                background: url('images/pa_1.png') no-repeat;
-
-                width: 123px;
-                height: 184px;
-            }
-            section.our_projects .ico_02{
-                background: url('images/pa_2.png') no-repeat;
-
-                width: 141px;
-                height: 136px;
-            }
-            section.our_projects .ico_03{
-                background: url('images/pa_4.png') no-repeat;
-                
-                width: 135px;
-                height: 135px;
-            }
-            section.our_projects .ico_04{
-                background: url('images/pa_3.png') no-repeat;
-
-                width: 196px;
-                height: 118px;
-            }*/
         .project_about .number{
             display: block;
             font-size: 107px;
@@ -234,7 +214,6 @@
             line-height: 36px;
 
             padding: 35px 65px;
-            /*padding: 35px 0;*/
             position: relative;
             height: auto;
         }
