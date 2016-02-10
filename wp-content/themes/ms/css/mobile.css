@@ -608,15 +608,22 @@
         height: 75px;
         line-height: 75px;
         display: inline-block;
-
-        font-size: 53px;
-        color: #fff;
-        font-family: benderbold, sans-serif;
-
         margin-bottom: 50px;
-        padding-left: 115px;
-        background: url('images/m_footer_telephone.png') no-repeat 0 50%;
+
+        font-family: benderbold, sans-serif;
+        font-size: 25px;
+        color: #fff;
+        position: relative;
     }
+        footer .m_telephone:before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: -110px;
+            width: 75px;
+            height: 75px;
+            background: url('images/m_footer_telephone.png') no-repeat 0 50%;
+        }
     footer .get_call{
         margin: 105px 0 158px;
         display: block;
@@ -943,14 +950,29 @@
         footer .col-xs-4{
             padding: 0;
         }
-        footer .m_telephone{
+        /* footer .m_telephone{
             padding-left: 0;
             background: none;
             font-size: 24px;
             height: 24px;
             line-height: 24px;
             margin-bottom: 25px;
+        } */
+        footer .m_telephone{
+            padding-left: 0;
+            background: none;
+            font-size: 24px;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 25px;
         }
+            footer .m_telephone:before{
+                width: 35px;
+                height: 35px;
+                left: -50px;
+                -webkit-background-size: cover;
+                background-size: cover;
+            }
         footer .m_socials a{
             width: 35px;
             height: 35px;

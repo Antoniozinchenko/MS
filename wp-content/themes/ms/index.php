@@ -290,7 +290,7 @@ endforeach;
             <i class="fa fa-times" id="route-form-close"></i>
             <input type="text" class="inp_style clear-both set-route-form-input" id="set-route-form-input" placeholder="Введіть початкову адресу">
             <div class="text-center text set-route-form-text">Або</div>
-            <a href="javascript:;" class="btn_style set-route-form-btn" id="get-geolocation-btn">Прокласти маршрут з поточного місця</a>
+            <a href="javascript:;" class="btn_style set-route-form-btn" id="get-geolocation-btn">Прокласти маршрут</a>
         </div>
         <div id="map" data-city="1" class="map"></div>
         <a href="javascript:;" class="btn_style get_route get_route_form">прокласти маршрут</a>
