@@ -319,6 +319,7 @@ header{
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 199;
+  overflow-y: auto;
 }
   #fixed-menu a,
   #promo-popup a,
