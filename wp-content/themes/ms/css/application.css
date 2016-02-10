@@ -512,7 +512,7 @@ header{
         white-space: nowrap;
         margin-left: -15px;
         left: -50%;
-        width: 220px;
+        width: 260px;
         text-align: center;
         overflow: hidden;
         opacity: 0;
@@ -698,12 +698,14 @@ section.preparing{
 .about-1, .about-2 {
   background: #FAF8F9;
   position: relative;
+  width: 50%;
 }
 .about-1{
   margin-bottom: 86px;
-  height: 370px;
+  /*height: 370px;*/
+  min-height: 370px;
   padding: 0;
-  width: 408px;
+  /*width: 408px;*/
   float: left;
 }
   .about-1:before {
@@ -746,7 +748,7 @@ section.preparing{
     }
 .about-2{
   float: left;
-  width: 452px;
+  /*width: 452px;*/
   padding-bottom: 55px;
 }
   .about-2:before{
