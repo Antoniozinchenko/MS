@@ -19,10 +19,8 @@
     <!--CSS-->
     <link href="<?php echo $pwd ?>css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- <link href="<?php echo $pwd ?>css/reset.css" rel="stylesheet"> -->
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
     <!-- <link href="<?php echo $pwd ?>css/poligons.css" rel="stylesheet"> -->
-    <!-- <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet"> -->
     <link href="<?php echo $pwd ?>css/mobile.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -38,11 +36,8 @@
     <script src="<?php echo $pwd ?>js/parallax.min.js"></script>
     <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
     
-    
 </head>
 <body>
-
-
 
 <div class="secondary-header hidden-mb">
      <div class="container">
