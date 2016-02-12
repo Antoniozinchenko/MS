@@ -19,16 +19,9 @@
     <!--CSS-->
     <link href="<?php echo $pwd ?>css/bootstrap.min.css" rel="stylesheet">
 
-    
-
-    <link href="<?php echo $pwd ?>css/reset.css" rel="stylesheet">
     <link href="<?php echo $pwd ?>css/application.css" rel="stylesheet">
-    <link href="<?php echo $pwd ?>css/poligons.css" rel="stylesheet">
-    <link href="<?php echo $pwd ?>css/backgrounds.css" rel="stylesheet">
+    <!-- <link href="<?php echo $pwd ?>css/poligons.css" rel="stylesheet"> -->
     <link href="<?php echo $pwd ?>css/mobile.css" rel="stylesheet">
-
-    
-
 
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
@@ -37,21 +30,14 @@
     <!-- JS -->
     <script src="<?php echo $pwd ?>js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="<?php echo $pwd ?>js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="<?php echo $pwd ?>js/jquery.simplemodal.js" type="text/javascript"></script>
+    
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
     <script src="<?php echo $pwd ?>js/parallax.min.js"></script>
-
     <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    <script type="text/javascript" src="<?php echo $pwd ?>fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-    <script src="http://vjs.zencdn.net/4.11/video.js"></script>
     
 </head>
 <body>
-
-
 
 <div class="secondary-header hidden-mb">
      <div class="container">

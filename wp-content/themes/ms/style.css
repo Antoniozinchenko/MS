@@ -103,7 +103,7 @@ Theme Name: ms-bud
     background-size: 100% 100%;
     z-index: 2;
 }
-@media (max-width: 721px){
+@media (max-width: 861px){
     .hexagon-news .border-box {
         position: absolute;
         background: url('img/border3.png') 100% no-repeat;
