@@ -11,7 +11,7 @@
                     }
                 },
                 {
-                    breakpoint: 720,
+                    breakpoint: 861,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -41,7 +41,7 @@
             },
             responsive: [
                 {
-                    breakpoint: 720,
+                    breakpoint: 861,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -65,7 +65,7 @@
             },
             responsive: [
                 {
-                    breakpoint: 720,
+                    breakpoint: 861,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -124,7 +124,7 @@
                     }
                 },
                 {
-                    breakpoint: 720,
+                    breakpoint: 861,
                     settings: {
                         slidesToShow: 1,
                         dots: true

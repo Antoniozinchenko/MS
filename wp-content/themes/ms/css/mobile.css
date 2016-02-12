@@ -4,6 +4,7 @@
 @media (max-width: 991px){
     .container{ width: 100%; }
     .top_slider .next-appartmen{right: 0;}
+    #carousel-news .slick-slide img{height: 500px;}
 }
 @media (max-width: 860px){
 /*@media only screen and (max-device-width: 721px){*/
@@ -156,7 +157,7 @@
         section.our_projects .project_about li > div{
             display: block;
             float: left;
-            width: 50% !important;
+            width: 40% !important;
             height: auto;
         }
         section.our_projects .ico{
@@ -211,6 +212,8 @@
         padding: 160px 65px 0;
         
         background: url('images/mobile_form.png') no-repeat right top;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
         section.question_form_mobile .section_title{
             color: #ffffff;
@@ -250,6 +253,9 @@
             width: 100%;
             height: 131px;
             background: url('images/recent_awards_bottom.png') no-repeat 0 0;
+
+            -webkit-background-size: cover;
+            background-size: cover;
         }
         section.recent_awards_mobile img{
             margin: 50px auto 45px;
@@ -483,7 +489,7 @@
         margin: 0 !important;
     }
         .slick-slide img{
-            height: auto !important;
+            height: auto;
             display: inline-block !important;
             max-width: 100%;
         }
