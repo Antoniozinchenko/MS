@@ -1,15 +1,14 @@
 .hidden-lg{
     display: none !important;
 }
-@media (max-width: 721px){
+@media (max-width: 991px){
+    .container{ width: 100%; }
+    .top_slider .next-appartmen{right: 0;}
+}
+@media (max-width: 860px){
 /*@media only screen and (max-device-width: 721px){*/
     
     /* def */
-
-    /* rewrite bootstrap */
-    /*.container{
-        width: 100%;
-    }*/
     .hidden-lg{
         display: block !important;
     }
@@ -86,21 +85,6 @@
             margin-right: 5px;
             margin-top: 75px;
         }
-        /*header .nav-menu-btn i,
-        header .nav-menu-btn:before,
-        header .nav-menu-btn:after{
-            height: 7px;
-        }
-        .nav-menu-btn:before{
-            width: 41px;
-        }
-        .nav-menu-btn i{
-            width: 29px;
-            margin: 7px 0;
-        }
-        .nav-menu-btn:after{
-            width: 36px;
-        }*/
 
     /* project_about */
     section.our_projects .project_about{
@@ -125,7 +109,6 @@
         }
         .mobile_top_slider_img{
             text-align: right;
-            /*height: 575px;*/
             height: auto;
         }
         .mobile-slider-our-projects .title{
@@ -244,10 +227,7 @@
         }
         section.question_form_mobile .btn_style{
             display: inline-block;
-            /*height: 83px;
-            line-height: 83px;
 
-            font-size: 31px;*/
             font-family: benderbold, sans-serif;
         }
             section.question_form_mobile .btn_style:hover{
@@ -263,7 +243,6 @@
             padding-left: 65px;
         }
         section.recent_awards_mobile .container{
-            /*padding: 90px 80px 0;*/
             padding: 90px 0px 0;
             background: #f7f6f5;    
         }
@@ -298,7 +277,6 @@
         margin: 0 0 110px;
     }
         section.advantages .col-md-6 div{
-            /*width: 50%;*/
             padding: 0;
         }
             section.advantages .ico_wr{
@@ -314,8 +292,6 @@
 
                 width: 70%;      
             }  
-        
-          
     
     /* news */
     section.news{
@@ -403,9 +379,6 @@
         }
         section.news .slick-slide .title{
 
-        }
-        section.news .slick-slide img{
-            /*min-height: 571px;*/
         }
 
     /* feedback */
@@ -536,7 +509,6 @@
     /* sldier arrows*/
     .slider-arrow-left, 
     .slider-arrow-right{
-        /*font-size: 100px !important;*/
         line-height: 60px !important;
     }
 
@@ -572,7 +544,6 @@
         .maps-navigation .slick-dots{
             margin-top: -25px !important;
         }
-
     
     /* contacts & map*/
     .map{
@@ -653,8 +624,6 @@
         z-index: 1;
         background: rgba(0, 0, 0, 0.8);
     }
-
-
 }
 
 @media (max-width: 650px) {
@@ -730,10 +699,6 @@
     section.our_projects .project_about{
         text-align: center;
         padding-top: 55px;
-
-        /*-webkit-background-size: contain;
-        background-size: contain;*/
-
         height: auto !important;
     }
         section.our_projects .project_about li{
@@ -764,10 +729,6 @@
         padding: 0;
         height: auto;
         position: relative;
-        /*min-height: 313px;*/
-
-        /*-webkit-background-size: contain;
-        background-size: contain;*/
         background: none;
     }
         section.question_form_mobile .container{
@@ -798,7 +759,6 @@
     .about_company .section_title{
         margin: 20px 0 0;
     }
-
     
     /* awards */
     section.recent_awards_mobile .container{
@@ -950,14 +910,6 @@
         footer .col-xs-4{
             padding: 0;
         }
-        /* footer .m_telephone{
-            padding-left: 0;
-            background: none;
-            font-size: 24px;
-            height: 24px;
-            line-height: 24px;
-            margin-bottom: 25px;
-        } */
         footer .m_telephone{
             padding-left: 0;
             background: none;
