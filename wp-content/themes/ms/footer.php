@@ -80,7 +80,7 @@
 
 <?php
 //Getting promo posts
-//wp_reset_query();
+wp_reset_query();
 $args = array(
     'posts_per_page'   => 1,
     'limit'            => 1,
