@@ -735,6 +735,7 @@ section.relative-contacts .set-route-form #route-form-close:hover {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    margin-top: 30px;
 }
 
 #popup-box {

@@ -85,7 +85,7 @@ $args = array(
     'posts_per_page'   => 1,
     'limit'            => 1,
     'offset'           => 0,
-    'category'         => 13,
+    'category'         => array(13),
     'orderby'          => 'date',
     'order'            => 'DESC',
     'post_type'        => 'post',
@@ -94,16 +94,15 @@ $args = array(
 );
 
 $promo = get_posts( $args );
-
-
-foreach ($promo as $v):
-    $v->image_url = wp_get_attachment_image_src(get_post_thumbnail_id($v->ID), 'big');
-    $v->banner_title = do_shortcode('[types id='.$v->ID.' field="promo_banner_title"][/types]');
-    $v->banner_content = do_shortcode('[types id='.$v->ID.' field="promo_banner_content"][/types]');
-    $v->banner_image = do_shortcode('[types id='.$v->ID.' field="promo_banner_image" size="thumbnail" url="true"][/types]');
-    $v->promo_end_date = do_shortcode('[types id='.$v->ID.' field="promo_end_date" format="d.m.Y"][/types]');
-endforeach;
 if(!empty($promo)):
+    foreach ($promo as $v):
+        $v->image_url = wp_get_attachment_image_src(get_post_thumbnail_id($v->ID), 'big');
+        $v->banner_title = do_shortcode('[types id='.$v->ID.' field="promo_banner_title"][/types]');
+        $v->banner_content = do_shortcode('[types id='.$v->ID.' field="promo_banner_content"][/types]');
+        $v->banner_image = do_shortcode('[types id='.$v->ID.' field="promo_banner_image" size="thumbnail" url="true"][/types]');
+        $v->promo_end_date = do_shortcode('[types id='.$v->ID.' field="promo_end_date" format="d.m.Y"][/types]');
+    endforeach;
+
     $promo = $promo[0];
 ?>
 <!-- MODAL PROMO POPUP -->
