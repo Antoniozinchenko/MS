@@ -479,6 +479,11 @@ header{
   z-index: 199;
   overflow-y: auto;
 }
+
+  #promo-popup #our-promo {
+    margin-top: 60px;
+  }
+
   #fixed-menu a,
   #promo-popup a,
   #popup-box a
@@ -501,7 +506,7 @@ header{
     position: relative;
   }
   #fixed-menu #nav-menu-close-btn,
-  #popup-box-close-btn,
+  #popup-box-close-btn, #promo-box-close-btn,
   #close-footer-contact-form {
     position: absolute;
     right: -85px;
@@ -517,7 +522,7 @@ header{
     transition: color .3s ease-in-out;
   }
     #fixed-menu #nav-menu-close-btn:hover,
-    #promo-popup #promo-popup-close-btn:hover,
+    #promo-popup #promo-box-close-btn:hover,
     #popup-box-close-btn, #close-footer-contact-form:hover {
       color: #b5b4b2;
     }
@@ -1595,37 +1600,38 @@ footer{
   /*END PROMO POPUP*/
 
 /*bicycle*/
-.bicycle{
-  -ms-transform: scale(2.2); /* IE 9 */
-  -webkit-transform: scale(2.2); /* Safari */
-  transform: scale(2.2);
-  position: relative;
-  top:-38px;
-  left: 7px;
-  z-index: 1;
-}
-.bicycle{
-  -ms-transform: scale(2.2); /* IE 9 */
-  -webkit-transform: scale(2.2); /* Safari */
-  transform: scale(2.2);
-  position: relative;
-  top:-38px;
-  left: 7px;
-  z-index: 1;
-  opacity: 0.8;
-}
-.hover-bicycle:hover .bicycle{
-  opacity: 1;
+/*.bicycle{*/
+  /*-ms-transform: scale(2.2); !* IE 9 *!*/
+  /*-webkit-transform: scale(2.2); !* Safari *!*/
+  /*transform: scale(2.2);*/
+  /*position: relative;*/
+  /*top:-38px;*/
+  /*left: 7px;*/
+  /*z-index: 1;*/
+/*}*/
+/*.bicycle{*/
+  /*-ms-transform: scale(2.2); !* IE 9 *!*/
+  /*-webkit-transform: scale(2.2); !* Safari *!*/
+  /*transform: scale(2.2);*/
+  /*position: relative;*/
+  /*top:-38px;*/
+  /*left: 7px;*/
+  /*z-index: 1;*/
+  /*opacity: 0.8;*/
+/*}*/
+/*.hover-bicycle:hover .bicycle{*/
+  /*opacity: 1;*/
 
-}
-#our-promo {
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-}
+/*}*/
+/*#our-promo {*/
+  /*text-align: center;*/
+  /*width: 60%;*/
+  /*margin: 0 auto;*/
+/*}*/
 #our-promo > img {
-  width: 100%;
-  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 /*bicycle end*/
 

@@ -69,7 +69,7 @@
             padding: 0 !important;
         }
     
-    #fixed-menu #nav-menu-close-btn, #popup-box-close-btn, #close-footer-contact-form{
+    #fixed-menu #nav-menu-close-btn, #popup-box-close-btn, #promo-box-close-btn, #close-footer-contact-form{
         top: 25px !important;
         right: 25px !important;
     }

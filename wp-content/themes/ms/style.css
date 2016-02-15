@@ -740,3 +740,42 @@ section.relative-contacts .set-route-form #route-form-close:hover {
 #popup-box {
     overflow-y: auto;
 }
+
+
+/*Promo box styles*/
+#promo-popup h2 {
+    text-align: center;
+    color: #EE8C01;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#promo-popup h3 {
+    text-align: center;
+    color: #F8F8F8;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+#promo-popup h4 {
+    text-align: center;
+    color: #F8F8F8;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#promo-popup .valid-until {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #CACACA;
+}
+
+#promo-popup .promo-content {
+    color: #b1b1b1;
+    margin: 30px;
+    line-height: 22px;
+}
+

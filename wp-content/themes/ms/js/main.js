@@ -184,6 +184,15 @@
             document.body.style.overflow = '';
             $list.children().addClass('hide');
         });
+
+        $(popupBox).on('click', function(e){
+            if(e.target == popupBox) {
+                $popupBox.fadeOut(500);
+                document.body.classList.remove('blur');
+                document.body.style.overflow = '';
+                $list.children().addClass('hide');
+            }
+        });
         
         $('.modal-pop-up').on('click', function(e){
             e.preventDefault();
@@ -290,7 +299,7 @@
 
                     var div = document.createElement('div');
                     div.className = 'post-content';
-                    div.innerHTML = $targetDom2.find('.post-content').text();
+                    div.innerHTML = $targetDom2.find('.post-content').html();
 
                     var li = document.createElement('li');
                     li.id = modalID;
@@ -796,33 +805,31 @@ $(document).ready(function(){
     });
 });
 
-/*
+
+
+
+
 jQuery(document).ready(function () {
 
-    // bicycle=((
-    
-    function show_ad(){
+    function show_ad(e){
+        e.preventDefault();
         $('body').addClass('blur').css('overflow','hidden');
         $('#promo-popup').fadeIn(300);
     }
     var slideBlock1 = $('.slick-slide[data-slick-index=0]').first().addClass('hover-bicycle').children();
     
-    $('.hover-bicycle, #modal-promo-link').on('click',function(e){
-        e.preventDefault();
-        show_ad();
-    });
+    $('.hover-bicycle, #modal-promo-link').on('click',show_ad);
 
-    var scripts= document.getElementsByTagName('script');
-    var path= scripts[5].src.split('?')[0];      // remove any ?query
-    var mydir= path.split('/').slice(0, -1).join('/')+'/';
-    var srcImg = mydir+'../img/News_2.png';
-    slideBlock1[1].src = srcImg;
-    slideBlock1[1].className = 'bicycle';
-    slideBlock1[2].style.display = 'none';
-    
-    // end bicycle
-    
-});*/
+
+    $('#promo-box-close-btn').on('click', function(){
+        $('#promo-popup').fadeOut(500);
+        $('body').removeClass('blur');
+        $('body').removeAttr('style');
+    });
+});
+
+
+
 
 
 (function($){
@@ -833,7 +840,7 @@ jQuery(document).ready(function () {
         });
 
         $('.get_call').on('click', function(){
-            if($(window).width() < 703) {
+            if($(window).width() < 843) {
                 var contacts_popup = $('#contact-popup-box');
                 if (typeof(contacts_popup.find('.footer-contact-form').html()) === "undefined") {
                     //contacts_popup.find('.box').append($('footer').find('.footer-contact-form').clone()).html();

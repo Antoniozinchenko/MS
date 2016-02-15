@@ -77,19 +77,49 @@
 	</div>
 </div>
 
-<?php /* ?>
+
+<?php
+//Getting promo posts
+//wp_reset_query();
+$args = array(
+    'posts_per_page'   => 1,
+    'limit'            => 1,
+    'offset'           => 0,
+    'category'         => 13,
+    'orderby'          => 'date',
+    'order'            => 'DESC',
+    'post_type'        => 'post',
+    'post_status'      => 'publish',
+    'suppress_filters' => true
+);
+
+$promo = get_posts( $args );
+
+
+foreach ($promo as $v):
+    $v->image_url = wp_get_attachment_image_src(get_post_thumbnail_id($v->ID), 'big');
+    $v->banner_title = do_shortcode('[types id='.$v->ID.' field="promo_banner_title"][/types]');
+    $v->banner_content = do_shortcode('[types id='.$v->ID.' field="promo_banner_content"][/types]');
+    $v->banner_image = do_shortcode('[types id='.$v->ID.' field="promo_banner_image" size="thumbnail" url="true"][/types]');
+    $v->promo_end_date = do_shortcode('[types id='.$v->ID.' field="promo_end_date" format="d.m.Y"][/types]');
+endforeach;
+if(!empty($promo)):
+    $promo = $promo[0];
+?>
 <!-- MODAL PROMO POPUP -->
 <div class="modal-promo">
   <div class="close-promo-btn">
     <i class="fa fa-times"></i>
   </div>
-  <div class="modal-promo-img-container">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img_promo_popup.jpg">
-  </div>
+    <?php if(!empty($promo->banner_image)): ?>
+        <div class="modal-promo-img-container">
+            <img src="<?php echo $promo->banner_image ?>">
+        </div>
+    <?php endif; ?>
   <div class="modal-promo-content">
-    <h3>Шалена п’ятниця</h3>
-    <h4>знижки на квартири до 120.000 грн.</h4>
-    <p>період дії акції до 13.11.2015</p>
+    <h3><?php echo $promo->banner_title ?></h3>
+    <h4><?php echo $promo->banner_content ?></h4>
+    <p>період дії акції до <?php echo $promo->promo_end_date ?></p>
     <hr>
     <a href="#" id="modal-promo-link">детальніше</a>
   </div>
@@ -99,28 +129,20 @@
 <!-- fxd menu -->
 <div id="promo-popup">
     <div class="clearfix wrap-860 box">
-        <i id="promo-popup-close-btn" class="fa fa-close"></i>
+        <i id="promo-box-close-btn" class="fa fa-close"></i>
         <div id="our-promo">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/News_2.png">
+            <h2><?php echo $promo->post_title ?></h2>
+            <h3><?php echo $promo->banner_title ?></h3>
+            <h4><?php echo $promo->banner_content ?></h4>
+            <p class="valid-until">період дії акції до <?php echo $promo->promo_end_date ?></p>
+            <?php if(!empty($promo->image_url)): ?>
+                <img src="<?php echo $promo->image_url[0] ?>">
+            <?php endif; ?>
+            <div class="promo-content"><?php echo $promo->post_content ?></div>
         </div>
     </div>
 </div>
-
-
-<script type="text/javascript">
-  (function() {
-    $(document).ready(function(){
-
-      $('#promo-popup-close-btn').on('click', function(){
-        $('#promo-popup').fadeOut(500);
-        $('body').removeClass('blur');
-        $('body').removeAttr('style');
-      });
-
-    });
-  })(window.jQuery)
-</script>
-<?php //*/ ?>
+<?php endif;  ?>
 <!-- END MODAL PROMO POPUP -->
 
 
