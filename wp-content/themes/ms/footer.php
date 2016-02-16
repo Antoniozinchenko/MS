@@ -104,7 +104,7 @@ if(!empty($promo)):
     $promo = $promo[0];
 ?>
 <!-- MODAL PROMO POPUP -->
-<div class="modal-promo">
+<div class="modal-promo hidden-mb">
   <div class="close-promo-btn">
     <i class="fa fa-times"></i>
   </div>
