@@ -772,11 +772,12 @@ section.relative-contacts .set-route-form #route-form-close:hover {
     font-size: 12px;
     margin-top: 5px;
     color: #CACACA;
+    margin-bottom: 30px;
 }
 
 #promo-popup .promo-content {
     color: #b1b1b1;
-    margin: 30px;
+    margin: 30px 0;
     line-height: 22px;
 }
 

@@ -80,12 +80,11 @@
 
 <?php
 //Getting promo posts
-wp_reset_query();
 $args = array(
     'posts_per_page'   => 1,
     'limit'            => 1,
     'offset'           => 0,
-    'category'         => array(13),
+    'category'         => 13,
     'orderby'          => 'date',
     'order'            => 'DESC',
     'post_type'        => 'post',
@@ -102,7 +101,6 @@ if(!empty($promo)):
         $v->banner_image = do_shortcode('[types id='.$v->ID.' field="promo_banner_image" size="thumbnail" url="true"][/types]');
         $v->promo_end_date = do_shortcode('[types id='.$v->ID.' field="promo_end_date" format="d.m.Y"][/types]');
     endforeach;
-
     $promo = $promo[0];
 ?>
 <!-- MODAL PROMO POPUP -->
