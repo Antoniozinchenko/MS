@@ -186,7 +186,7 @@
         });
 
         $(popupBox).on('click', function(e){
-            if(e.target == popupBox) {
+            if(e.target == popupBox || e.target == popupBox.querySelector('.box')) {
                 $popupBox.fadeOut(500);
                 document.body.classList.remove('blur');
                 document.body.style.overflow = '';
@@ -391,6 +391,15 @@
                 //$navMain.slideDown();
                 $('#fixed-menu').fadeOut();
                 $('body').css('overflow', '').removeClass('blur');
+            });
+
+            var fxdMenu = document.getElementById('fixed-menu');
+
+            $(fxdMenu).on('click', function(e){
+                if(e.target == fxdMenu || e.target == fxdMenu.querySelector('.box')) {
+                    $('#fixed-menu').fadeOut();
+                    $('body').css('overflow', '').removeClass('blur');
+                }
             });
 
             var isBtn, btn, inBtn;
@@ -816,7 +825,8 @@ jQuery(document).ready(function () {
         $('body').addClass('blur').css('overflow','hidden');
         $('#promo-popup').fadeIn(300);
     }
-    var slideBlock1 = $('.slick-slide[data-slick-index=0]').first().addClass('hover-bicycle').children();
+
+    var promoBox = document.getElementById('promo-popup');
     
     $('.hover-bicycle, #modal-promo-link').on('click',show_ad);
 
@@ -825,6 +835,12 @@ jQuery(document).ready(function () {
         $('#promo-popup').fadeOut(500);
         $('body').removeClass('blur');
         $('body').removeAttr('style');
+    });
+
+    $(promoBox).on('click', function(e){
+        if(e.target == promoBox || e.target == promoBox.querySelector('#our-promo')){
+
+        }
     });
 });
 
