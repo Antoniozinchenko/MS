@@ -838,7 +838,10 @@ jQuery(document).ready(function () {
     });
 
     $(promoBox).on('click', function(e){
-        if(e.target == promoBox || e.target == promoBox.querySelector('#our-promo')){
+        if(e.target == promoBox || e.target == promoBox.querySelector('#our-promo') || e.target == promoBox.querySelector('.box')){
+            $('#promo-popup').fadeOut(500);
+            $('body').removeClass('blur');
+            $('body').removeAttr('style')
 
         }
     });
