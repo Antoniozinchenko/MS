@@ -161,9 +161,9 @@ if(!empty($promo)):
             <div class="f_contacts">
               <h2 class="footer_title">
                 контакти              
-              </h2>   
-              <p><span>М. ЧЕРНІВЦІ</span><?php echo $address_chernivtsi; ?></p>
-              <p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p>
+              </h2>
+                <p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p>
+                <p><span>М. ЧЕРНІВЦІ</span><?php echo $address_chernivtsi; ?></p>
             </div>
             <div class="f_socials">
               <h2 class="footer_title">
