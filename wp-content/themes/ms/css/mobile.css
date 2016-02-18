@@ -101,7 +101,7 @@
         /* slider */
         section.our_projects .mobile-slider-our-projects {
             display: block;
-            background: url('images/mobile_top_slider_bg.png') no-repeat 50% 0;
+            background: url('images/mobile_top_slider_bg.png') no-repeat 50% 10px;
             margin: 0 -15px;
             position: relative;
 
@@ -117,6 +117,9 @@
             color: #ff9707;
             font-family: benderbold, sans-serif;
             margin: 50px 0 25px;
+        }
+        .mobile-slider-our-projects img{
+            margin-top: -24px;
         }
         .mobile-slider-our-projects .count-apartment,
         .mobile-slider-our-projects .lost-apartment{
