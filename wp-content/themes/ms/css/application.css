@@ -1677,3 +1677,28 @@ footer{
   .get_route_form {
     display: none;
   }
+
+
+.afterfooter .happy{
+  display: inline-block;
+  margin-left: 5px;
+
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #70777d;
+  font-weight: 900;
+
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  background: url(../img/happy_design.svg) no-repeat;
+  background-position: center -42px;
+  vertical-align: middle;
+  padding: 10px 40px;
+}
+.afterfooter .happy:hover {
+  /*color: #ED8C01;*/
+  background: url(../img/happy_design_hover.svg) no-repeat;
+  background-position: center -60px;
+}

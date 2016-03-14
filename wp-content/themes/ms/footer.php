@@ -221,9 +221,9 @@ if(!empty($promo)):
         &copy; Девелоперська компанія "MS"
       </div>
       <div class="pull-right">
-        Сайт зроблено в
-        <a href="javascript:;" class="happy">hap:py</a>
-      </div>
+        <?php _e('Сайт зроблено в', DH_DOMAIN) ?>
+            <a href="http://happydesign.pro" class="happy" target="_blank"></a>
+        </div>
     </div>
   </div>
 </section>
